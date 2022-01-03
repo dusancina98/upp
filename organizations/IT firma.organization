@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="IT firma">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="kandidat.jedan">
+      <firstName>Kandidat</firstName>
+      <lastName>Jedan</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="kandidat.dva">
+      <firstName>Kandidat</firstName>
+      <lastName>Dva</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="hr.sef">
+      <firstName>Hr</firstName>
+      <lastName>Sef</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="hr.zaposleni1">
+      <firstName>Hr</firstName>
+      <lastName>Zaposleni1</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="hr.zaposleni2">
+      <firstName>Hr</firstName>
+      <lastName>Zaposleni2</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="projtim.clan1">
+      <firstName>Projtim</firstName>
+      <lastName>Clan1</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="projtim.clan2">
+      <firstName>Projtim</firstName>
+      <lastName>Clan2</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="kandidat.tri">
+      <firstName>Kandidat</firstName>
+      <lastName>Tri</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Sef">
+      <displayName>Sef</displayName>
+    </role>
+    <role name="Clan">
+      <displayName>Clan</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="ITFirma">
+      <displayName>ITFirma</displayName>
+    </group>
+    <group name="Kandidat">
+      <displayName>Kandidat</displayName>
+    </group>
+    <group name="Zaposleni" parentPath="/ITFirma">
+      <displayName>Zaposleni</displayName>
+    </group>
+    <group name="HRSluzba" parentPath="/ITFirma/Zaposleni">
+      <displayName>HRSluzba</displayName>
+    </group>
+    <group name="ProjektniTim" parentPath="/ITFirma/Zaposleni">
+      <displayName>ProjektniTim</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>kandidat.jedan</userName>
+      <roleName>Clan</roleName>
+      <groupName>Kandidat</groupName>
+    </membership>
+    <membership>
+      <userName>kandidat.dva</userName>
+      <roleName>Clan</roleName>
+      <groupName>Kandidat</groupName>
+    </membership>
+    <membership>
+      <userName>hr.sef</userName>
+      <roleName>Sef</roleName>
+      <groupName>HRSluzba</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hr.zaposleni1</userName>
+      <roleName>Clan</roleName>
+      <groupName>HRSluzba</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hr.zaposleni2</userName>
+      <roleName>Clan</roleName>
+      <groupName>HRSluzba</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>projtim.clan1</userName>
+      <roleName>Clan</roleName>
+      <groupName>ProjektniTim</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>projtim.clan2</userName>
+      <roleName>Clan</roleName>
+      <groupName>ProjektniTim</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>kandidat.tri</userName>
+      <roleName>Sef</roleName>
+      <groupName>Kandidat</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
