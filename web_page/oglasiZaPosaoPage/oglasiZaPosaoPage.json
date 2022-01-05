@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "oglasiZaPosaoPage",
   "name" : "oglasiZaPosaoPage",
-  "lastUpdate" : 1641222625251,
+  "lastUpdate" : 1641388684425,
   "rows" : [
     [
       {
@@ -682,7 +682,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tselectedOglasInput: $data.oglas_selected.persistenceId",
+        "\tselectedOglasInput: $data.oglas_selected.persistenceId,",
         "}"
       ],
       "exposed" : false

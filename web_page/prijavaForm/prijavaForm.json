@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "prijavaZaPosaoForm",
-  "name" : "prijavaZaPosaoForm",
-  "lastUpdate" : 1641239893559,
+  "id" : "prijavaForm",
+  "name" : "prijavaForm",
+  "lastUpdate" : 1641389264219,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "bf4eb0da-45b7-4353-bce2-d658e2a40f73",
+        "reference" : "0ef1d314-7ace-4dc2-8e32-a64e592b7a26",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "47cb46d3-4188-4314-8972-decd55e1eff9",
+              "reference" : "b77a2a90-ac43-4303-99f1-86dee0955534",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "c83b7234-8a08-4a97-b27f-40751161c46f",
+              "reference" : "e8bd5a09-1f67-4145-b2dd-1b8239604578",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "9005e675-833a-4634-b176-1f8ffa04ad65",
+        "reference" : "b964fc8d-d4c4-4ead-9631-249a0698cf30",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,13 +123,13 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "da73cdcb-ef5d-48ab-b7bb-f286f646ca4e",
+          "reference" : "b049cca6-4569-4f46-b368-8cd61bbfa858",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
             [
               {
-                "type" : "component",
+                "type" : "container",
                 "dimension" : {
                   "md" : 12,
                   "sm" : 12,
@@ -137,35 +137,173 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 4"
-                  },
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Prijava"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
                   }
                 },
-                "reference" : "665f7eae-d007-4fdd-add2-c847c3416700",
+                "reference" : "0f7c1e16-1caf-4976-b130-26fe71dff833",
                 "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 4"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Cv Document"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "4440ba44-eb5c-4a63-bc08-81bb74dca19e",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "showPreview" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "document" : {
+                          "type" : "variable",
+                          "value" : "context.cvDocument_ref"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "Process document"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "url" : {
+                          "type" : "constant"
+                        }
+                      },
+                      "reference" : "68c30aa9-5d74-4c26-b61b-498cddda2b7b",
+                      "hasValidationError" : false,
+                      "id" : "pbFileViewer",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Cv Document"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Browse to update the file..."
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "context.cvDocument_ref.newValue"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "../API/formFileUpload"
+                        }
+                      },
+                      "reference" : "90412f35-15c5-418e-a488-287ba55b3608",
+                      "hasValidationError" : false,
+                      "id" : "pbUpload",
+                      "description" : ""
+                    }
+                  ]
+                ]
               }
             ],
             [
@@ -194,7 +332,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "99643586-7f5d-4428-825c-eef51758d3e0",
+                "reference" : "86326c8e-20de-44e9-8838-8cd7984c1fee",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -208,7 +346,48 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 4"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Propratno Pismo Document"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "a40d8f47-29f5-4eea-be20-0b9b9c2f6903",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "showPreview" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -216,49 +395,29 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Propratno Pismo"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
+                        "document" : {
+                          "type" : "variable",
+                          "value" : "context.propratnoPismoDocument_ref"
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "Process document"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.prijavaInput.propratnoPismo"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
+                        "url" : {
+                          "type" : "constant"
                         }
                       },
-                      "reference" : "ec00d6e2-eb63-471d-933a-5749c6a21f2a",
+                      "reference" : "70ec80f9-0aea-40da-95a5-0d9824369f3f",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbFileViewer",
                       "description" : ""
                     }
                   ],
@@ -274,7 +433,7 @@
                       "propertyValues" : {
                         "labelHidden" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "hidden" : {
                           "type" : "constant",
@@ -290,22 +449,15 @@
                         },
                         "labelWidth" : {
                           "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
+                          "value" : 4
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Cv"
+                          "value" : "Propratno Pismo Document"
                         },
                         "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "Browse to update the file..."
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -313,16 +465,20 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.prijavaInput.cv"
+                          "value" : "context.propratnoPismoDocument_ref.newValue"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "../API/formFileUpload"
                         }
                       },
-                      "reference" : "ae5cf534-69aa-4a76-a0c7-ec12c4c9caf0",
+                      "reference" : "054810c8-892e-4c0d-b7c1-bb2cbff236c4",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbUpload",
                       "description" : ""
                     }
                   ]
@@ -400,7 +556,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "4fb80144-c85f-4292-bc3d-29aceef229fb",
+                "reference" : "2d8de732-b07b-4380-806e-cdf973df0032",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -452,7 +608,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e2cd59f3-c795-4772-86f1-ca93c4a401e7",
+                "reference" : "ea191f1c-68dd-4f45-a1d3-50c0d4f1c3c5",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -465,14 +621,14 @@
   ],
   "assets" : [
     {
-      "id" : "69916aea-66c0-4e0c-b0d8-44b89f686475",
+      "id" : "779fc800-1d65-4955-a39f-aa281422e311",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "3c76f368-27c2-42d2-9bbd-65b0bb9440e1",
+      "id" : "2f4ac822-9889-4053-93c8-6a4fe4f77d0f",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
@@ -485,18 +641,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "formInput" : {
-      "type" : "json",
-      "value" : [
-        "{\r",
-        "  \"prijavaInput\" : {\r",
-        "    \"propratnoPismo\" : \"\",\r",
-        "    \"cv\" : \"\"\r",
-        "  }\r",
-        "}"
       ],
       "exposed" : false
     },
@@ -518,8 +662,21 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tprijavaInput: $data.formInput.prijavaInput",
+        "if( $data.context ){",
+        "\treturn {",
+        "\t\tcvDocumentInput: {",
+        "\t\t\tid: $data.context.cvDocument_ref && $data.context.cvDocument_ref.id ? $data.context.cvDocument_ref.id.toString() : null,",
+        "\t\t\tfilename: $data.context.cvDocument_ref.newValue && $data.context.cvDocument_ref.newValue.filename ? $data.context.cvDocument_ref.newValue.filename : null,",
+        "\t\t\ttempPath: $data.context.cvDocument_ref.newValue && $data.context.cvDocument_ref.newValue.tempPath ? $data.context.cvDocument_ref.newValue.tempPath : null,",
+        "\t\t\tcontentType: $data.context.cvDocument_ref.newValue && $data.context.cvDocument_ref.newValue.contentType ? $data.context.cvDocument_ref.newValue.contentType : null",
+        "\t\t},",
+        "\t\tpropratnoPismoDocumentInput: {",
+        "\t\t\tid: $data.context.propratnoPismoDocument_ref && $data.context.propratnoPismoDocument_ref.id ? $data.context.propratnoPismoDocument_ref.id.toString() : null,",
+        "\t\t\tfilename: $data.context.propratnoPismoDocument_ref.newValue && $data.context.propratnoPismoDocument_ref.newValue.filename ? $data.context.propratnoPismoDocument_ref.newValue.filename : null,",
+        "\t\t\ttempPath: $data.context.propratnoPismoDocument_ref.newValue && $data.context.propratnoPismoDocument_ref.newValue.tempPath ? $data.context.propratnoPismoDocument_ref.newValue.tempPath : null,",
+        "\t\t\tcontentType: $data.context.propratnoPismoDocument_ref.newValue && $data.context.propratnoPismoDocument_ref.newValue.contentType ? $data.context.propratnoPismoDocument_ref.newValue.contentType : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
@@ -540,7 +697,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "4e6e59ca-0011-42ad-ad86-e485a9952af2",
+  "uuid" : "2ec752eb-0986-4657-8489-7ce4d73b21b4",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

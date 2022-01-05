@@ -66,6 +66,14 @@
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
+    <user userName="kandidat.cetri">
+      <firstName>Kandidat</firstName>
+      <lastName>Cetri</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Sef">
@@ -137,6 +145,11 @@
       <userName>kandidat.tri</userName>
       <roleName>Sef</roleName>
       <groupName>Kandidat</groupName>
+    </membership>
+    <membership>
+      <userName>kandidat.cetri</userName>
+      <roleName>Sef</roleName>
+      <groupName>ITFirma</groupName>
     </membership>
   </memberships>
 </organization:Organization>
