@@ -21,6 +21,7 @@
     <user userName="hr.sef">
       <firstName>Hr</firstName>
       <lastName>Sef</lastName>
+      <manager>hr.zaposleni1</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>
@@ -45,6 +46,7 @@
     <user userName="projtim.clan1">
       <firstName>Projtim</firstName>
       <lastName>Clan1</lastName>
+      <manager>projtim.clan2</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>

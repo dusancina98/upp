@@ -30,6 +30,19 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.PrijavaZaKurs">
+            <fields>
+                <field type="STRING" length="255" name="ime" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prezime" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="cena" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="datumOdrzavanja" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.StatusPrijaveZaKurs" fetchType="LAZY" name="statusPrijave" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.PrijavaZaPosao">
             <fields>
                 <field type="LONG" length="255" name="idKandidata" nullable="false" collection="false"/>
@@ -49,6 +62,15 @@
         <businessObject qualifiedName="magija.it_firma.model.Senioritet">
             <fields>
                 <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.StatusPrijaveZaKurs">
+            <fields>
+                <field type="TEXT" length="255" name="status" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="razlogOdbijanja" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
