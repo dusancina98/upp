@@ -605,7 +605,7 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_OtqBkGziEeydovcGajPANg" target="_TzTxIGgeEeydB5g01Nxqig" source="_QxIrgGgcEeydB5g01Nxqig">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_OtqBkWziEeydovcGajPANg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_OtqBkmziEeydovcGajPANg" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_OtqBkmziEeydovcGajPANg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_AVu4QG4rEeyU6JmbbOHeag" target="_yu_80G4qEeyU6JmbbOHeag" source="_3Fl_lmgJEeydB5g01Nxqig">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_AVvfUG4rEeyU6JmbbOHeag"/>
