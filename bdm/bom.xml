@@ -72,6 +72,7 @@
             <fields>
                 <field type="INTEGER" length="255" name="statusPrijave" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="razlogOdbijanja" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="budzetZaPrevozSmestaj" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

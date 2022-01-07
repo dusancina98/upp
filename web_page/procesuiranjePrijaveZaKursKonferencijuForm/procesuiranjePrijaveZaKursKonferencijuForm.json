@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "procesuiranjePrijaveZaKursKonferencijuForm",
   "name" : "procesuiranjePrijaveZaKursKonferencijuForm",
-  "lastUpdate" : 1641514855772,
+  "lastUpdate" : 1641517048303,
   "rows" : [
     [
       {
@@ -648,7 +648,7 @@
                   },
                   "modalId" : {
                     "type" : "expression",
-                    "value" : "2"
+                    "value" : "openModalOnPrihvati"
                   }
                 },
                 "reference" : "b2f79a36-334f-439e-b891-d8052dc92122",
@@ -932,6 +932,390 @@
           ]
         }
       }
+    ],
+    [
+      {
+        "type" : "modalContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : "2"
+          },
+          "size" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "animation" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "4aa571a1-5f88-43e4-8a8c-aa252e79b10c",
+        "hasValidationError" : false,
+        "id" : "pbModalContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "29a9d7dd-45fc-4574-b6f2-3d75b68c44e3",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Da li ste sigurni da zelite da prihvatite upit?"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  }
+                },
+                "reference" : "46dd715a-dc28-4fc8-ba65-5b0874d6bce8",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Prihvati"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "success"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "084faf54-5250-48a2-9653-6e450802b9af",
+                "hasValidationError" : false,
+                "id" : "pbButton"
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "type" : "modalContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : "3"
+          },
+          "size" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "animation" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "67031e5f-28e8-4386-aa24-6081371687d3",
+        "hasValidationError" : false,
+        "id" : "pbModalContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "db0d4ebd-d5b8-4d0d-a0d8-23f56fabe333",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Unesi budzet za smestaj i prevoz"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "budzetZaKursUzivo"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "number"
+                  },
+                  "min" : {
+                    "type" : "constant",
+                    "value" : 0
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "eae0fc7f-fe74-4fd2-a827-75f47bce035b",
+                "hasValidationError" : false,
+                "id" : "pbInput"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Submit"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "default"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutputBudget"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "7f761c53-c538-4360-83ae-d70b93764294",
+                "hasValidationError" : false,
+                "id" : "pbButton"
+              }
+            ]
+          ]
+        }
+      }
     ]
   ],
   "assets" : [
@@ -1004,7 +1388,9 @@
         "\treturn {",
         "\t\t//map prijavaZaKursKonferenciju variable to expected task contract input",
         "\t\tprijavaZaKursKonferencijuInput: {",
-        "\t\t\tprihvaceno: true",
+        "\t\t\tprihvaceno: true,",
+        "\t\t\trazlogOdbijanja: \"\",",
+        "            budzetZaKursUzivo: 0",
         "\t\t}",
         "\t}",
         "}"
@@ -1049,6 +1435,37 @@
     },
     "budzetZaKursUzivo" : {
       "type" : "constant",
+      "exposed" : false
+    },
+    "openModalOnPrihvati" : {
+      "type" : "expression",
+      "value" : [
+        "var flag = false",
+        "",
+        "if(flag){",
+        "    return 2",
+        "}else{",
+        "    return 3",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "formOutputBudget" : {
+      "type" : "expression",
+      "value" : [
+        "if( $data.prijavaZaKursKonferenciju && $data.prijavaZaKursKonferenciju_statusPrijave ){",
+        "\t//attach lazy references variables to parent variables",
+        "\t$data.prijavaZaKursKonferenciju.statusPrijave = $data.prijavaZaKursKonferenciju_statusPrijave;",
+        "\treturn {",
+        "\t\t//map prijavaZaKursKonferenciju variable to expected task contract input",
+        "\t\tprijavaZaKursKonferencijuInput: {",
+        "\t\t\tprihvaceno: true,",
+        "\t\t\trazlogOdbijanja: \"\",",
+        "            budzetZaKursUzivo: $data.budzetZaKursUzivo,",
+        "\t\t}",
+        "\t}",
+        "}"
+      ],
       "exposed" : false
     }
   },

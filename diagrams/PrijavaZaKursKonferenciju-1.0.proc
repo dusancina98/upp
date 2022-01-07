@@ -84,11 +84,11 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_ttALmG9PEeyPZJYMJ_lsSA" name="prijavaZaKursKonferenciju" content="prijavaZaKursKonferenciju" type="TYPE_VARIABLE" returnType="magija.it_firma.model.PrijavaZaKurs">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ttALmW9PEeyPZJYMJ_lsSA" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_ttALmm9PEeyPZJYMJ_lsSA" name="prijavaZaKursKonferencijuInput1.statusPrijave" content="//Retrieve aggregated StatusPrijaveZaKurs using its DAO and persistenceId&#xD;&#xA;def statusPrijaveZaKursVar = prijavaZaKursKonferenciju.statusPrijave&#xD;&#xA;&#xD;&#xA;if(prijavaZaKursKonferencijuInput.prihvaceno == true){&#xD;&#xA;&#x9;statusPrijaveZaKursVar.setStatusPrijave(zahtevPrihvacenOdNadredjenogStatusNumCONST)&#xD;&#xA;&#x9;statusPrijaveZaKursVar.setRazlogOdbijanja(prijavaZaKursKonferencijuInput.razlogOdbijanja)&#xD;&#xA;}else{&#xD;&#xA;&#x9;statusPrijaveZaKursVar.setStatusPrijave(zahtevOdbijenStatusNumCONST)&#xD;&#xA;&#x9;statusPrijaveZaKursVar.setRazlogOdbijanja(prijavaZaKursKonferencijuInput.razlogOdbijanja)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return statusPrijaveZaKursVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="magija.it_firma.model.StatusPrijaveZaKurs">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_NzxTkG9QEeyPZJYMJ_lsSA" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_NzxTkW9QEeyPZJYMJ_lsSA" name="prijavaZaKursKonferencijuInput" type="COMPLEX" createMode="false"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_NzxTkm9QEeyPZJYMJ_lsSA" name="zahtevPrihvacenOdNadredjenogStatusNumCONST" dataType="_en3ADm5gEeySSt74BsnCSw"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_NzxTk29QEeyPZJYMJ_lsSA" name="zahtevOdbijenStatusNumCONST" dataType="_en3ADm5gEeySSt74BsnCSw"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_ttALmm9PEeyPZJYMJ_lsSA" name="prijavaZaKursKonferencijuInput1.statusPrijave" content="//Retrieve aggregated StatusPrijaveZaKurs using its DAO and persistenceId&#xD;&#xA;def statusPrijaveZaKursVar = prijavaZaKursKonferenciju.statusPrijave&#xD;&#xA;&#xD;&#xA;if(prijavaZaKursKonferencijuInput.prihvaceno){&#xD;&#xA;&#x9;statusPrijaveZaKursVar.setStatusPrijave(zahtevPrihvacenOdNadredjenogStatusNumCONST)&#xD;&#xA;&#x9;statusPrijaveZaKursVar.setBudzetZaPrevozSmestaj(prijavaZaKursKonferencijuInput.budzetZaKursUzivo)&#xD;&#xA;}else{&#xD;&#xA;&#x9;statusPrijaveZaKursVar.setStatusPrijave(zahtevOdbijenStatusNumCONST)&#xD;&#xA;&#x9;statusPrijaveZaKursVar.setRazlogOdbijanja(prijavaZaKursKonferencijuInput.razlogOdbijanja)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return statusPrijaveZaKursVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="magija.it_firma.model.StatusPrijaveZaKurs">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_k87qsG9UEey2mP3swYzyXQ" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_k87qsW9UEey2mP3swYzyXQ" name="prijavaZaKursKonferencijuInput" type="COMPLEX" createMode="false"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_k87qsm9UEey2mP3swYzyXQ" name="zahtevPrihvacenOdNadredjenogStatusNumCONST" dataType="_en3ADm5gEeySSt74BsnCSw"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_k87qs29UEey2mP3swYzyXQ" name="zahtevOdbijenStatusNumCONST" dataType="_en3ADm5gEeySSt74BsnCSw"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_ttALnW9PEeyPZJYMJ_lsSA" type="JAVA_METHOD" expression="setStatusPrijave">
               <inputTypes>magija.it_firma.model.StatusPrijaveZaKurs</inputTypes>
@@ -107,7 +107,7 @@
               <inputs xmi:type="process:ContractInput" xmi:id="_q3LnIG9KEeyPZJYMJ_lsSA" name="prihvaceno" type="BOOLEAN">
                 <mapping xmi:type="process:ContractInputMapping" xmi:id="_q3LnIW9KEeyPZJYMJ_lsSA"/>
               </inputs>
-              <inputs xmi:type="process:ContractInput" xmi:id="_s4PtsG9PEeyPZJYMJ_lsSA" name="budzetZaKursUzivo">
+              <inputs xmi:type="process:ContractInput" xmi:id="_s4PtsG9PEeyPZJYMJ_lsSA" name="budzetZaKursUzivo" type="INTEGER">
                 <mapping xmi:type="process:ContractInputMapping" xmi:id="_s4PtsW9PEeyPZJYMJ_lsSA"/>
               </inputs>
               <inputs xmi:type="process:ContractInput" xmi:id="_ukChIG9PEeyPZJYMJ_lsSA" name="razlogOdbijanja">
@@ -144,7 +144,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_efT2EW9LEeyPZJYMJ_lsSA" content="" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_en2_9G5gEeySSt74BsnCSw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_S_ApYG9QEeyPZJYMJ_lsSA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_WOe5QG9UEey2mP3swYzyXQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_en2_9m5gEeySSt74BsnCSw">
         <targetForm xmi:type="expression:Expression" xmi:id="_en2_925gEeySSt74BsnCSw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
