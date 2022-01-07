@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "obradaZahtevaZaKursKonferenciju",
-  "name" : "obradaZahtevaZaKursKonferenciju",
-  "lastUpdate" : 1641420297762,
+  "id" : "unosRazlogaOdbijanjaForm",
+  "name" : "unosRazlogaOdbijanjaForm",
+  "lastUpdate" : 1641514000859,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "fd60e92c-e666-47d3-9eee-8958506b0329",
+        "reference" : "ea426b01-5148-438a-96df-7f3c142ddeaf",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "18a109c8-9623-4e9b-931d-818507347efc",
+              "reference" : "4751d769-d954-4584-81a7-d1cff6e5d13a",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "8f530c8d-927e-49c4-a82b-0d36a0f1261c",
+              "reference" : "c4aef744-8418-47f1-95aa-bc7a29aba58d",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "b26a5141-d17a-44ab-9141-bfa8d76d0095",
+        "reference" : "c08fe008-c203-4842-9d74-c7ea3a8a99c4",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "5b566a4d-3d01-46f8-9dd4-6121f252cca8",
+          "reference" : "70fd9ba9-8bb8-44c9-975b-89573c4a9b0e",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -151,7 +151,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Prijava Za Kurs Posao"
+                    "value" : "Prijava Za Kurs Konferenciju"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "d3fa1c7c-f495-4b0d-b6b1-d7f3ace3333c",
+                "reference" : "42f4ac50-7f6d-489e-8cb3-c5c840bef0c2",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -179,7 +179,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -194,7 +195,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "be267e47-11b3-4806-9265-4db0028dae43",
+                "reference" : "59c8d025-85f1-4f4c-a6b2-f61b56268881",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -218,7 +219,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!prijavaZaKursPosao.ime"
+                          "value" : "!prijavaZaKursKonferenciju.ime"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -230,7 +231,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{prijavaZaKursPosao.ime}}"
+                          "value" : "{{prijavaZaKursKonferenciju.ime}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -239,21 +240,9 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
                         }
                       },
-                      "reference" : "a743a077-2e67-4549-90a0-9ef446dd8924",
+                      "reference" : "ee24cb3c-f87e-4fae-a8fb-538f6d287777",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -279,7 +268,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!prijavaZaKursPosao.prezime"
+                          "value" : "!prijavaZaKursKonferenciju.prezime"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -291,7 +280,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{prijavaZaKursPosao.prezime}}"
+                          "value" : "{{prijavaZaKursKonferenciju.prezime}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -302,7 +291,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "586646e5-7e5a-44a0-809f-893a7187dfde",
+                      "reference" : "37a61b7b-ef36-4f55-b45b-a61bd45be591",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -328,7 +317,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!prijavaZaKursPosao.naziv"
+                          "value" : "!prijavaZaKursKonferenciju.naziv"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -340,7 +329,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{prijavaZaKursPosao.naziv}}"
+                          "value" : "{{prijavaZaKursKonferenciju.naziv}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -349,21 +338,9 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
                         }
                       },
-                      "reference" : "39b370e3-55b4-417d-a07f-440cd5b2c509",
+                      "reference" : "f42670f4-f717-4cbe-8743-ef590097b765",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -389,7 +366,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!prijavaZaKursPosao.cena"
+                          "value" : "!prijavaZaKursKonferenciju.cena"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -401,7 +378,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{prijavaZaKursPosao.cena}}"
+                          "value" : "{{prijavaZaKursKonferenciju.cena}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -412,7 +389,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "14d79f50-515b-491b-a6e7-e14e2382e28f",
+                      "reference" : "4cb50e87-7924-47bd-b55e-a305250260d9",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -438,7 +415,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!prijavaZaKursPosao.datumOdrzavanja"
+                          "value" : "!prijavaZaKursKonferenciju.datumOdrzavanja"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -450,7 +427,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{prijavaZaKursPosao.datumOdrzavanja|uiDate}}"
+                          "value" : "{{prijavaZaKursKonferenciju.datumOdrzavanja|uiDate}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -461,50 +438,9 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "bcb672e6-088f-4b70-9ec7-52f453fdea65",
+                      "reference" : "82035910-9a10-48ee-b079-e6af9943915e",
                       "hasValidationError" : false,
                       "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Status Prijave"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "7814ef46-8ffb-47f9-9bff-bd31cc07748d",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
                       "description" : ""
                     }
                   ],
@@ -519,7 +455,8 @@
                       },
                       "propertyValues" : {
                         "repeatedCollection" : {
-                          "type" : "variable"
+                          "type" : "variable",
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
@@ -534,135 +471,10 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "673496a5-6787-4ac7-9979-e0a9e97e1b79",
+                      "reference" : "4925a52e-19ed-45d5-962b-c79163aeddcb",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "availableValues" : {
-                                "type" : "expression",
-                                "value" : "statusPrijaveZaKurs_query"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 1
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Status Prijave"
-                              },
-                              "placeholder" : {
-                                "type" : "constant",
-                                "value" : "Select a Status Prijave"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "prijavaZaKursPosao_statusPrijave"
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : false
-                              }
-                            },
-                            "reference" : "c856edc0-2c8d-4151-bfb2-0987bb6cb0cc",
-                            "hasValidationError" : false,
-                            "id" : "pbSelect",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 1
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Status"
-                              },
-                              "placeholder" : {
-                                "type" : "constant"
-                              },
-                              "type" : {
-                                "type" : "constant",
-                                "value" : "text"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "prijavaZaKursPosao_statusPrijave.status"
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : false
-                              }
-                            },
-                            "reference" : "b1d4bfae-5946-4a59-a3be-df30493d064a",
-                            "hasValidationError" : false,
-                            "id" : "pbInput",
-                            "description" : ""
-                          }
-                        ],
                         [
                           {
                             "type" : "component",
@@ -714,14 +526,14 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "prijavaZaKursPosao_statusPrijave.razlogOdbijanja"
+                                "value" : "prijavaZaKursKonferenciju_statusPrijave.razlogOdbijanja"
                               },
                               "required" : {
                                 "type" : "constant",
                                 "value" : false
                               }
                             },
-                            "reference" : "dcbc7e83-9882-4d8b-ab63-677c19850340",
+                            "reference" : "3598b6de-4782-4d7b-8cba-edb3a89e8b53",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -802,9 +614,32 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
-                "reference" : "0dc49498-b0a4-4409-a609-6603fd7f1801",
+                "reference" : "b35ea017-ae85-4da4-b5f6-e96c51298e56",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -856,7 +691,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "257bd854-5366-4ad9-aea2-05cc643e8434",
+                "reference" : "be7caeab-ed2e-46f1-a3e5-5ef0c6179d09",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -869,33 +704,40 @@
   ],
   "assets" : [
     {
-      "id" : "cfcf6e2d-6ded-4107-a899-d2c517af0613",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "aac1dcae-a4dc-4af0-8248-7bbdc5d70f9e",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "a148c804-e4e8-46e2-a87a-f91c792032df",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "9f8af55c-6d2e-4e27-9c97-c1fe37c17ae9",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
   ],
   "inactiveAssets" : [ ],
   "variables" : {
+    "prijavaZaKursKonferenciju" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.prijavaZaKursKonferenciju_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "prijavaZaKursKonferenciju_statusPrijave" : {
+      "type" : "url",
+      "value" : [
+        "{{prijavaZaKursKonferenciju|lazyRef:'statusPrijave'}}"
+      ],
+      "exposed" : false
+    },
     "task" : {
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "prijavaZaKursPosao" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.prijavaZaKursPosao_ref.link}}"
       ],
       "exposed" : false
     },
@@ -924,17 +766,13 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.prijavaZaKursPosao && $data.prijavaZaKursPosao_statusPrijave ){",
+        "if( $data.prijavaZaKursKonferenciju && $data.prijavaZaKursKonferenciju_statusPrijave ){",
         "\t//attach lazy references variables to parent variables",
-        "\t$data.prijavaZaKursPosao.statusPrijave = $data.prijavaZaKursPosao_statusPrijave;",
+        "\t$data.prijavaZaKursKonferenciju.statusPrijave = $data.prijavaZaKursKonferenciju_statusPrijave;",
         "\treturn {",
-        "\t\t//map prijavaZaKursPosao variable to expected task contract input",
-        "\t\tprijavaZaKursPosaoInput: {",
-        "\t\t\tstatusPrijave: $data.prijavaZaKursPosao.statusPrijave ? {",
-        "\t\t\t\tpersistenceId_string: $data.prijavaZaKursPosao.statusPrijave.persistenceId_string !== undefined ? $data.prijavaZaKursPosao.statusPrijave.persistenceId_string : null,",
-        "\t\t\t\tstatus: $data.prijavaZaKursPosao.statusPrijave.status !== undefined ? $data.prijavaZaKursPosao.statusPrijave.status : null,",
-        "\t\t\t\trazlogOdbijanja: $data.prijavaZaKursPosao.statusPrijave.razlogOdbijanja !== undefined ? $data.prijavaZaKursPosao.statusPrijave.razlogOdbijanja : null",
-        "\t\t\t} : null",
+        "\t\t//map prijavaZaKursKonferenciju variable to expected task contract input",
+        "\t\tprijavaZaKursKonferencijuInput: {",
+        "\t\t\trazlogOdbijanja: $data.prijavaZaKursKonferenciju.statusPrijave.razlogOdbijanja !== undefined ? $data.prijavaZaKursKonferenciju.statusPrijave.razlogOdbijanja : null",
         "\t\t}",
         "\t}",
         "}"
@@ -948,13 +786,6 @@
       ],
       "exposed" : false
     },
-    "prijavaZaKursPosao_statusPrijave" : {
-      "type" : "url",
-      "value" : [
-        "{{prijavaZaKursPosao|lazyRef:'statusPrijave'}}"
-      ],
-      "exposed" : false
-    },
     "taskId" : {
       "type" : "urlparameter",
       "value" : [
@@ -964,7 +795,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "a5356827-01df-4690-b8a6-b180c0647780",
+  "uuid" : "5d68056d-f3f2-4ebb-83f7-6783a61d7d4a",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
