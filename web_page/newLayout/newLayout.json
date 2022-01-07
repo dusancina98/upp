@@ -1,0 +1,31 @@
+{
+  "modelVersion" : "2.2",
+  "id" : "newLayout",
+  "name" : "newLayout",
+  "lastUpdate" : 1641514238626,
+  "rows" : [
+    [ ]
+  ],
+  "assets" : [
+    {
+      "id" : "027adf72-772c-4c01-96bf-ef2af2529601",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "b48e0c29-5e03-48cb-b96a-786c9371ca71",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : { },
+  "hasValidationError" : false,
+  "uuid" : "cc5a9f95-3861-4ede-9eba-84d30d690b9e",
+  "type" : "layout",
+  "description" : "Page generated with Bonita UI designer"
+}
