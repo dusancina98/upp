@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "oglasiZaPosaoPage",
   "name" : "oglasiZaPosaoPage",
-  "lastUpdate" : 1641388684425,
+  "lastUpdate" : 1642023635879,
   "rows" : [
     [
       {
@@ -486,6 +486,58 @@
                               "value" : ""
                             },
                             "hidden" : {
+                              "type" : "expression",
+                              "value" : "oglas_selected.straniJezici.length == 0"
+                            },
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Znanje stranih jezika"
+                            },
+                            "labelPosition" : {
+                              "type" : "constant",
+                              "value" : "top"
+                            },
+                            "labelWidth" : {
+                              "type" : "constant",
+                              "value" : 4
+                            },
+                            "allowHTML" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "text" : {
+                              "type" : "interpolation",
+                              "value" : "{{get_strani_jezici}}"
+                            },
+                            "alignment" : {
+                              "type" : "constant",
+                              "value" : "left"
+                            }
+                          },
+                          "reference" : "ae0b5a92-9c4f-466f-914c-4059b86e197f",
+                          "hasValidationError" : false,
+                          "id" : "pbText"
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "xs" : 12,
+                            "sm" : 12,
+                            "md" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "hidden" : {
                               "type" : "constant",
                               "value" : false
                             },
@@ -684,6 +736,15 @@
         "return {",
         "\tselectedOglasInput: $data.oglas_selected.persistenceId,",
         "}"
+      ],
+      "exposed" : false
+    },
+    "get_strani_jezici" : {
+      "type" : "expression",
+      "value" : [
+        "const jezici = $data.oglas_selected.straniJezici.filter((o) => o);",
+        "const jeziciLi = jezici.map((o) => \"<li>\" + o.naziv + \"</li>\").join('');",
+        "return '<ul>' + jeziciLi + '</ul>';"
       ],
       "exposed" : false
     }

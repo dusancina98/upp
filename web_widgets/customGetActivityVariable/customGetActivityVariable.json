@@ -1,0 +1,60 @@
+{
+  "modelVersion" : "2.2",
+  "previousArtifactVersion" : "1.1.11",
+  "properties" : [
+    {
+      "label" : "URL of the API (only change if needed)",
+      "name" : "APIUrl",
+      "type" : "text",
+      "defaultValue" : "../API/bpm/activityVariable/",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Activity Id",
+      "name" : "activityId",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Name of variable to retrieve",
+      "name" : "variableName",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Store variable here",
+      "name" : "resultingVariable",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Property to display",
+      "name" : "propertyToDisplay",
+      "type" : "text",
+      "defaultValue" : "value",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Do you want to display the result in the widget?",
+      "name" : "showTheResult",
+      "type" : "choice",
+      "defaultValue" : "Yes",
+      "choiceValues" : [
+        "Yes",
+        "No"
+      ],
+      "bond" : "constant"
+    }
+  ],
+  "id" : "customGetActivityVariable",
+  "name" : "getActivityVariable",
+  "lastUpdate" : 1641990361279,
+  "template" : "@customGetActivityVariable.tpl.html",
+  "controller" : "@customGetActivityVariable.ctrl.js",
+  "description" : "This widget retrieves an activity variable by using the API",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

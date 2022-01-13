@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="IT firma">
-  <customUserInfoDefinitions/>
+  <customUserInfoDefinitions>
+    <customUserInfoDefinition>
+      <name>language</name>
+      <description></description>
+    </customUserInfoDefinition>
+  </customUserInfoDefinitions>
   <users>
     <user userName="kandidat.jedan">
       <firstName>Kandidat</firstName>
@@ -8,7 +13,12 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value>Engleski</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="kandidat.dva">
       <firstName>Kandidat</firstName>
@@ -16,7 +26,12 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value>Srpski</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="hr.sef">
       <firstName>Hr</firstName>
@@ -24,7 +39,12 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="hr.zaposleni1">
       <firstName>Hr</firstName>
@@ -32,7 +52,12 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value>Engleski</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="hr.zaposleni2">
       <firstName>Hr</firstName>
@@ -40,23 +65,40 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value>Srpski</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="projtim.clan1">
       <firstName>Projtim</firstName>
       <lastName>Clan1</lastName>
+      <jobTitle>Senior</jobTitle>
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value>Engleski</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="projtim.clan2">
       <firstName>Projtim</firstName>
       <lastName>Clan2</lastName>
+      <jobTitle>Junior</jobTitle>
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value>Engleski</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="kandidat.tri">
       <firstName>Kandidat</firstName>
@@ -64,7 +106,12 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value>Srpski</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="kandidat.cetri">
       <firstName>Kandidat</firstName>
@@ -72,7 +119,12 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value>Engleski</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
   </users>
   <roles>
