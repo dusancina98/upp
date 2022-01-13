@@ -17,6 +17,9 @@
                 <relationField type="AGGREGATION" reference="magija.it_firma.model.PrijavaZaPosao" fetchType="LAZY" name="prijava" nullable="false" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="izabranTermin" nullable="true" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="predlogTermina" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="kandidatOdustao" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="magija.it_firma.model.OcenaKandidata" fetchType="LAZY" name="oceneKandidata" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="korisnikProsao" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -35,6 +38,17 @@
                     </queryParameters>
                 </query>
             </queries>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.OcenaKandidata">
+            <fields>
+                <field type="INTEGER" length="255" name="licnaProcena" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="ocenaZaOblast" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="intervjuerId" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="utisak" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.Oglas">

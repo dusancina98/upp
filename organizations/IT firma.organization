@@ -10,8 +10,12 @@
     <user userName="kandidat.jedan">
       <firstName>Kandidat</firstName>
       <lastName>Jedan</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>kandidat.jedan@proba.com</email>
+      </personalData>
+      <professionalData>
+        <email>kandidat.jedan@proba.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -23,8 +27,12 @@
     <user userName="kandidat.dva">
       <firstName>Kandidat</firstName>
       <lastName>Dva</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>kandidat.dva@proba.com</email>
+      </personalData>
+      <professionalData>
+        <email>kandidat.dva@proba.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -36,8 +44,12 @@
     <user userName="hr.sef">
       <firstName>Hr</firstName>
       <lastName>Sef</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>hrsef@proba.com</email>
+      </personalData>
+      <professionalData>
+        <email>hrsef@proba.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -49,8 +61,12 @@
     <user userName="hr.zaposleni1">
       <firstName>Hr</firstName>
       <lastName>Zaposleni1</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>hr.zaposleni1@proba.com</email>
+      </personalData>
+      <professionalData>
+        <email>hr.zaposleni1@proba.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -62,8 +78,12 @@
     <user userName="hr.zaposleni2">
       <firstName>Hr</firstName>
       <lastName>Zaposleni2</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>hr.zaposleni2@proba.com</email>
+      </personalData>
+      <professionalData>
+        <email>hr.zaposleni2@proba.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -76,8 +96,12 @@
       <firstName>Projtim</firstName>
       <lastName>Clan1</lastName>
       <jobTitle>Senior</jobTitle>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>projtimclan1@proba.com</email>
+      </personalData>
+      <professionalData>
+        <email>projtimclan1@proba.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -90,8 +114,12 @@
       <firstName>Projtim</firstName>
       <lastName>Clan2</lastName>
       <jobTitle>Junior</jobTitle>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>projtimclan2@proba.com</email>
+      </personalData>
+      <professionalData>
+        <email>projtimclan2@proba.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -103,8 +131,12 @@
     <user userName="kandidat.tri">
       <firstName>Kandidat</firstName>
       <lastName>Tri</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>kandidat.tri@proba.com</email>
+      </personalData>
+      <professionalData>
+        <email>kandidat.tri@proba.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -116,8 +148,12 @@
     <user userName="kandidat.cetri">
       <firstName>Kandidat</firstName>
       <lastName>Cetri</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>kandidat.cetri@proba.com</email>
+      </personalData>
+      <professionalData>
+        <email>kandidat.cetri@proba.com</email>
+      </professionalData>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
