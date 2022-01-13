@@ -479,7 +479,10 @@
                 <expression xmi:type="expression:Expression" xmi:id="_zjB64253EeyjgveEqoBecA" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zjB65G53EeyjgveEqoBecA" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_zjB65W53EeyjgveEqoBecA" name="nekiuhr@itfirm.com" content="nekiuhr@itfirm.com" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_zjB65W53EeyjgveEqoBecA" name="hrEmail" content="def personalContactData = apiAccessor.getIdentityAPI().getUserContactData(zaposleniHrFirstId, true);&#xD;&#xA;return personalContactData.email;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_ivJdsHSoEeypxZfw7Qa36A" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_ivJdsXSoEeypxZfw7Qa36A" name="zaposleniHrFirstId" dataType="_3Fl_vmgJEeydB5g01Nxqig"/>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zjB65m53EeyjgveEqoBecA" key="bcc">
                 <expression xmi:type="expression:Expression" xmi:id="_zjB65253EeyjgveEqoBecA" content="" returnTypeFixed="true"/>
@@ -745,13 +748,16 @@
                 <expression xmi:type="expression:Expression" xmi:id="_gsO1z248EeyJl8bUIr5YVQ" name="5ea1dde83306c3" content="5ea1dde83306c3" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_gsO10G48EeyJl8bUIr5YVQ" key="from">
-                <expression xmi:type="expression:Expression" xmi:id="_gsO10W48EeyJl8bUIr5YVQ" name="from()" content="'asd'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_gsO10W48EeyJl8bUIr5YVQ" name="notify@itfirma.com" content="&quot;notify@itfirma.com&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_gsO10m48EeyJl8bUIr5YVQ" key="returnPath">
                 <expression xmi:type="expression:Expression" xmi:id="_gsO10248EeyJl8bUIr5YVQ" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_gsO11G48EeyJl8bUIr5YVQ" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_gsO11W48EeyJl8bUIr5YVQ" name="to()" content="'asd'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_gsO11W48EeyJl8bUIr5YVQ" name="kandidatEmail" content="def personalContactData = apiAccessor.getIdentityAPI().getUserContactData(prijava.idKandidata, true);&#xD;&#xA;return personalContactData.email;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_aUT_YHSoEeypxZfw7Qa36A" name="prijava" dataType="_3Fl_w2gJEeydB5g01Nxqig" className="magija.it_firma.model.PrijavaZaPosao"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_aUT_YXSoEeypxZfw7Qa36A" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_gsO11m48EeyJl8bUIr5YVQ" key="bcc">
                 <expression xmi:type="expression:Expression" xmi:id="_gsO11248EeyJl8bUIr5YVQ" content="" returnTypeFixed="true"/>
