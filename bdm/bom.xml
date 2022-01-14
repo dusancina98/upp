@@ -21,6 +21,24 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.OpremaNaStanju">
+            <fields>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaOpreme" fetchType="LAZY" name="vrsta" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tip" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="kolicina" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.PonudaDobavljaca">
+            <fields>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.StavkaPonudeDobavljaca" fetchType="LAZY" name="stavkePonude" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.Pozicija">
             <fields>
                 <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
@@ -73,6 +91,51 @@
                 <field type="INTEGER" length="255" name="statusPrijave" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="razlogOdbijanja" nullable="true" collection="false"/>
                 <field type="INTEGER" length="255" name="budzetZaPrevozSmestaj" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.StavkaPonudeDobavljaca">
+            <fields>
+                <field type="DOUBLE" length="255" name="jedinicnaCena" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.StavkaZahtevaZaNabavkuOpreme" fetchType="LAZY" name="stavkaZahteva" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.StavkaZahtevaZaNabavkuOpreme">
+            <fields>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaOpreme" fetchType="LAZY" name="vrstaOpreme" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="tipOpreme" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="kolicina" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.VrstaOpreme">
+            <fields>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.ZahtevZaNabavakuOpreme">
+            <fields>
+                <field type="STRING" length="255" name="ime" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="prezime" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.StavkaZahtevaZaNabavkuOpreme" fetchType="LAZY" name="stavkaZahteva" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="preliminarnoOdobrenje" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="obrazlozenjeOdbijanja" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="maksimalniBudzet" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="dodeljeniZaposleni" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="izdataOprema" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.PonudaDobavljaca" fetchType="LAZY" name="ponudeDobavljaca" nullable="true" collection="true"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.PonudaDobavljaca" fetchType="LAZY" name="najboljaPonuda" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="odobrenaKupovina" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
