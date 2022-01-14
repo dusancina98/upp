@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "prihvatanjePrijaveForm",
-  "name" : "prihvatanjePrijaveForm",
-  "lastUpdate" : 1642001058383,
+  "id" : "predlogTerminaForm",
+  "name" : "predlogTerminaForm",
+  "lastUpdate" : 1642031129542,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "fdd0eb42-bac2-4fd3-991b-eb3a9686645e",
+        "reference" : "b4750d84-2ae4-4736-bb7d-65589dec067f",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -39,7 +39,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "Prihvatanje prijave"
+                  "value" : "Predlog termina za intervju"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "bdf6a774-3f9e-4105-b68d-75220ac9d851",
+              "reference" : "d4d0bcad-3368-4aae-821a-e8d9be2ec7bc",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -75,7 +75,7 @@
             "value" : false
           }
         },
-        "reference" : "4572f794-f78e-41ee-9948-e5bf2f572392",
+        "reference" : "9fdfadd4-2bf9-4dc2-8075-987ac30b5755",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -84,7 +84,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "ab54d8b9-e1c6-45d0-b3f2-ee6790130ecb",
+          "reference" : "4f2bf743-ce60-4dad-97d0-ac72778ea0c9",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -99,8 +99,7 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -115,10 +114,46 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ca9d0f9f-a353-42a5-82c2-951dd27721ed",
+                "reference" : "2d1f31b1-9595-4133-b796-415fbef2cc40",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Intervjueri"
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 4"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "b3426867-a098-4b69-8615-20cd9c178adc",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle"
+                    }
+                  ],
                   [
                     {
                       "type" : "component",
@@ -139,7 +174,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!prijava.idKandidata"
+                          "value" : "!intervju.clanHrId"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -147,11 +182,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Kandidat"
+                          "value" : "Clan HR tima"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{kandidat.firstname}}\n{{kandidat.lastname}}"
+                          "value" : "{{clanHr.firstname}} {{clanHr.lastname}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -174,7 +209,7 @@
                           "value" : true
                         }
                       },
-                      "reference" : "799c3577-d953-4d5d-86ac-8d1ed794b347",
+                      "reference" : "dd4a1d40-8a07-4343-974f-89595ff9ca03",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -184,27 +219,43 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
                         "md" : 12,
-                        "lg" : 6
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
                       },
                       "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!intervju.clanProjektniId"
+                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Default label"
+                          "value" : "Clan projektnog tima"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{clanProjTim.firstname}} {{clanProjTim.lastname}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -217,113 +268,55 @@
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : true
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "<b>Propratno pismo</b>"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
                         }
                       },
-                      "reference" : "f830733f-cb09-41ce-91a7-8bdfa873e5d9",
+                      "reference" : "72026ded-a616-471e-ac12-aca8b7f0f4e2",
                       "hasValidationError" : false,
-                      "id" : "pbText"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Download: {{prijava.propratnoPismoFilename}}"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "URL"
-                        },
-                        "targetUrl" : {
-                          "type" : "expression",
-                          "value" : "\"/bonita/portal/\" + prijava.propratnoPismoUrl"
-                        },
-                        "pageToken" : {
-                          "type" : "constant"
-                        },
-                        "processName" : {
-                          "type" : "constant"
-                        },
-                        "processVersion" : {
-                          "type" : "constant"
-                        },
-                        "taskId" : {
-                          "type" : "constant"
-                        },
-                        "caseId" : {
-                          "type" : "constant"
-                        },
-                        "target" : {
-                          "type" : "constant",
-                          "value" : "_self"
-                        },
-                        "appToken" : {
-                          "type" : "constant"
-                        },
-                        "urlParams" : {
-                          "type" : "constant"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "buttonStyle" : {
-                          "type" : "constant",
-                          "value" : "link"
-                        }
-                      },
-                      "reference" : "0b7d6964-ba25-47ac-8148-d76fd3dbfd04",
-                      "hasValidationError" : false,
-                      "id" : "pbLink"
+                      "id" : "pbText",
+                      "description" : ""
                     }
                   ],
                   [
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
                         "md" : 12,
-                        "lg" : 6
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
                       },
                       "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!intervju.poznavalacJezikaId"
+                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Default label"
+                          "value" : "Poznavalac jezika"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{poznavalacJezika.firstname}} {{poznavalacJezika.lastname}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -336,86 +329,12 @@
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : true
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "<b>CV</b>"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
                         }
                       },
-                      "reference" : "e400b209-b013-4c5d-8a94-deb430a57adf",
+                      "reference" : "0f325108-cb2c-471d-bfe1-3dd9a603c1b4",
                       "hasValidationError" : false,
-                      "id" : "pbText"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Download: {{prijava.cvFilename}}"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "URL"
-                        },
-                        "targetUrl" : {
-                          "type" : "expression",
-                          "value" : "\"/bonita/portal/\" + prijava.cvUrl"
-                        },
-                        "pageToken" : {
-                          "type" : "constant"
-                        },
-                        "processName" : {
-                          "type" : "constant"
-                        },
-                        "processVersion" : {
-                          "type" : "constant"
-                        },
-                        "taskId" : {
-                          "type" : "constant"
-                        },
-                        "caseId" : {
-                          "type" : "constant"
-                        },
-                        "target" : {
-                          "type" : "constant",
-                          "value" : "_self"
-                        },
-                        "appToken" : {
-                          "type" : "constant"
-                        },
-                        "urlParams" : {
-                          "type" : "constant"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "buttonStyle" : {
-                          "type" : "constant",
-                          "value" : "link"
-                        }
-                      },
-                      "reference" : "05cd2d0c-b86e-4571-a6f9-0095df739132",
-                      "hasValidationError" : false,
-                      "id" : "pbLink"
+                      "id" : "pbText",
+                      "description" : ""
                     }
                   ],
                   [
@@ -442,7 +361,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Oglas"
+                          "value" : "Prijava"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -453,7 +372,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "8f148ff9-4fcb-4565-91db-ff276b9b5bf7",
+                      "reference" : "250b2790-8e39-4546-be5e-329e2d6cd7f3",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -485,7 +404,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "e29162d2-bea3-47be-adf9-db07dca1874c",
+                      "reference" : "c8cab702-5a80-475c-a571-af97a7dcad3b",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -509,7 +428,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "!prijava_oglas.naslov"
+                                "value" : "!intervju_prijava.idKandidata"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -517,11 +436,11 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Naslov"
+                                "value" : "Kandidat"
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{prijava_oglas.naslov}}"
+                                "value" : "{{kandidat.firstname}} {{kandidat.lastname}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -544,7 +463,7 @@
                                 "value" : true
                               }
                             },
-                            "reference" : "d41e64f5-1feb-4f1c-88b2-4c04454379c7",
+                            "reference" : "7e4c6631-9e81-4ff5-9189-c4cf442706bd",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -570,7 +489,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "!prijava_oglas.datumIsteka"
+                                "value" : "!intervju_prijava.datum"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -578,11 +497,11 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Datum Isteka"
+                                "value" : "Datum prijave"
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{prijava_oglas.datumIsteka|uiDate}}"
+                                "value" : "{{intervju_prijava.datum|uiDate}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -605,7 +524,7 @@
                                 "value" : true
                               }
                             },
-                            "reference" : "7e16e046-d9bf-4279-bf0b-61d523aeb935",
+                            "reference" : "69f7ead5-eb5b-4e37-9519-255442c6738f",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -615,31 +534,91 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
                               "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
                               "lg" : 12
                             },
                             "propertyValues" : {
-                              "allowHtml" : {
+                              "cssClasses" : {
                                 "type" : "constant",
-                                "value" : true
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!prijava_oglas.naziv"
                               },
                               "labelHidden" : {
                                 "type" : "constant",
                                 "value" : false
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Naziv oglasa"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{prijava_oglas.naziv}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "f32cf33a-3468-4144-9bfb-4d4eb89e804f",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
                               },
                               "hidden" : {
                                 "type" : "expression",
                                 "value" : "!prijava_oglas.opis"
                               },
-                              "cssClasses" : {
+                              "labelHidden" : {
                                 "type" : "constant",
-                                "value" : ""
+                                "value" : false
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Opis"
+                                "value" : "Opis oglasa"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
                               },
                               "text" : {
                                 "type" : "interpolation",
@@ -648,10 +627,38 @@
                               "alignment" : {
                                 "type" : "constant",
                                 "value" : "left"
-                              },
-                              "dimension" : {
+                              }
+                            },
+                            "reference" : "63b4d0c3-6143-4ea2-b9fc-b2bb447fbcc5",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
                                 "type" : "constant",
-                                "value" : 12
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!prijava_oglas.straniJezici"
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Potrebno znanje jezika"
                               },
                               "labelPosition" : {
                                 "type" : "constant",
@@ -664,15 +671,122 @@
                               "allowHTML" : {
                                 "type" : "constant",
                                 "value" : true
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{get_strani_jezici}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
                               }
                             },
-                            "reference" : "10c1a934-056d-47b2-a8cd-947f3fda487e",
+                            "reference" : "64dbe439-308d-4e7e-aadd-90cf401757d3",
                             "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
+                            "id" : "pbText"
                           }
                         ]
                       ]
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "showNow" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "inlineInput" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Predlog Termina"
+                        },
+                        "type" : {
+                          "type" : "constant"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "todayLabel" : {
+                          "type" : "constant",
+                          "value" : "Today"
+                        },
+                        "timePlaceholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a time (h:mm:ss a)"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "timeFormat" : {
+                          "type" : "constant",
+                          "value" : "h:mm:ss a"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "nowLabel" : {
+                          "type" : "constant",
+                          "value" : "Now"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "intervju.predlogTermina"
+                        },
+                        "withTimeZone" : {
+                          "type" : "constant",
+                          "value" : true
+                        }
+                      },
+                      "reference" : "62c446a7-c280-4e05-8cd7-675de7bb0399",
+                      "hasValidationError" : false,
+                      "id" : "pbDateTimePicker",
+                      "description" : ""
                     }
                   ]
                 ]
@@ -680,222 +794,102 @@
             ],
             [
               {
-                "type" : "container",
+                "type" : "component",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
+                  "removeItem" : {
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "repeatedCollection" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Potvrdi"
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromError" : {
                     "type" : "variable",
+                    "value" : "formOutput._submitError"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "valueToAdd" : {
+                    "type" : "expression"
+                  },
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "$form.$invalid"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
                     "value" : ""
                   }
                 },
-                "reference" : "83c37572-34b2-4d0f-afba-5262bc1ef0bb",
+                "reference" : "53665c11-2529-449f-8a26-8b9454dc8ca3",
                 "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 6,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "expression",
-                          "value" : "$form.$invalid"
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Odbijanje"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "buttonStyle" : {
-                          "type" : "constant",
-                          "value" : "danger"
-                        },
-                        "action" : {
-                          "type" : "constant",
-                          "value" : "Submit task"
-                        },
-                        "assign" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "url" : {
-                          "type" : "interpolation"
-                        },
-                        "responseStatusCode" : {
-                          "type" : "variable",
-                          "value" : ""
-                        },
-                        "dataToSend" : {
-                          "type" : "expression",
-                          "value" : "formOutputOdbijeno"
-                        },
-                        "dataFromSuccess" : {
-                          "type" : "variable",
-                          "value" : ""
-                        },
-                        "closeOnSuccess" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "dataFromError" : {
-                          "type" : "variable",
-                          "value" : "formOutputOdbijeno._submitError"
-                        },
-                        "targetUrlOnSuccess" : {
-                          "type" : "interpolation",
-                          "value" : "/bonita"
-                        },
-                        "collectionToModify" : {
-                          "type" : "variable"
-                        },
-                        "modalId" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "collectionPosition" : {
-                          "type" : "constant",
-                          "value" : "Last"
-                        },
-                        "valueToAdd" : {
-                          "type" : "constant"
-                        },
-                        "removeItem" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "c3f1c3f1-a02a-4785-9192-9c1e20f05a2b",
-                      "hasValidationError" : false,
-                      "id" : "pbButton"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "removeItem" : {
-                          "type" : "variable"
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "buttonStyle" : {
-                          "type" : "constant",
-                          "value" : "success"
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Prihvatanje"
-                        },
-                        "dataToSend" : {
-                          "type" : "expression",
-                          "value" : "formOutput"
-                        },
-                        "dataFromError" : {
-                          "type" : "variable",
-                          "value" : "formOutput._submitError"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "collectionPosition" : {
-                          "type" : "constant"
-                        },
-                        "targetUrlOnSuccess" : {
-                          "type" : "interpolation",
-                          "value" : "/bonita"
-                        },
-                        "action" : {
-                          "type" : "constant",
-                          "value" : "Submit task"
-                        },
-                        "collectionToModify" : {
-                          "type" : "variable"
-                        },
-                        "valueToAdd" : {
-                          "type" : "expression"
-                        },
-                        "disabled" : {
-                          "type" : "expression",
-                          "value" : "$form.$invalid"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "right"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "assign" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "url" : {
-                          "type" : "interpolation"
-                        },
-                        "responseStatusCode" : {
-                          "type" : "variable",
-                          "value" : ""
-                        },
-                        "dataFromSuccess" : {
-                          "type" : "variable",
-                          "value" : ""
-                        },
-                        "closeOnSuccess" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "modalId" : {
-                          "type" : "constant",
-                          "value" : ""
-                        }
-                      },
-                      "reference" : "b24cbe39-600f-4c62-b194-5a72d8ffface",
-                      "hasValidationError" : false,
-                      "id" : "pbButton",
-                      "description" : ""
-                    }
-                  ]
-                ]
+                "id" : "pbButton",
+                "description" : ""
               }
             ],
             [
@@ -942,72 +936,12 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
                   }
                 },
-                "reference" : "5ac35ba0-159c-467c-a230-5f541de2108a",
+                "reference" : "d53883b0-992a-4cc1-90a6-c89d9947235e",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
-                  },
-                  "hidden" : {
-                    "type" : "expression",
-                    "value" : "!formOutputOdbijeno._submitError.message"
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutputOdbijeno._submitError.message}}\n{{odb_errs}}"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "40b32138-6ccb-4c10-b896-35a4c0c7282a",
-                "hasValidationError" : false,
-                "id" : "pbText"
               }
             ]
           ]
@@ -1017,14 +951,14 @@
   ],
   "assets" : [
     {
-      "id" : "10ecb5ca-1a80-44e8-8d6a-7b13af64c41a",
+      "id" : "38be1a95-d562-477b-ab7a-2e5bdae388cb",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "74feefeb-69ab-42e2-bf18-01f984e3e1ac",
+      "id" : "af059ee7-3e15-4be3-b65d-fe6d3680e835",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
@@ -1033,17 +967,10 @@
   ],
   "inactiveAssets" : [ ],
   "variables" : {
-    "prijava" : {
+    "intervju_prijava" : {
       "type" : "url",
       "value" : [
-        "../{{context.prijava_ref.link}}"
-      ],
-      "exposed" : false
-    },
-    "prijava_oglas" : {
-      "type" : "url",
-      "value" : [
-        "{{prijava|lazyRef:'oglas'}}"
+        "{{intervju|lazyRef:'prijava'}}"
       ],
       "exposed" : false
     },
@@ -1072,14 +999,13 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.prijava && $data.prijava_oglas ){",
+        "if( $data.intervju && $data.intervju_prijava ){",
         "\t//attach lazy references variables to parent variables",
-        "\t$data.prijava.oglas = $data.prijava_oglas;",
+        "\t$data.intervju.prijava = $data.intervju_prijava;",
         "\treturn {",
-        "\t\t//map prijava variable to expected task contract input",
-        "\t\tprijavaInput: {",
-        "\t\t\tprihvaceno: true,",
-        "\t\t\todbijeno: false",
+        "\t\t//map intervju variable to expected task contract input",
+        "\t\tintervjuInput: {",
+        "\t\t\tpredlogTermina: $data.intervju.predlogTermina !== undefined ? $data.intervju.predlogTermina : null",
         "\t\t}",
         "\t}",
         "}"
@@ -1093,6 +1019,13 @@
       ],
       "exposed" : false
     },
+    "intervju" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.intervju_ref.link}}"
+      ],
+      "exposed" : false
+    },
     "taskId" : {
       "type" : "urlparameter",
       "value" : [
@@ -1103,46 +1036,55 @@
     "kandidat" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user/{{prijava.idKandidata}}"
+        "../API/identity/user/{{intervju_prijava.idKandidata}}"
       ],
       "advancedOptions" : { },
       "exposed" : false
     },
-    "formOutputOdbijeno" : {
-      "type" : "expression",
+    "clanHr" : {
+      "type" : "url",
       "value" : [
-        "if( $data.prijava && $data.prijava_oglas ){",
-        "\t//attach lazy references variables to parent variables",
-        "\t$data.prijava.oglas = $data.prijava_oglas;",
-        "\treturn {",
-        "\t\t//map prijava variable to expected task contract input",
-        "\t\tprijavaInput: {",
-        "\t\t\tprihvaceno: false,",
-        "\t\t\todbijeno: true",
-        "\t\t}",
-        "\t}",
-        "}"
+        "../API/identity/user/{{intervju.clanHrId}}"
       ],
+      "advancedOptions" : { },
       "exposed" : false
     },
-    "odb_errs" : {
+    "clanProjTim" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{intervju.clanProjektniId}}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "poznavalacJezika" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{intervju.poznavalacJezikaId}}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "prijava_oglas" : {
+      "type" : "url",
+      "value" : [
+        "{{ intervju_prijava | lazyRef: 'oglas' }}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "get_strani_jezici" : {
       "type" : "expression",
       "value" : [
-        "if($data.formOutputOdbijeno && $data.formOutputOdbijeno._submitError && $data.formOutputOdbijeno._submitError.explanations){",
-        "\tconst liElements = $data.formOutputOdbijeno._submitError.explanations",
-        "\t\t.filter(cause => cause !== null)",
-        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
-        "\t\t.join('');",
-        "\tif(liElements){",
-        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
-        "\t}",
-        "}"
+        "const jezici = $data.prijava_oglas.straniJezici.filter((o) => o);",
+        "const jeziciLi = jezici.map((o) => \"<li>\" + o.naziv + \"</li>\").join('');",
+        "return '<ul>' + jeziciLi + '</ul>';"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "dc86c258-47c5-48f4-be3a-a53c3542cfc2",
+  "uuid" : "f4f85586-a96b-4816-b99b-cd7770947f67",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

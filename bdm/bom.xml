@@ -9,6 +9,48 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.Intervju">
+            <fields>
+                <field type="LONG" length="255" name="clanHrId" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="clanProjektniId" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="poznavalacJezikaId" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.PrijavaZaPosao" fetchType="LAZY" name="prijava" nullable="false" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="izabranTermin" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="predlogTermina" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="kandidatOdustao" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="magija.it_firma.model.OcenaKandidata" fetchType="LAZY" name="oceneKandidata" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="korisnikProsao" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.KorisnikStraniJezik">
+            <fields>
+                <field type="LONG" length="255" name="idKorisnika" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.StraniJezik" fetchType="EAGER" name="straniJezik" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="findByStraniJezikList" content="SELECT k&#13;&#10;FROM KorisnikStraniJezik k &#13;&#10;WHERE k.straniJezik.naziv IN :straniJezici" returnType="java.util.List">
+                    <queryParameters>
+                        <queryParameter name="straniJezici" className="[Ljava.lang.String;"/>
+                    </queryParameters>
+                </query>
+            </queries>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.OcenaKandidata">
+            <fields>
+                <field type="INTEGER" length="255" name="licnaProcena" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="ocenaZaOblast" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="intervjuerId" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="utisak" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.Oglas">
             <fields>
                 <field type="STRING" length="255" name="naslov" nullable="false" collection="false"/>
@@ -16,6 +58,7 @@
                 <field type="LOCALDATE" length="255" name="datumIsteka" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="opis" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="magija.it_firma.model.Angazovanje" fetchType="LAZY" name="angazovanje" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.StraniJezik" fetchType="EAGER" name="straniJezici" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -73,6 +116,8 @@
                 <field type="INTEGER" length="255" name="statusHrZaposleni" nullable="false" collection="false"/>
                 <field type="INTEGER" length="255" name="statusHrSef" nullable="false" collection="false"/>
                 <field type="LOCALDATE" length="255" name="datum" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="obradioHrId" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="obradioSefId" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -83,6 +128,20 @@
                 <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.StraniJezik">
+            <fields>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints>
+                <uniqueConstraint name="uniqueConstraint">
+                    <fieldNames>
+                        <fieldName>naziv</fieldName>
+                    </fieldNames>
+                </uniqueConstraint>
+            </uniqueConstraints>
             <queries/>
             <indexes/>
         </businessObject>
