@@ -50,6 +50,7 @@
       <professionalData>
         <email>hrsef@proba.com</email>
       </professionalData>
+      <manager>hr.zaposleni1</manager>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -102,6 +103,7 @@
       <professionalData>
         <email>projtimclan1@proba.com</email>
       </professionalData>
+      <manager>projtim.clan2</manager>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
