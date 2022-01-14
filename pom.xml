@@ -116,7 +116,6 @@
     </dependency>
     <dependency>
       <groupId>org.bonitasoft.actorfilter</groupId>
-<<<<<<< HEAD
       <artifactId>bonita-actorfilter-custom-user-info</artifactId>
       <version>1.0.0</version>
     </dependency>
@@ -128,9 +127,11 @@
     <dependency>
       <groupId>org.bonitasoft.actorfilter</groupId>
       <artifactId>bonita-actorfilter-user-manager</artifactId>
-=======
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.actorfilter</groupId>
       <artifactId>bonita-actorfilter-initiator-manager</artifactId>
->>>>>>> branch 'master' of https://github.com/dusancina98/upp
       <version>1.0.0</version>
     </dependency>
   </dependencies>
