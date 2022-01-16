@@ -44,13 +44,13 @@
     <user userName="hr.sef">
       <firstName>Hr</firstName>
       <lastName>Sef</lastName>
+      <manager>hr.zaposleni1</manager>
       <personalData>
         <email>hrsef@proba.com</email>
       </personalData>
       <professionalData>
         <email>hrsef@proba.com</email>
       </professionalData>
-      <manager>hr.zaposleni1</manager>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -97,13 +97,13 @@
       <firstName>Projtim</firstName>
       <lastName>Clan1</lastName>
       <jobTitle>Senior</jobTitle>
+      <manager>projtim.clan2</manager>
       <personalData>
         <email>projtimclan1@proba.com</email>
       </personalData>
       <professionalData>
         <email>projtimclan1@proba.com</email>
       </professionalData>
-      <manager>projtim.clan2</manager>
       <password encrypted="false">123</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -164,6 +164,58 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="nabavka.zaposleni">
+      <firstName>Nabavka</firstName>
+      <lastName>Zaposleni</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="nabavka.sef">
+      <firstName>Nabavka</firstName>
+      <lastName>Sef</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="dobavljac1">
+      <firstName>Dobavljac</firstName>
+      <lastName>1</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="dobavljac2">
+      <firstName>Dobavljac</firstName>
+      <lastName>2</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="Sef">
@@ -188,6 +240,12 @@
     </group>
     <group name="ProjektniTim" parentPath="/ITFirma/Zaposleni">
       <displayName>ProjektniTim</displayName>
+    </group>
+    <group name="SluzbaNabavke" parentPath="/ITFirma/Zaposleni">
+      <displayName>SluzbaNabavke</displayName>
+    </group>
+    <group name="Dobavljac">
+      <displayName>Dobavljac</displayName>
     </group>
   </groups>
   <memberships>
@@ -240,6 +298,28 @@
       <userName>kandidat.cetri</userName>
       <roleName>Sef</roleName>
       <groupName>ITFirma</groupName>
+    </membership>
+    <membership>
+      <userName>nabavka.zaposleni</userName>
+      <roleName>Clan</roleName>
+      <groupName>SluzbaNabavke</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>nabavka.sef</userName>
+      <roleName>Sef</roleName>
+      <groupName>SluzbaNabavke</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>dobavljac1</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
+    </membership>
+    <membership>
+      <userName>dobavljac2</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
     </membership>
   </memberships>
 </organization:Organization>
