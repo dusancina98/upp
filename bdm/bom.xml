@@ -82,6 +82,7 @@
                 <field type="DOUBLE" length="255" name="cena" nullable="true" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="datumOdrzavanja" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="magija.it_firma.model.StatusPrijaveZaKurs" fetchType="LAZY" name="statusPrijave" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="jeUzivo" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -113,6 +114,16 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.StatusPrijaveZaKurs">
+            <fields>
+                <field type="INTEGER" length="255" name="statusPrijave" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="razlogOdbijanja" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="budzetZaPrevozSmestaj" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.StraniJezik">
             <fields>
                 <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
@@ -124,16 +135,6 @@
                     </fieldNames>
                 </uniqueConstraint>
             </uniqueConstraints>
-            <queries/>
-            <indexes/>
-        </businessObject>
-        <businessObject qualifiedName="magija.it_firma.model.StatusPrijaveZaKurs">
-            <fields>
-                <field type="INTEGER" length="255" name="statusPrijave" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="razlogOdbijanja" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="budzetZaPrevozSmestaj" nullable="true" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
             <queries/>
             <indexes/>
         </businessObject>

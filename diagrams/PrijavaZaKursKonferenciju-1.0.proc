@@ -45,13 +45,24 @@
               <inputTypes>java.time.OffsetDateTime</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fBgYIHfmEeymkYCqkGoVdQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fBgYIXfmEeymkYCqkGoVdQ" name="prijavaZaKursKonferenciju" content="prijavaZaKursKonferenciju" type="TYPE_VARIABLE" returnType="magija.it_firma.model.PrijavaZaKurs">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_jDY5MHfmEeymkYCqkGoVdQ" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fBgYInfmEeymkYCqkGoVdQ" name="prijavaZaKursKonferencijuInput.jeUzivo" content="prijavaZaKursKonferencijuInput.jeUzivo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_tjaiYHfmEeymkYCqkGoVdQ" name="prijavaZaKursKonferencijuInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fBgYI3fmEeymkYCqkGoVdQ" type="JAVA_METHOD" expression="setJeUzivo">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_en2_625gEeySSt74BsnCSw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_en2_7G5gEeySSt74BsnCSw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_en2_7W5gEeySSt74BsnCSw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_en2_7m5gEeySSt74BsnCSw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_en2_725gEeySSt74BsnCSw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_en2_8G5gEeySSt74BsnCSw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_GLCxAG83Eeyr4OnhN8K7wQ" name="prijavaZaKursKonferenciju" content="a4b3d0b6-41e3-42bc-b125-18432690b3c9" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_GLCxAG83Eeyr4OnhN8K7wQ" name="prijavaZaKursKonferencijuForm" content="f2e300c3-edd6-465a-a699-0ed559134a47" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_en2_8m5gEeySSt74BsnCSw">
             <inputs xmi:type="process:ContractInput" xmi:id="_DVAYAG83Eeyr4OnhN8K7wQ" name="prijavaZaKursKonferencijuInput" type="COMPLEX" dataReference="prijavaZaKursKonferenciju" createMode="false">
@@ -144,7 +155,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_efT2EW9LEeyPZJYMJ_lsSA" content="" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_en2_9G5gEeySSt74BsnCSw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_WOe5QG9UEey2mP3swYzyXQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_CVuJIHfmEeymkYCqkGoVdQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_en2_9m5gEeySSt74BsnCSw">
         <targetForm xmi:type="expression:Expression" xmi:id="_en2_925gEeySSt74BsnCSw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
