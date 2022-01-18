@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "procesuiranjePrijaveZaKursKonferencijuForm",
   "name" : "procesuiranjePrijaveZaKursKonferencijuForm",
-  "lastUpdate" : 1641517048303,
+  "lastUpdate" : 1642459794615,
   "rows" : [
     [
       {
@@ -1440,7 +1440,7 @@
     "openModalOnPrihvati" : {
       "type" : "expression",
       "value" : [
-        "var flag = false",
+        "var flag = $data.prijavaZaKursKonferenciju.jeUzivo",
         "",
         "if(flag){",
         "    return 2",

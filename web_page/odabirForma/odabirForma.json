@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "prijavaZaKursKonferenciju",
-  "name" : "prijavaZaKursKonferenciju",
-  "lastUpdate" : 1641504314659,
+  "id" : "odabirForma",
+  "name" : "odabirForma",
+  "lastUpdate" : 1642547204252,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "9c04b2ae-5c21-4065-b5d3-84c4a56575ed",
+        "reference" : "7646cee6-283c-4cc5-ad74-6ffb534145a0",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "76f5b449-47e4-40f7-86de-5b45900043c3",
+              "reference" : "b505c47a-2b91-4c2e-a3fa-1bab7f043f0f",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "e85185d5-7e3f-4072-bd56-7a404441b34f",
+              "reference" : "21dd19cf-1239-46ae-bd54-bbb705e4f344",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "0cdbde9f-2211-4c47-b206-e3f54f4c6ff6",
+        "reference" : "05956302-b70e-4f93-9746-fe5c6c3570a8",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "196ca5e3-83f5-4e09-938c-05a4283d5b33",
+          "reference" : "08c3ff98-21a7-4ce0-9056-83163c25815b",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -151,7 +151,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Prijava Za Kurs Konferenciju"
+                    "value" : "Selektovani Izvrsioci Input"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "c042a39e-a86c-4b19-86aa-939fc55ce1b4",
+                "reference" : "0febcae0-eca6-4626-b974-84ca68c79c23",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -194,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "99fd9a18-1c40-4971-b279-f6c5c43f4dd9",
+                "reference" : "10c1be41-52d5-48c8-a5e4-415ff18536f8",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -208,58 +208,61 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "disabled" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : false
                         },
-                        "cssClasses" : {
+                        "required" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : true
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Naziv"
+                          "value" : "Group"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
                         },
                         "placeholder" : {
-                          "type" : "constant"
+                          "type" : "interpolation"
                         },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "groups"
                         },
-                        "dimension" : {
+                        "displayedKey" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : "displayName"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "id"
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "prijavaZaKursKonferenciju.naziv"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
+                          "value" : "formInput.selektovaniIzvrsiociInput.groupId"
                         }
                       },
-                      "reference" : "aeae0a3c-fa85-4ebd-9a8e-8c2b5bb4586c",
+                      "reference" : "f5532e32-e5f5-4f9e-b0d0-86f8fcb035b5",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ],
                   [
@@ -272,158 +275,58 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "disabled" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Cena"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "prijavaZaKursKonferenciju.cena"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "d79f208f-529f-4415-8314-79385771739f",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "showNow" : {
-                          "type" : "constant",
                           "value" : true
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "inlineInput" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Datum Odrzavanja"
-                        },
-                        "type" : {
-                          "type" : "constant"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "todayLabel" : {
-                          "type" : "constant",
-                          "value" : "Today"
-                        },
-                        "timePlaceholder" : {
-                          "type" : "constant",
-                          "value" : "Enter a time (h:mm:ss a)"
                         },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "User"
                         },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
-                        "timeFormat" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : "h:mm:ss a"
+                          "value" : 1
                         },
                         "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
+                          "type" : "interpolation"
                         },
-                        "nowLabel" : {
-                          "type" : "constant",
-                          "value" : "Now"
+                        "availableValues" : {
+                          "type" : "constant"
                         },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "prijavaZaKursKonferenciju.datumOdrzavanja"
-                        },
-                        "withTimeZone" : {
-                          "type" : "constant",
-                          "value" : true
+                          "value" : "formInput.selektovaniIzvrsiociInput.userId"
                         }
                       },
-                      "reference" : "9d57d706-ff46-433e-8e0e-b0f5110c768d",
+                      "reference" : "cd46e3fa-b790-45ec-8b40-dfa9e9ad39c1",
                       "hasValidationError" : false,
-                      "id" : "pbDateTimePicker",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ]
                 ]
@@ -500,7 +403,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "f00dfb2f-cb0a-4c3c-aedd-4a99e49876c1",
+                "reference" : "de27e2a8-41bd-4094-838a-00cc2e6c8ad5",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -552,7 +455,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "cb79e174-c0f1-45bf-9600-ef547b9b3ba0",
+                "reference" : "acc27f40-f506-4f67-ac52-388e4e94991e",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -565,14 +468,14 @@
   ],
   "assets" : [
     {
-      "id" : "50adbe7f-b2de-4f00-b2e4-cc87af159725",
+      "id" : "720fe06f-56c3-47dc-9e8d-5b5cf3138734",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "90053063-1e9d-410d-87af-c8d728d95df4",
+      "id" : "87042f86-e8f9-486e-9af8-ef099c9d205f",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -581,17 +484,22 @@
   ],
   "inactiveAssets" : [ ],
   "variables" : {
-    "prijavaZaKursKonferenciju" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.prijavaZaKursKonferenciju_ref.link}}"
-      ],
-      "exposed" : false
-    },
     "task" : {
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"selektovaniIzvrsiociInput\" : {\r",
+        "    \"groupId\" : 0,\r",
+        "    \"userId\" : 0\r",
+        "  }\r",
+        "}"
       ],
       "exposed" : false
     },
@@ -613,15 +521,8 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.prijavaZaKursKonferenciju ){",
-        "\treturn {",
-        "\t\t//map prijavaZaKursKonferenciju variable to expected task contract input",
-        "\t\tprijavaZaKursKonferencijuInput: {",
-        "\t\t\tnaziv: $data.prijavaZaKursKonferenciju.naziv !== undefined ? $data.prijavaZaKursKonferenciju.naziv : null,",
-        "\t\t\tcena: $data.prijavaZaKursKonferenciju.cena !== undefined ? $data.prijavaZaKursKonferenciju.cena : null,",
-        "\t\t\tdatumOdrzavanja: $data.prijavaZaKursKonferenciju.datumOdrzavanja !== undefined ? $data.prijavaZaKursKonferenciju.datumOdrzavanja : null",
-        "\t\t}",
-        "\t}",
+        "return {",
+        "\tselektovaniIzvrsiociInput: $data.formInput.selektovaniIzvrsiociInput",
         "}"
       ],
       "exposed" : false
@@ -639,10 +540,18 @@
         "id"
       ],
       "exposed" : false
+    },
+    "groups" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?p=0&c=100"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "a4b3d0b6-41e3-42bc-b125-18432690b3c9",
+  "uuid" : "2f6a8318-6d45-46fa-b214-e570102c95ce",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
