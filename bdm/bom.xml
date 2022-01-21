@@ -9,6 +9,15 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.CenaZahteva">
+            <fields>
+                <field type="DOUBLE" length="255" name="cene" nullable="true" collection="true"/>
+                <field type="LONG" length="255" name="dobavljacId" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.Intervju">
             <fields>
                 <field type="LONG" length="255" name="clanHrId" nullable="false" collection="false"/>
@@ -148,6 +157,7 @@
                 <field type="STRING" length="255" name="tipOpreme" nullable="false" collection="false"/>
                 <field type="INTEGER" length="255" name="kolicina" nullable="false" collection="false"/>
                 <relationField type="AGGREGATION" reference="magija.it_firma.model.PonudaDobavljaca" fetchType="LAZY" name="ponudeDobavljaca" nullable="true" collection="true"/>
+                <field type="INTEGER" length="255" name="manjaKolicina" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -195,6 +205,7 @@
                 <field type="INTEGER" length="255" name="najboljaPonuda" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="odobrenaKupovina" nullable="true" collection="false"/>
                 <field type="LONG" length="255" name="dobavljaciId" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="prihvacenaManjaKolicina" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
