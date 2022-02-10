@@ -1385,10 +1385,10 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8nUPcHQBEeyh5_sH83myOA"/>
         <condition xmi:type="expression:Expression" xmi:id="_8nUPcXQBEeyh5_sH83myOA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_-CAEwHQBEeyh5_sH83myOA" name="prihvatio sef" target="_0zlcIHP7Eeyh5_sH83myOA" source="_3HjbIHQBEeyh5_sH83myOA">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_-CAEwHQBEeyh5_sH83myOA" name="nije prihvatio sef" target="_0zlcIHP7Eeyh5_sH83myOA" source="_3HjbIHQBEeyh5_sH83myOA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_-CAr0HQBEeyh5_sH83myOA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_-CAr0XQBEeyh5_sH83myOA" name="prihvatio sef" content="//prijava.obradioSefId != -1&#xD;&#xA;!postignutDogovor" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_MuEIcHhTEeyFyKvIzEgOOQ" documentation="Privremena promenlnljiva dok se ne utvrdi tok dogovora" name="postignutDogovor" dataType="_3Fl_u2gJEeydB5g01Nxqig"/>
+        <condition xmi:type="expression:Expression" xmi:id="_-CAr0XQBEeyh5_sH83myOA" name="nije prihvatio sef" content="prijava.obradioSefId == -1&#xD;&#xA;//!postignutDogovor" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_q5zg4IpzEeysoo8klwXnVw" name="prijava" dataType="_3Fl_w2gJEeydB5g01Nxqig" className="magija.it_firma.model.PrijavaZaPosao"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_-Z9IwHRkEeyPMqjpvbzLJQ" target="_AetCAGggEeydB5g01Nxqig" source="_pVYqIHRhEeyPMqjpvbzLJQ">
@@ -1439,7 +1439,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_0bSXAXSiEeypxZfw7Qa36A"/>
         <condition xmi:type="expression:Expression" xmi:id="_0bSXAnSiEeypxZfw7Qa36A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_TNRAgHhTEeyFyKvIzEgOOQ" name="nije prihvatio sef" target="_Qru34HhTEeyFyKvIzEgOOQ" source="_3HjbIHQBEeyh5_sH83myOA" isDefault="true">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_TNRAgHhTEeyFyKvIzEgOOQ" name="prihvatio sef" target="_Qru34HhTEeyFyKvIzEgOOQ" source="_3HjbIHQBEeyh5_sH83myOA" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_TNRnkHhTEeyFyKvIzEgOOQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_TNRnkXhTEeyFyKvIzEgOOQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
@@ -1904,7 +1904,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_rNPItG_kEey538TNGH5Ihw" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_rNPIsW_kEey538TNGH5Ihw" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rNPIsm_kEey538TNGH5Ihw" points="[-41, -11, 151, 10]$[-182, -11, 10, 10]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rNPIsm_kEey538TNGH5Ihw" points="[-41, -11, 123, 1]$[-151, -11, 13, 1]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rNQW0G_kEey538TNGH5Ihw" id="(1.0,0.6976744186046512)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rNQW0W_kEey538TNGH5Ihw" id="(0.9,0.58)"/>
     </edges>
@@ -2004,10 +2004,10 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_koZigHShEeyPNIIo-EETpg" type="4001" element="_koXGQHShEeyPNIIo-EETpg" source="_nBjAoHSgEeyPNIIo-EETpg" target="_3lq6QHSgEeyPNIIo-EETpg" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_koaJkHShEeyPNIIo-EETpg" type="6001">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_koaJkXShEeyPNIIo-EETpg" y="-10"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_koaJkXShEeyPNIIo-EETpg" x="-10" y="15"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_koZigXShEeyPNIIo-EETpg" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_koZignShEeyPNIIo-EETpg" points="[0, -9, -100, 0]$[90, -10, -10, -1]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_koZignShEeyPNIIo-EETpg" points="[0, -9, -100, 0]$[90, -9, -10, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kob-wHShEeyPNIIo-EETpg" id="(1.0,0.6976744186046512)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kob-wXShEeyPNIIo-EETpg" id="(0.06289308176100629,0.4936708860759494)"/>
     </edges>
