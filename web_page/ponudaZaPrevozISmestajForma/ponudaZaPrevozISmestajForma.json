@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "odabirSmestajaIPrevozaForma",
-  "name" : "odabirSmestajaIPrevozaForma",
-  "lastUpdate" : 1642639740395,
+  "id" : "ponudaZaPrevozISmestajForma",
+  "name" : "ponudaZaPrevozISmestajForma",
+  "lastUpdate" : 1642717879020,
   "rows" : [
     [
       {
@@ -10,8 +10,21 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
-        "reference" : "a6db1ca6-424f-47e6-a9e2-32aaebf7da65",
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "db277b2b-bb3b-426d-82fa-cf0778aa932e",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +63,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "d26f12b5-3826-40c7-bbc6-9ef69f18bda1",
+              "reference" : "c6c4bb71-5c01-4753-aaf5-3a9d19c83c54",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +111,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "f08278df-5bc3-4708-b177-87c6936fe38d",
+              "reference" : "9e9e4f14-1562-4c26-b92d-ea76a9fb17c4",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +127,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "6a842dfb-9c94-4a41-ba57-0d0a64c6df50",
+        "reference" : "62b14de9-c799-434f-b5f2-f6c5b63b1859",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,10 +136,232 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "fa304dac-600a-4436-8f5a-4d730bb0f5be",
+          "reference" : "01c0db50-5fc6-440c-92b3-884ff5dbbb7e",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Prijava Za Kurs Konferenciju"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "d0a1d7ee-bb9f-4e54-9846-6c8fd0030dfb",
+                "hasValidationError" : false,
+                "id" : "pbTitle",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "f19b4629-cb5c-4b01-9fd7-aad81a3d56b0",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!prijavaZaKursKonferenciju.naziv"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Naziv"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{prijavaZaKursKonferenciju.naziv}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "60f7b686-2144-45b4-98f7-4997c1902c60",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!prijavaZaKursKonferenciju.cena"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Cena"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{prijavaZaKursKonferenciju.cena}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "087ef8cd-bdc2-43d4-9911-f4ec9d635ee0",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!prijavaZaKursKonferenciju.datumOdrzavanja"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Datum Odrzavanja"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{prijavaZaKursKonferenciju.datumOdrzavanja|uiDate}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "76736838-00a4-446d-8483-ba455b311c79",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ]
+                ]
+              }
+            ],
             [
               {
                 "type" : "component",
@@ -162,7 +397,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "3a6c9381-7ed2-4577-a777-ca5e08bc34ba",
+                "reference" : "4843f5a7-c5cd-43d1-9e20-8542fb10a16b",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -194,7 +429,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "92062ef8-0d6f-4570-b75f-331b76bc4556",
+                "reference" : "397b1c47-a243-413e-8b0b-51adc737514a",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -233,7 +468,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "2b19dc8d-bfc6-4155-b0e7-b5eb5d292837",
+                      "reference" : "b253f086-2c02-4fa4-b872-f478238f3cd5",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -266,7 +501,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "06e4c49c-1fb3-4df0-af53-9a48af2eedcb",
+                      "reference" : "333ef921-fdbd-43a7-b6fc-543c34df4eab",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -326,27 +561,9 @@
                               "required" : {
                                 "type" : "constant",
                                 "value" : false
-                              },
-                              "minLength" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "maxLength" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "min" : {
-                                "type" : "constant"
-                              },
-                              "max" : {
-                                "type" : "constant"
-                              },
-                              "step" : {
-                                "type" : "constant",
-                                "value" : 1
                               }
                             },
-                            "reference" : "b4db93e7-f337-408e-93ae-dbafe737e37e",
+                            "reference" : "f0b99706-d9b6-40f0-8053-c576a8518cfd",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -387,7 +604,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "7fc7ac0b-1de3-4e29-822a-d2d1b18f1c34",
+                            "reference" : "9cedf4ef-7a95-4d48-88a3-79b190d1cdfe",
                             "hasValidationError" : false,
                             "id" : "pbTitle",
                             "description" : ""
@@ -419,7 +636,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "d1f6ffcd-0437-408e-b43d-9583d307a4d5",
+                            "reference" : "085c930e-7776-42cb-8b0f-046c13003ef6",
                             "hasValidationError" : false,
                             "id" : "pbContainer",
                             "rows" : [
@@ -476,20 +693,9 @@
                                     "required" : {
                                       "type" : "constant",
                                       "value" : false
-                                    },
-                                    "disabled" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "displayedKey" : {
-                                      "type" : "expression",
-                                      "value" : "naziv"
-                                    },
-                                    "returnedKey" : {
-                                      "type" : "constant"
                                     }
                                   },
-                                  "reference" : "035d7d47-46ef-4e7e-86a6-7ff2a67a1b56",
+                                  "reference" : "612cf149-3650-42a9-b1d4-0c888d010534",
                                   "hasValidationError" : false,
                                   "id" : "pbSelect",
                                   "description" : ""
@@ -538,7 +744,7 @@
                                       "value" : 12
                                     }
                                   },
-                                  "reference" : "19bff181-210c-41bf-a991-22607d1caa4c",
+                                  "reference" : "74a6e2ec-4950-4cc2-abef-5b93574bf0b2",
                                   "hasValidationError" : false,
                                   "id" : "pbText",
                                   "description" : ""
@@ -641,7 +847,7 @@
                                 "value" : true
                               }
                             },
-                            "reference" : "42aa4533-fe26-428a-8801-04332aec6239",
+                            "reference" : "576fb5de-aa11-4836-806e-acb2a9f97e9a",
                             "hasValidationError" : false,
                             "id" : "pbDateTimePicker",
                             "description" : ""
@@ -705,7 +911,7 @@
                                 "value" : false
                               }
                             },
-                            "reference" : "370e762e-05a1-4799-a635-330a95ed220c",
+                            "reference" : "387f3a70-fa75-46ea-91a9-486ee9830df9",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -779,7 +985,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "23c61b4b-10d1-405b-b271-8450b10ba7f8",
+                            "reference" : "916a2ac4-2d30-4224-92e9-2c26e95a12d0",
                             "hasValidationError" : false,
                             "id" : "pbButton",
                             "description" : ""
@@ -853,33 +1059,9 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "assign" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "url" : {
-                          "type" : "interpolation"
-                        },
-                        "responseStatusCode" : {
-                          "type" : "variable"
-                        },
-                        "dataFromSuccess" : {
-                          "type" : "variable"
-                        },
-                        "closeOnSuccess" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "dataFromError" : {
-                          "type" : "variable"
-                        },
-                        "modalId" : {
-                          "type" : "constant",
-                          "value" : ""
                         }
                       },
-                      "reference" : "97d4655e-5b54-440e-a8da-173a02636266",
+                      "reference" : "266abf7d-21df-4e36-9e5d-5cfa6602bc54",
                       "hasValidationError" : false,
                       "id" : "pbButton",
                       "description" : ""
@@ -920,7 +1102,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "2ac168d2-4688-4f3e-996d-add84b1b1bb8",
+                      "reference" : "f67abd52-b0bd-4d51-a529-3948c64eb3d5",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -953,7 +1135,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "b3d9c397-5ac6-47c5-b5dc-934005dfca79",
+                      "reference" : "fa452162-b268-40f6-bd9b-6991a3c17fac",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -1015,7 +1197,7 @@
                                 "value" : false
                               }
                             },
-                            "reference" : "66c9e137-82bc-4429-a8d7-6690234940e6",
+                            "reference" : "f60f40ab-7273-476f-8a6a-0fdf8d039ac5",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -1056,7 +1238,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "bd4528d1-acf4-4f5e-86b8-9148a5577b7e",
+                            "reference" : "a1c3c261-b274-426a-9644-dc5135a31f7a",
                             "hasValidationError" : false,
                             "id" : "pbTitle",
                             "description" : ""
@@ -1088,7 +1270,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "c233ab34-4882-4bd2-8ee1-46f447a2b68b",
+                            "reference" : "10028d78-2ae7-4c7d-ae22-432a3cd549f3",
                             "hasValidationError" : false,
                             "id" : "pbContainer",
                             "rows" : [
@@ -1145,20 +1327,9 @@
                                     "required" : {
                                       "type" : "constant",
                                       "value" : false
-                                    },
-                                    "disabled" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "displayedKey" : {
-                                      "type" : "constant",
-                                      "value" : "naziv"
-                                    },
-                                    "returnedKey" : {
-                                      "type" : "constant"
                                     }
                                   },
-                                  "reference" : "1a9e0f40-e9f5-4ab4-9cbf-98da0fb48f8d",
+                                  "reference" : "a6724c2f-6bb2-491f-9140-566c20c05971",
                                   "hasValidationError" : false,
                                   "id" : "pbSelect",
                                   "description" : ""
@@ -1207,7 +1378,7 @@
                                       "value" : 12
                                     }
                                   },
-                                  "reference" : "de94c78a-09bd-4bf7-ba02-3b7b672d87e9",
+                                  "reference" : "e434aeff-adc0-4aed-b81e-fa569beb101c",
                                   "hasValidationError" : false,
                                   "id" : "pbText",
                                   "description" : ""
@@ -1310,7 +1481,7 @@
                                 "value" : true
                               }
                             },
-                            "reference" : "4d81812d-9602-463c-814b-7e1da2d82728",
+                            "reference" : "8cbcb6bd-645c-48a4-8478-ecb8695c162b",
                             "hasValidationError" : false,
                             "id" : "pbDateTimePicker",
                             "description" : ""
@@ -1374,7 +1545,7 @@
                                 "value" : false
                               }
                             },
-                            "reference" : "11be5530-dcb5-4cb2-aeb6-b628bd35e2fa",
+                            "reference" : "1ba624fc-6645-4707-8435-df747f839e52",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -1448,7 +1619,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "a9497b84-37ee-4889-aafa-76953d81b7a6",
+                            "reference" : "7509b6a3-6b1b-4c3d-b24c-41394612cfcc",
                             "hasValidationError" : false,
                             "id" : "pbButton",
                             "description" : ""
@@ -1524,7 +1695,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "deb11596-5cf1-4bda-aadd-023734c3cdad",
+                      "reference" : "4b1a5bea-c2b2-401c-99c7-73729e01e931",
                       "hasValidationError" : false,
                       "id" : "pbButton",
                       "description" : ""
@@ -1604,7 +1775,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7bf78f32-1612-48f7-afc7-5ebdc1f21550",
+                "reference" : "2a798ce7-c2be-46b9-8802-e8ad919fa12e",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -1656,7 +1827,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "c467a1b4-59c3-48a4-9324-36fcac00a3aa",
+                "reference" : "36385b44-9470-42e9-9def-9ffa3ec7625f",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -1669,16 +1840,16 @@
   ],
   "assets" : [
     {
-      "id" : "24bc00aa-825f-41c5-b183-1d11a1dcc537",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "88aa690d-1293-488e-8847-f99f2a6a8733",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "d2a6d90f-9fe2-4428-8c5b-d5925048bef5",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "7bb1a073-d2e9-4bef-aa6f-02758971a865",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -1689,6 +1860,20 @@
       "type" : "url",
       "value" : [
         "../API/bdm/businessData/magija.it_firma.model.VrstaSmestaja?q=find&p=0&c=99"
+      ],
+      "exposed" : false
+    },
+    "prijavaZaKursKonferenciju" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.prijavaZaKursKonferenciju_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "prijavaZaKursKonferenciju_statusPrijave" : {
+      "type" : "url",
+      "value" : [
+        "{{prijavaZaKursKonferenciju|lazyRef:'statusPrijave'}}"
       ],
       "exposed" : false
     },
@@ -1724,11 +1909,14 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.ponuda && $data.ponuda_opcijePrevoza && $data.ponuda_opcijeSmestaja ){",
         "\t//attach lazy references variables to parent variables",
         "\t$data.ponuda.opcijePrevoza = $data.ponuda_opcijePrevoza;",
         "\t$data.ponuda.opcijeSmestaja = $data.ponuda_opcijeSmestaja;",
         "\treturn {",
+        "\t\t//map prijavaZaKursKonferenciju variable to expected task contract input",
+        "\t\tprijavaZaKursKonferencijuInput: {",
+        "\t\t\time: $data.prijavaZaKursKonferenciju.ime !== undefined ? $data.prijavaZaKursKonferenciju.ime : null",
+        "\t\t},",
         "\t\t//map ponuda variable to expected task contract input",
         "\t\tponudaInput: {",
         "\t\t\topcijePrevoza: $data.ponuda.opcijePrevoza.map( it => ({",
@@ -1750,8 +1938,7 @@
         "\t\t\t\tcena: it.cena !== undefined ? it.cena : null",
         "\t\t\t}))",
         "\t\t}",
-        "\t}",
-        "}"
+        "\t}"
       ],
       "exposed" : false
     },
@@ -1792,7 +1979,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "7e9894a1-c4b0-4e69-8102-9e3fd4378761",
+  "uuid" : "06800181-5572-4018-8308-542c6c0b1873",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

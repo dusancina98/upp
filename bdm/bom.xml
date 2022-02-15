@@ -64,37 +64,6 @@
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="magija.it_firma.model.OpcijePrevoza">
-            <fields>
-                <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaPrevoza" fetchType="EAGER" name="vrsta" nullable="true" collection="false"/>
-                <field type="OFFSETDATETIME" length="255" name="datum" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="cena" nullable="true" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
-        <businessObject qualifiedName="magija.it_firma.model.OpcijeSmestaja">
-            <fields>
-                <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaSmestaja" fetchType="EAGER" name="vrsta" nullable="true" collection="false"/>
-                <field type="OFFSETDATETIME" length="255" name="datum" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="cena" nullable="true" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
-        <businessObject qualifiedName="magija.it_firma.model.PonudaPrevozaISmestaja">
-            <fields>
-                <relationField type="COMPOSITION" reference="magija.it_firma.model.OpcijePrevoza" fetchType="LAZY" name="opcijePrevoza" nullable="true" collection="true"/>
-                <relationField type="COMPOSITION" reference="magija.it_firma.model.OpcijeSmestaja" fetchType="LAZY" name="opcijeSmestaja" nullable="true" collection="true"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.Pozicija">
             <fields>
                 <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
