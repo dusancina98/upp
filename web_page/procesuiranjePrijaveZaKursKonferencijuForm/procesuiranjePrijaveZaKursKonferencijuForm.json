@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "procesuiranjePrijaveZaKursKonferencijuForm",
   "name" : "procesuiranjePrijaveZaKursKonferencijuForm",
-  "lastUpdate" : 1644785119831,
+  "lastUpdate" : 1644958332191,
   "rows" : [
     [
       {
@@ -1442,7 +1442,7 @@
       "value" : [
         "var flag = $data.prijavaZaKursKonferenciju.jeUzivo",
         "",
-        "if(flag){",
+        "if(!flag){",
         "    return 2",
         "}else{",
         "    return 3",
