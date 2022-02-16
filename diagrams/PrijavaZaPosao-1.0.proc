@@ -149,6 +149,20 @@
               <inputTypes>java.lang.Long</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="__hm9cI94EeyHVM2SmjBIaA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="__hm9cY94EeyHVM2SmjBIaA" name="prijava" content="prijava" type="TYPE_VARIABLE" returnType="magija.it_firma.model.PrijavaZaPosao">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_AT9ncI95EeyHVM2SmjBIaA" name="prijava" dataType="_3Fl_w2gJEeydB5g01Nxqig" className="magija.it_firma.model.PrijavaZaPosao"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="__hm9co94EeyHVM2SmjBIaA" name="stepensStrucneSpreme" content="stepenObrazovanjaDAO.findByPersistenceId(Long.parseLong(stepenStrucneSpreme));" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="magija.it_firma.model.StepenObrazovanja">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_r2AqoI96EeyHVM2SmjBIaA" name="stepenObrazovanjaDAO" content="stepenObrazovanjaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.StepenObrazovanjaDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_r2AqoY96EeyHVM2SmjBIaA" name="stepenStrucneSpreme">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_r2Aqoo96EeyHVM2SmjBIaA"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="__hm9c494EeyHVM2SmjBIaA" type="JAVA_METHOD" expression="setStepenObrazovanja">
+              <inputTypes>magija.it_firma.model.StepenObrazovanja</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_3Fl_mmgJEeydB5g01Nxqig" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_3Fl_m2gJEeydB5g01Nxqig" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_3Fl_nGgJEeydB5g01Nxqig" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -167,6 +181,9 @@
           <contract xmi:type="process:Contract" xmi:id="_3Fl_oWgJEeydB5g01Nxqig">
             <inputs xmi:type="process:ContractInput" xmi:id="_EA3isG4qEeyU6JmbbOHeag" name="cvDocumentInput" type="FILE" dataReference="cvDocument" createMode="false"/>
             <inputs xmi:type="process:ContractInput" xmi:id="_FWGQQG4qEeyU6JmbbOHeag" name="propratnoPismoDocumentInput" type="FILE" dataReference="propratnoPismoDocument" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_5Lr9MI94EeyHVM2SmjBIaA" name="stepenStrucneSpreme">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_5Lr9MY94EeyHVM2SmjBIaA"/>
+            </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_3Fl_omgJEeydB5g01Nxqig" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>

@@ -100,12 +100,31 @@
                 <field type="LOCALDATE" length="255" name="datum" nullable="false" collection="false"/>
                 <field type="LONG" length="255" name="obradioHrId" nullable="false" collection="false"/>
                 <field type="LONG" length="255" name="obradioSefId" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.StepenObrazovanja" fetchType="LAZY" name="stepenObrazovanja" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.Senioritet">
+            <fields>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.StatusPrijaveZaKurs">
+            <fields>
+                <field type="INTEGER" length="255" name="statusPrijave" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="razlogOdbijanja" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="budzetZaPrevozSmestaj" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.StepenObrazovanja">
             <fields>
                 <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
             </fields>
@@ -124,16 +143,6 @@
                     </fieldNames>
                 </uniqueConstraint>
             </uniqueConstraints>
-            <queries/>
-            <indexes/>
-        </businessObject>
-        <businessObject qualifiedName="magija.it_firma.model.StatusPrijaveZaKurs">
-            <fields>
-                <field type="INTEGER" length="255" name="statusPrijave" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="razlogOdbijanja" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="budzetZaPrevozSmestaj" nullable="true" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
             <queries/>
             <indexes/>
         </businessObject>
