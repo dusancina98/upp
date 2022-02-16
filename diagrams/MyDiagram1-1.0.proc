@@ -12,40 +12,16 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_KJTNaI6TEeyFSv-fmjCzvg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_KJTNaY6TEeyFSv-fmjCzvg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_KJTNao6TEeyFSv-fmjCzvg" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_XT_Pko6fEeyFSv-fmjCzvg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_XT_Pk46fEeyFSv-fmjCzvg" name="ponudaa" content="ponudaa" type="TYPE_VARIABLE" returnType="magija.it_firma.model.Ponuda">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XT_PlI6fEeyFSv-fmjCzvg" name="ponudaa" dataType="_KJTNlI6TEeyFSv-fmjCzvg" className="magija.it_firma.model.Ponuda"/>
+          <operations xmi:type="expression:Operation" xmi:id="_LWyfu49NEeySN98M0fZqMg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_LWyfvI9NEeySN98M0fZqMg" name="ponudaa" content="ponudaa" type="TYPE_VARIABLE" returnType="magija.it_firma.model.Ponuda">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_LWyfvY9NEeySN98M0fZqMg" name="ponudaa" dataType="_KJTNlI6TEeyFSv-fmjCzvg" className="magija.it_firma.model.Ponuda"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_XT_PlY6fEeyFSv-fmjCzvg" name="ponudaaInput.napomena" content="ponudaaInput?.napomena" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_XT_Plo6fEeyFSv-fmjCzvg" name="ponudaaInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_LWyfvo9NEeySN98M0fZqMg" name="ponudaaInput.ponudaSmestaja" content="def ponudaSmestajaList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;ponudaaInput?.ponudaSmestaja.each{&#xD;&#xA;&#x9;//Add PonudaSmestaja instance&#xD;&#xA;&#x9;ponudaSmestajaList.add({ currentPonudaSmestajaInput ->&#xD;&#xA;&#x9;&#x9;def ponudaSmestajaVar = ponudaa.ponudaSmestaja.find { it.persistenceId.toString() == currentPonudaSmestajaInput.persistenceId_string} ?: new magija.it_firma.model.PonudaSmestaja()&#xD;&#xA;&#x9;&#x9;ponudaSmestajaVar.naziv = currentPonudaSmestajaInput.naziv&#xD;&#xA;&#x9;&#x9;ponudaSmestajaVar.cena = currentPonudaSmestajaInput.cena&#xD;&#xA;&#x9;&#x9;ponudaSmestajaVar.vrstaSmestaja = {&#xD;&#xA;&#x9;&#x9;&#x9;//Retrieve aggregated VrstaSmestaja using its DAO and persistenceId&#xD;&#xA;&#x9;&#x9;&#x9;def vrstaSmestajaVar = vrstaSmestajaDAO.findByPersistenceId(currentPonudaSmestajaInput.vrstaSmestaja?.persistenceId_string?.trim() ? currentPonudaSmestajaInput.vrstaSmestaja.persistenceId_string.toLong() : null)&#xD;&#xA;&#x9;&#x9;&#x9;if (!vrstaSmestajaVar) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;if (currentPonudaSmestajaInput.vrstaSmestaja?.persistenceId_string?.trim() ? currentPonudaSmestajaInput.vrstaSmestaja.persistenceId_string.toLong() : null) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `VrstaSmestaja` with the persistence id &quot; + currentPonudaSmestajaInput.vrstaSmestaja?.persistenceId_string?.trim() ? currentPonudaSmestajaInput.vrstaSmestaja.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;return null&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;return vrstaSmestajaVar}()&#xD;&#xA;&#x9;&#x9;return ponudaSmestajaVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return ponudaSmestajaList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_LWyfv49NEeySN98M0fZqMg" name="ponudaaInput" type="COMPLEX" createMode="false"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_LWyfwI9NEeySN98M0fZqMg" name="ponudaa" dataType="_KJTNlI6TEeyFSv-fmjCzvg" className="magija.it_firma.model.Ponuda"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_LWyfwY9NEeySN98M0fZqMg" name="vrstaSmestajaDAO" content="vrstaSmestajaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.VrstaSmestajaDAO" returnTypeFixed="true"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_XT_Pl46fEeyFSv-fmjCzvg" type="JAVA_METHOD" expression="setNapomena">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_XT_PmI6fEeyFSv-fmjCzvg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_XT_PmY6fEeyFSv-fmjCzvg" name="ponudaa" content="ponudaa" type="TYPE_VARIABLE" returnType="magija.it_firma.model.Ponuda">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XT_Pmo6fEeyFSv-fmjCzvg" name="ponudaa" dataType="_KJTNlI6TEeyFSv-fmjCzvg" className="magija.it_firma.model.Ponuda"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_XT_Pm46fEeyFSv-fmjCzvg" name="ponudaaInput.ponudaSmestaja" content="def ponudaSmestajaList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;ponudaaInput?.ponudaSmestaja.each{&#xD;&#xA;&#x9;//Add PonudaSmestaja instance&#xD;&#xA;&#x9;ponudaSmestajaList.add({ currentPonudaSmestajaInput ->&#xD;&#xA;&#x9;&#x9;def ponudaSmestajaVar = ponudaa.ponudaSmestaja.find { it.persistenceId.toString() == currentPonudaSmestajaInput.persistenceId_string} ?: new magija.it_firma.model.PonudaSmestaja()&#xD;&#xA;&#x9;&#x9;ponudaSmestajaVar.naziv = currentPonudaSmestajaInput.naziv&#xD;&#xA;&#x9;&#x9;ponudaSmestajaVar.cena = currentPonudaSmestajaInput.cena&#xD;&#xA;&#x9;&#x9;ponudaSmestajaVar.vrstaSmestaja = {&#xD;&#xA;&#x9;&#x9;&#x9;//Retrieve aggregated VrstaSmestaja using its DAO and persistenceId&#xD;&#xA;&#x9;&#x9;&#x9;def vrstaSmestajaVar = vrstaSmestajaDAO.findByPersistenceId(currentPonudaSmestajaInput.vrstaSmestaja?.persistenceId_string?.trim() ? currentPonudaSmestajaInput.vrstaSmestaja.persistenceId_string.toLong() : null)&#xD;&#xA;&#x9;&#x9;&#x9;if (!vrstaSmestajaVar) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;if (currentPonudaSmestajaInput.vrstaSmestaja?.persistenceId_string?.trim() ? currentPonudaSmestajaInput.vrstaSmestaja.persistenceId_string.toLong() : null) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `VrstaSmestaja` with the persistence id &quot; + currentPonudaSmestajaInput.vrstaSmestaja?.persistenceId_string?.trim() ? currentPonudaSmestajaInput.vrstaSmestaja.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;return null&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;return vrstaSmestajaVar}()&#xD;&#xA;&#x9;&#x9;return ponudaSmestajaVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return ponudaSmestajaList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_XT_PnI6fEeyFSv-fmjCzvg" name="ponudaaInput" type="COMPLEX" createMode="false"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XT_PnY6fEeyFSv-fmjCzvg" name="ponudaa" dataType="_KJTNlI6TEeyFSv-fmjCzvg" className="magija.it_firma.model.Ponuda"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_XT_Pno6fEeyFSv-fmjCzvg" name="vrstaSmestajaDAO" content="vrstaSmestajaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.VrstaSmestajaDAO" returnTypeFixed="true"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_XT_Pn46fEeyFSv-fmjCzvg" type="JAVA_METHOD" expression="setPonudaSmestaja">
-              <inputTypes>java.util.List</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_XT_PoI6fEeyFSv-fmjCzvg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_XT_PoY6fEeyFSv-fmjCzvg" name="ponudaa" content="ponudaa" type="TYPE_VARIABLE" returnType="magija.it_firma.model.Ponuda">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XT_Poo6fEeyFSv-fmjCzvg" name="ponudaa" dataType="_KJTNlI6TEeyFSv-fmjCzvg" className="magija.it_firma.model.Ponuda"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_XT_Po46fEeyFSv-fmjCzvg" name="ponudaaInput.ponudaPrevoza" content="def ponudaPrevozaList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;ponudaaInput?.ponudaPrevoza.each{&#xD;&#xA;&#x9;//Add PonudaPrevoza instance&#xD;&#xA;&#x9;ponudaPrevozaList.add({ currentPonudaPrevozaInput ->&#xD;&#xA;&#x9;&#x9;def ponudaPrevozaVar = ponudaa.ponudaPrevoza.find { it.persistenceId.toString() == currentPonudaPrevozaInput.persistenceId_string} ?: new magija.it_firma.model.PonudaPrevoza()&#xD;&#xA;&#x9;&#x9;ponudaPrevozaVar.naziv = currentPonudaPrevozaInput.naziv&#xD;&#xA;&#x9;&#x9;ponudaPrevozaVar.cena = currentPonudaPrevozaInput.cena&#xD;&#xA;&#x9;&#x9;ponudaPrevozaVar.vrstaPrevoza = {&#xD;&#xA;&#x9;&#x9;&#x9;//Retrieve aggregated VrstaPrevoza using its DAO and persistenceId&#xD;&#xA;&#x9;&#x9;&#x9;def vrstaPrevozaVar = vrstaPrevozaDAO.findByPersistenceId(currentPonudaPrevozaInput.vrstaPrevoza?.persistenceId_string?.trim() ? currentPonudaPrevozaInput.vrstaPrevoza.persistenceId_string.toLong() : null)&#xD;&#xA;&#x9;&#x9;&#x9;if (!vrstaPrevozaVar) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;if (currentPonudaPrevozaInput.vrstaPrevoza?.persistenceId_string?.trim() ? currentPonudaPrevozaInput.vrstaPrevoza.persistenceId_string.toLong() : null) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `VrstaPrevoza` with the persistence id &quot; + currentPonudaPrevozaInput.vrstaPrevoza?.persistenceId_string?.trim() ? currentPonudaPrevozaInput.vrstaPrevoza.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;return null&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;return vrstaPrevozaVar}()&#xD;&#xA;&#x9;&#x9;return ponudaPrevozaVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return ponudaPrevozaList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_XT_PpI6fEeyFSv-fmjCzvg" name="ponudaaInput" type="COMPLEX" createMode="false"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XT_PpY6fEeyFSv-fmjCzvg" name="ponudaa" dataType="_KJTNlI6TEeyFSv-fmjCzvg" className="magija.it_firma.model.Ponuda"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_XT_Ppo6fEeyFSv-fmjCzvg" name="vrstaPrevozaDAO" content="vrstaPrevozaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.VrstaPrevozaDAO" returnTypeFixed="true"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_XT_Pp46fEeyFSv-fmjCzvg" type="JAVA_METHOD" expression="setPonudaPrevoza">
+            <operator xmi:type="expression:Operator" xmi:id="_LWyfwo9NEeySN98M0fZqMg" type="JAVA_METHOD" expression="setPonudaSmestaja">
               <inputTypes>java.util.List</inputTypes>
             </operator>
           </operations>
@@ -55,32 +31,29 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_KJTNbo6TEeyFSv-fmjCzvg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_KJTNb46TEeyFSv-fmjCzvg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_KJTNcI6TEeyFSv-fmjCzvg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Yt1-cI6fEeyFSv-fmjCzvg" name="newForm9" content="02bd160f-7373-4e61-9e06-9887688f2077" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_MftPkI9NEeySN98M0fZqMg" name="newForm5" content="e74d1015-5d03-44c5-a66f-ad3e141f125a" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_KJTNco6TEeyFSv-fmjCzvg">
-            <inputs xmi:type="process:ContractInput" xmi:id="_XT-ogI6fEeyFSv-fmjCzvg" name="ponudaaInput" type="COMPLEX" dataReference="ponudaa" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_XT-ogY6fEeyFSv-fmjCzvg" name="napomena" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_XT-ogo6fEeyFSv-fmjCzvg" name="ponudaSmestaja" type="COMPLEX" multiple="true" createMode="false">
-                <inputs xmi:type="process:ContractInput" xmi:id="_XT-og46fEeyFSv-fmjCzvg" name="persistenceId_string" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_XT-ohI6fEeyFSv-fmjCzvg" name="naziv" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_XT-ohY6fEeyFSv-fmjCzvg" name="cena" type="INTEGER" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_XT-oho6fEeyFSv-fmjCzvg" name="vrstaSmestaja" type="COMPLEX" createMode="false">
-                  <inputs xmi:type="process:ContractInput" xmi:id="_XT-oh46fEeyFSv-fmjCzvg" name="persistenceId_string" createMode="false"/>
-                </inputs>
-              </inputs>
-              <inputs xmi:type="process:ContractInput" xmi:id="_XT-oiI6fEeyFSv-fmjCzvg" name="ponudaPrevoza" type="COMPLEX" multiple="true" createMode="false">
-                <inputs xmi:type="process:ContractInput" xmi:id="_XT-oiY6fEeyFSv-fmjCzvg" name="persistenceId_string" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_XT-oio6fEeyFSv-fmjCzvg" name="naziv" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_XT-oi46fEeyFSv-fmjCzvg" name="cena" type="INTEGER" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_XT-ojI6fEeyFSv-fmjCzvg" name="vrstaPrevoza" type="COMPLEX" createMode="false">
-                  <inputs xmi:type="process:ContractInput" xmi:id="_XT-ojY6fEeyFSv-fmjCzvg" name="persistenceId_string" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_LWyfsI9NEeySN98M0fZqMg" name="ponudaaInput" type="COMPLEX" dataReference="ponudaa" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_LWyfsY9NEeySN98M0fZqMg" name="ponudaSmestaja" type="COMPLEX" multiple="true" createMode="false">
+                <inputs xmi:type="process:ContractInput" xmi:id="_LWyfso9NEeySN98M0fZqMg" name="persistenceId_string" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_LWyfs49NEeySN98M0fZqMg" name="naziv" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_LWyftI9NEeySN98M0fZqMg" name="cena" type="INTEGER" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_LWyftY9NEeySN98M0fZqMg" name="vrstaSmestaja" type="COMPLEX" createMode="false">
+                  <inputs xmi:type="process:ContractInput" xmi:id="_LWyfto9NEeySN98M0fZqMg" name="persistenceId_string" createMode="false"/>
                 </inputs>
               </inputs>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_XT_PkI6fEeyFSv-fmjCzvg" expression="ponudaaInput?.ponudaSmestaja?.vrstaSmestaja.flatten().every{!it || it.persistenceId_string}" errorMessage="VrstaSmestaja must reference an existing instance with a persistenceId for PonudaSmestaja" name="aggregation_ponudaaInput_ponudaSmestaja_vrstaSmestaja">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_LWyft49NEeySN98M0fZqMg" expression="ponudaaInput?.ponudaSmestaja?.naziv.flatten().every{it!=null}" errorMessage="naziv is mandatory for PonudaSmestaja" name="mandatory_ponudaaInput_ponudaSmestaja_naziv">
               <inputNames>ponudaaInput</inputNames>
             </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_XT_PkY6fEeyFSv-fmjCzvg" expression="ponudaaInput?.ponudaPrevoza?.vrstaPrevoza.flatten().every{!it || it.persistenceId_string}" errorMessage="VrstaPrevoza must reference an existing instance with a persistenceId for PonudaPrevoza" name="aggregation_ponudaaInput_ponudaPrevoza_vrstaPrevoza">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_LWyfuI9NEeySN98M0fZqMg" expression="ponudaaInput?.ponudaSmestaja?.cena.flatten().every{it!=null}" errorMessage="cena is mandatory for PonudaSmestaja" name="mandatory_ponudaaInput_ponudaSmestaja_cena">
+              <inputNames>ponudaaInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_LWyfuY9NEeySN98M0fZqMg" expression="ponudaaInput?.ponudaSmestaja?.vrstaSmestaja.flatten().every{it!=null}" errorMessage="VrstaSmestaja is mandatory for PonudaSmestaja" name="mandatory_ponudaaInput_ponudaSmestaja_vrstaSmestaja">
+              <inputNames>ponudaaInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_LWyfuo9NEeySN98M0fZqMg" expression="ponudaaInput?.ponudaSmestaja?.vrstaSmestaja.flatten().every{!it || it.persistenceId_string}" errorMessage="VrstaSmestaja must reference an existing instance with a persistenceId for PonudaSmestaja" name="aggregation_ponudaaInput_ponudaSmestaja_vrstaSmestaja">
               <inputNames>ponudaaInput</inputNames>
             </constraints>
           </contract>
@@ -96,7 +69,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_PSfeUY6fEeyFSv-fmjCzvg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_KJTNdI6TEeyFSv-fmjCzvg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_UM5i0I6fEeyFSv-fmjCzvg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_NVmVwI9NEeySN98M0fZqMg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_KJTNdo6TEeyFSv-fmjCzvg">
         <targetForm xmi:type="expression:Expression" xmi:id="_KJTNd46TEeyFSv-fmjCzvg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

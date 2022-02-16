@@ -67,8 +67,8 @@
         <businessObject qualifiedName="magija.it_firma.model.Ponuda">
             <fields>
                 <field type="STRING" length="255" name="napomena" nullable="true" collection="false"/>
-                <relationField type="COMPOSITION" reference="magija.it_firma.model.PonudaSmestaja" fetchType="LAZY" name="ponudaSmestaja" nullable="true" collection="true"/>
-                <relationField type="COMPOSITION" reference="magija.it_firma.model.PonudaPrevoza" fetchType="LAZY" name="ponudaPrevoza" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="magija.it_firma.model.PonudaSmestaja" fetchType="EAGER" name="ponudaSmestaja" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="magija.it_firma.model.PonudaPrevoza" fetchType="EAGER" name="ponudaPrevoza" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
