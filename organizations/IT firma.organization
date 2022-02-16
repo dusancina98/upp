@@ -44,7 +44,11 @@
     <user userName="hr.sef">
       <firstName>Hr</firstName>
       <lastName>Sef</lastName>
+<<<<<<< HEAD
       <manager></manager>
+=======
+      <manager>hr.zaposleni1</manager>
+>>>>>>> refs/heads/master
       <personalData>
         <email>hrsef@proba.com</email>
       </personalData>
@@ -166,6 +170,7 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+<<<<<<< HEAD
     <user userName="nabavka.zaposleni1">
       <firstName>Nabavka</firstName>
       <lastName>Zaposleni1</lastName>
@@ -223,6 +228,38 @@
       <firstName>Nabavka</firstName>
       <lastName>Zaposleni2</lastName>
       <manager>nabavka.sef</manager>
+=======
+    <user userName="seffinansija">
+      <firstName>Sef </firstName>
+      <lastName>Finansija1</lastName>
+      <jobTitle>Sef finansija</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="opstasluzba1">
+      <firstName>Opsta </firstName>
+      <lastName>sluzba1</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="opstasluzba2">
+      <firstName>Opsta</firstName>
+      <lastName>Sluzba2</lastName>
+>>>>>>> refs/heads/master
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>
@@ -258,11 +295,19 @@
     <group name="ProjektniTim" parentPath="/ITFirma/Zaposleni">
       <displayName>ProjektniTim</displayName>
     </group>
+<<<<<<< HEAD
     <group name="SluzbaNabavke" parentPath="/ITFirma/Zaposleni">
       <displayName>SluzbaNabavke</displayName>
     </group>
     <group name="Dobavljac">
       <displayName>Dobavljac</displayName>
+=======
+    <group name="Sef finansija" parentPath="/ITFirma/Zaposleni">
+      <displayName>Sef finansija</displayName>
+    </group>
+    <group name="Opsta sluzba" parentPath="/ITFirma/Zaposleni">
+      <displayName>Opsta sluzba</displayName>
+>>>>>>> refs/heads/master
     </group>
   </groups>
   <memberships>
@@ -317,6 +362,7 @@
       <groupName>ITFirma</groupName>
     </membership>
     <membership>
+<<<<<<< HEAD
       <userName>nabavka.zaposleni1</userName>
       <roleName>Clan</roleName>
       <groupName>SluzbaNabavke</groupName>
@@ -342,6 +388,23 @@
       <userName>nabavka.zaposleni2</userName>
       <roleName>Clan</roleName>
       <groupName>SluzbaNabavke</groupName>
+=======
+      <userName>seffinansija</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sef finansija</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>opstasluzba1</userName>
+      <roleName>Sef</roleName>
+      <groupName>Opsta sluzba</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>opstasluzba2</userName>
+      <roleName>Sef</roleName>
+      <groupName>Opsta sluzba</groupName>
+>>>>>>> refs/heads/master
       <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
     </membership>
   </memberships>
