@@ -73,7 +73,6 @@
             <queries/>
             <indexes/>
         </businessObject>
-<<<<<<< HEAD
         <businessObject qualifiedName="magija.it_firma.model.OpremaNaStanju">
             <fields>
                 <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaOpreme" fetchType="EAGER" name="vrsta" nullable="true" collection="false"/>
@@ -88,7 +87,11 @@
             <fields>
                 <field type="DOUBLE" length="255" name="cena" nullable="false" collection="false"/>
                 <field type="LONG" length="255" name="dobavljacId" nullable="false" collection="false"/>
-=======
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.OpcijePrevoza">
             <fields>
                 <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
@@ -115,7 +118,6 @@
             <fields>
                 <relationField type="COMPOSITION" reference="magija.it_firma.model.OpcijePrevoza" fetchType="LAZY" name="opcijePrevoza" nullable="true" collection="true"/>
                 <relationField type="COMPOSITION" reference="magija.it_firma.model.OpcijeSmestaja" fetchType="LAZY" name="opcijeSmestaja" nullable="true" collection="true"/>
->>>>>>> refs/heads/master
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -182,7 +184,6 @@
             <queries/>
             <indexes/>
         </businessObject>
-<<<<<<< HEAD
         <businessObject qualifiedName="magija.it_firma.model.StavkaZahtevaZaNabavkuOpreme">
             <fields>
                 <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaOpreme" fetchType="EAGER" name="vrstaOpreme" nullable="false" collection="false"/>
@@ -195,8 +196,16 @@
             <queries/>
             <indexes/>
         </businessObject>
-=======
->>>>>>> refs/heads/master
+        <businessObject qualifiedName="magija.it_firma.model.StatusPrijaveZaKurs">
+            <fields>
+                <field type="INTEGER" length="255" name="statusPrijave" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="razlogOdbijanja" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="budzetZaPrevozSmestaj" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.StraniJezik">
             <fields>
                 <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
@@ -211,13 +220,8 @@
             <queries/>
             <indexes/>
         </businessObject>
-<<<<<<< HEAD
         <businessObject qualifiedName="magija.it_firma.model.Test">
-=======
-        <businessObject qualifiedName="magija.it_firma.model.VrstaPrevoza">
->>>>>>> refs/heads/master
             <fields>
-<<<<<<< HEAD
                 <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
@@ -233,6 +237,15 @@
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.ZahtevZaNabavakuOpreme">
+        <businessObject qualifiedName="magija.it_firma.model.VrstaPrevoza">
+            <fields>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.VrstaSmestaja">
             <fields>
                 <field type="STRING" length="255" name="ime" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="prezime" nullable="false" collection="false"/>
@@ -245,17 +258,7 @@
                 <field type="BOOLEAN" length="255" name="odobrenaKupovina" nullable="true" collection="false"/>
                 <field type="LONG" length="255" name="dobavljaciId" nullable="true" collection="true"/>
                 <field type="BOOLEAN" length="255" name="prihvacenaManjaKolicina" nullable="true" collection="false"/>
-=======
                 <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
-        <businessObject qualifiedName="magija.it_firma.model.VrstaSmestaja">
-            <fields>
-                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
->>>>>>> refs/heads/master
             </fields>
             <uniqueConstraints/>
             <queries/>
