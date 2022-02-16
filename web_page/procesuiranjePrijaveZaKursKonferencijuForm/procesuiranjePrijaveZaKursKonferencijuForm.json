@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "procesuiranjePrijaveZaKursKonferencijuForm",
   "name" : "procesuiranjePrijaveZaKursKonferencijuForm",
-  "lastUpdate" : 1644958332191,
+  "lastUpdate" : 1645040300323,
   "rows" : [
     [
       {
@@ -1184,7 +1184,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Unesi budzet za smestaj i prevoz"
+                    "value" : "Unesi budzet za smestaj"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -1218,6 +1218,84 @@
                   }
                 },
                 "reference" : "eae0fc7f-fe74-4fd2-a827-75f47bce035b",
+                "hasValidationError" : false,
+                "id" : "pbInput"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Unesi budzet za prevoz"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "budzetZaPrevoz"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "number"
+                  },
+                  "min" : {
+                    "type" : "constant",
+                    "value" : 0
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "425793ec-b5fd-4abd-ae6b-184303106e4d",
                 "hasValidationError" : false,
                 "id" : "pbInput"
               }
@@ -1390,7 +1468,8 @@
         "\t\tprijavaZaKursKonferencijuInput: {",
         "\t\t\tprihvaceno: true,",
         "\t\t\trazlogOdbijanja: \"\",",
-        "            budzetZaKursUzivo: 0",
+        "            budzetZaPrevoz: 0,",
+        "            budzetZaSmestaj: 0",
         "\t\t}",
         "\t}",
         "}"
@@ -1422,7 +1501,8 @@
         "\t\tprijavaZaKursKonferencijuInput: {",
         "\t\t\tprihvaceno: false,",
         "\t\t\trazlogOdbijanja: $data.razlogOdbijanja,",
-        "            budzetZaKursUzivo: 0",
+        "            budzetZaPrevoz: 0,",
+        "            budzetZaSmestaj: 0",
         "\t\t}",
         "\t}",
         "}"
@@ -1461,11 +1541,16 @@
         "\t\tprijavaZaKursKonferencijuInput: {",
         "\t\t\tprihvaceno: true,",
         "\t\t\trazlogOdbijanja: \"\",",
-        "            budzetZaKursUzivo: $data.budzetZaKursUzivo,",
+        "            budzetZaSmestaj: $data.budzetZaKursUzivo,",
+        "            budzetZaPrevoz: $data.budzetZaPrevoz,",
         "\t\t}",
         "\t}",
         "}"
       ],
+      "exposed" : false
+    },
+    "budzetZaPrevoz" : {
+      "type" : "constant",
       "exposed" : false
     }
   },
