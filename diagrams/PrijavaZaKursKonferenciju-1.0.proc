@@ -23,7 +23,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_XOVbCHmMEeyXl6PwbohH4Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_XOVbB3mMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_XOWCEHmMEeyXl6PwbohH4Q">
-            <targetForm xmi:type="expression:Expression" xmi:id="__wFq4I9jEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_Q0J2kI9pEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_-m4FgI6yEeyJVvZqN1ecNA" name="initiator" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_-m4FgY6yEeyJVvZqN1ecNA" definitionId="bonita-actorfilter-initiator" version="1.0">
@@ -235,16 +235,45 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_sWDboXmMEeyXl6PwbohH4Q" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_sWDboHmMEeyXl6PwbohH4Q" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_sWDbonmMEeyXl6PwbohH4Q" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_czTK8o8uEeyNyJd56imINw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_czTK848uEeyNyJd56imINw" name="prijavaZaKursKonferenciju" content="prijavaZaKursKonferenciju" type="TYPE_VARIABLE" returnType="magija.it_firma.model.PrijavaZaKurs">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_czTK9I8uEeyNyJd56imINw" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
+          <operations xmi:type="expression:Operation" xmi:id="_KvFSko9lEey8uvcwX-d3DQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_KvFSk49lEey8uvcwX-d3DQ" name="prijavaZaKursKonferenciju" content="prijavaZaKursKonferenciju" type="TYPE_VARIABLE" returnType="magija.it_firma.model.PrijavaZaKurs">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_KvFSlI9lEey8uvcwX-d3DQ" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_czTK9Y8uEeyNyJd56imINw" name="prijavaZaKursKonferencijuInput.naziv" content="prijavaZaKursKonferencijuInput?.naziv" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_czTK9o8uEeyNyJd56imINw" name="prijavaZaKursKonferencijuInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_KvFSlY9lEey8uvcwX-d3DQ" name="prijavaZaKursKonferencijuInput.naziv" content="prijavaZaKursKonferencijuInput?.naziv" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_KvFSlo9lEey8uvcwX-d3DQ" name="prijavaZaKursKonferencijuInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_czTK948uEeyNyJd56imINw" type="JAVA_METHOD" expression="setNaziv">
+            <operator xmi:type="expression:Operator" xmi:id="_KvFSl49lEey8uvcwX-d3DQ" type="JAVA_METHOD" expression="setNaziv">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_OsVLQI9lEey8uvcwX-d3DQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_OsVLQY9lEey8uvcwX-d3DQ" name="ponudaPrevozaISmestaja" content="ponudaPrevozaISmestaja" type="TYPE_VARIABLE" returnType="magija.it_firma.model.Ponuda">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_OsVLQo9lEey8uvcwX-d3DQ" name="ponudaPrevozaISmestaja" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_OsVLQ49lEey8uvcwX-d3DQ" name="ponudaPrevozaISmestajaInput.napomena" content="ponudaPrevozaISmestajaInput?.napomena" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_OsVLRI9lEey8uvcwX-d3DQ" name="ponudaPrevozaISmestajaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_OsVLRY9lEey8uvcwX-d3DQ" type="JAVA_METHOD" expression="setNapomena">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_uAhqII9pEey8uvcwX-d3DQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_uAhqIY9pEey8uvcwX-d3DQ" name="izabraniPrevoz" content="izabraniPrevoz" type="TYPE_VARIABLE" returnType="java.util.Objects">
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_uifHsI9pEey8uvcwX-d3DQ" name="izabraniPrevoz" dataType="_en3AEm5gEeySSt74BsnCSw" className="java.util.Objects"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_uAhqIo9pEey8uvcwX-d3DQ" name="newScript()" content="return ponudaPrevozaISmestajaInput.izabranPrevoz" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Objects">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_zrKRsI9pEey8uvcwX-d3DQ" name="ponudaPrevozaISmestajaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_uAhqI49pEey8uvcwX-d3DQ" type="ASSIGNMENT"/>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_z961oI9pEey8uvcwX-d3DQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_z961oY9pEey8uvcwX-d3DQ" name="izabraniSmestaj" content="izabraniSmestaj" type="TYPE_VARIABLE" returnType="java.util.Objects">
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_0buL8I9pEey8uvcwX-d3DQ" name="izabraniSmestaj" dataType="_en3AEm5gEeySSt74BsnCSw" className="java.util.Objects"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_z961oo9pEey8uvcwX-d3DQ" name="newScript()" content="return ponudaPrevozaISmestajaInput.izabranSmestaj" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Objects">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_1vCN8I9pEey8uvcwX-d3DQ" name="ponudaPrevozaISmestajaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_z961o49pEey8uvcwX-d3DQ" type="ASSIGNMENT"/>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_sWDbo3mMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_sWDbpHmMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -252,14 +281,56 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_sWDbp3mMEeyXl6PwbohH4Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_sWDbpnmMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_sWDbqXmMEeyXl6PwbohH4Q">
-            <targetForm xmi:type="expression:Expression" xmi:id="_FQ9QEI8wEeyNyJd56imINw" name="IzborPrevozaISmestajaInputForm" content="bf944dcd-5c21-41f8-a2cd-bc6fe248dc59" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_PuRJYI9lEey8uvcwX-d3DQ" name="odabirPrevozaISmestajaOdNadredjenogForm" content="f1522e71-4c3b-4828-8311-51d5bc4f5927" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_sWDbqHmMEeyXl6PwbohH4Q">
-            <inputs xmi:type="process:ContractInput" xmi:id="_KWAbII8sEeyPjLpVrVI45A" name="ponudaPrevozaISmestajaInput" type="COMPLEX" dataReference="ponudaPrevozaISmestaja" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_KWAbIY8sEeyPjLpVrVI45A" name="napomena" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_KvFSkI9lEey8uvcwX-d3DQ" name="prijavaZaKursKonferencijuInput" type="COMPLEX" dataReference="prijavaZaKursKonferenciju" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_KvFSkY9lEey8uvcwX-d3DQ" name="naziv" createMode="false"/>
             </inputs>
-            <inputs xmi:type="process:ContractInput" xmi:id="_czTK8I8uEeyNyJd56imINw" name="prijavaZaKursKonferencijuInput" type="COMPLEX" dataReference="prijavaZaKursKonferenciju" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_czTK8Y8uEeyNyJd56imINw" name="naziv" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_OsUkMI9lEey8uvcwX-d3DQ" name="ponudaPrevozaISmestajaInput" type="COMPLEX" dataReference="ponudaPrevozaISmestaja" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_OsUkMY9lEey8uvcwX-d3DQ" name="napomena" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_BqLHEI9mEey8uvcwX-d3DQ" name="izabranPrevoz" type="COMPLEX">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_BqLHEY9mEey8uvcwX-d3DQ"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_vv-88I9mEey8uvcwX-d3DQ" name="persistenceId_string">
+                  <mapping xmi:type="process:ContractInputMapping" xmi:id="_vv-88Y9mEey8uvcwX-d3DQ"/>
+                </inputs>
+                <inputs xmi:type="process:ContractInput" xmi:id="_wjxxYI9mEey8uvcwX-d3DQ" name="naziv">
+                  <mapping xmi:type="process:ContractInputMapping" xmi:id="_wjxxYY9mEey8uvcwX-d3DQ"/>
+                </inputs>
+                <inputs xmi:type="process:ContractInput" xmi:id="_w-glkI9mEey8uvcwX-d3DQ" name="cena" type="INTEGER">
+                  <mapping xmi:type="process:ContractInputMapping" xmi:id="_w-glkY9mEey8uvcwX-d3DQ"/>
+                </inputs>
+                <inputs xmi:type="process:ContractInput" xmi:id="_00_H4I9mEey8uvcwX-d3DQ" name="vrstaPrevoza" type="COMPLEX">
+                  <mapping xmi:type="process:ContractInputMapping" xmi:id="_00_H4Y9mEey8uvcwX-d3DQ"/>
+                  <inputs xmi:type="process:ContractInput" xmi:id="_19ckwI9mEey8uvcwX-d3DQ" name="persistenceId_string">
+                    <mapping xmi:type="process:ContractInputMapping" xmi:id="_19ckwY9mEey8uvcwX-d3DQ"/>
+                  </inputs>
+                  <inputs xmi:type="process:ContractInput" xmi:id="_3RPu8I9mEey8uvcwX-d3DQ" name="naziv">
+                    <mapping xmi:type="process:ContractInputMapping" xmi:id="_3RPu8Y9mEey8uvcwX-d3DQ"/>
+                  </inputs>
+                </inputs>
+              </inputs>
+              <inputs xmi:type="process:ContractInput" xmi:id="_CUgdgI9mEey8uvcwX-d3DQ" name="izabranSmestaj" type="COMPLEX">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_CUgdgY9mEey8uvcwX-d3DQ"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_4gdUEI9mEey8uvcwX-d3DQ" name="persistenceId_string">
+                  <mapping xmi:type="process:ContractInputMapping" xmi:id="_4gdUEY9mEey8uvcwX-d3DQ"/>
+                </inputs>
+                <inputs xmi:type="process:ContractInput" xmi:id="_5CwI0I9mEey8uvcwX-d3DQ" name="naziv">
+                  <mapping xmi:type="process:ContractInputMapping" xmi:id="_5CwI0Y9mEey8uvcwX-d3DQ"/>
+                </inputs>
+                <inputs xmi:type="process:ContractInput" xmi:id="_5yN24I9mEey8uvcwX-d3DQ" name="cena" type="INTEGER">
+                  <mapping xmi:type="process:ContractInputMapping" xmi:id="_5yN24Y9mEey8uvcwX-d3DQ"/>
+                </inputs>
+                <inputs xmi:type="process:ContractInput" xmi:id="_6sDB4I9mEey8uvcwX-d3DQ" name="vrstaPrevoza" type="COMPLEX">
+                  <mapping xmi:type="process:ContractInputMapping" xmi:id="_6sDB4Y9mEey8uvcwX-d3DQ"/>
+                  <inputs xmi:type="process:ContractInput" xmi:id="_7BJIII9mEey8uvcwX-d3DQ" name="persistenceId_string">
+                    <mapping xmi:type="process:ContractInputMapping" xmi:id="_7BJIIY9mEey8uvcwX-d3DQ"/>
+                  </inputs>
+                  <inputs xmi:type="process:ContractInput" xmi:id="_7_uQQI9mEey8uvcwX-d3DQ" name="naziv">
+                    <mapping xmi:type="process:ContractInputMapping" xmi:id="_7_uQQY9mEey8uvcwX-d3DQ"/>
+                  </inputs>
+                </inputs>
+              </inputs>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_sWDbq3mMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -471,7 +542,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_-Is953mMEeyXl6PwbohH4Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_-Is95nmMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_-Is96XmMEeyXl6PwbohH4Q">
-            <targetForm xmi:type="expression:Expression" xmi:id="__wFq4Y9jEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_Q0J2kY9pEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_-Is96HmMEeyXl6PwbohH4Q"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_-Is963mMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -715,6 +786,12 @@
       </data>
       <data xmi:type="process:JavaObjectData" xmi:id="_llEVQI6vEeyJVvZqN1ecNA" name="ponudeSmestaja" dataType="_en3AEm5gEeySSt74BsnCSw" className="java.util.List">
         <defaultValue xmi:type="expression:Expression" xmi:id="_llEVQY6vEeyJVvZqN1ecNA" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List"/>
+      </data>
+      <data xmi:type="process:JavaObjectData" xmi:id="_rRZKYI9pEey8uvcwX-d3DQ" name="izabraniSmestaj" dataType="_en3AEm5gEeySSt74BsnCSw" className="java.util.Objects">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_rRZKYY9pEey8uvcwX-d3DQ" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Objects"/>
+      </data>
+      <data xmi:type="process:JavaObjectData" xmi:id="_tC49MI9pEey8uvcwX-d3DQ" name="izabraniPrevoz" dataType="_en3AEm5gEeySSt74BsnCSw" className="java.util.Objects">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_tC49MY9pEey8uvcwX-d3DQ" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Objects"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_en2_9G5gEeySSt74BsnCSw">
         <targetForm xmi:type="expression:Expression" xmi:id="_RHawsI6AEeySBL9yLEF_vg" name="initPrijavaZaKursTaskForm" content="4f01db9a-fe0f-46a1-b711-57f6e0a9b771" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
