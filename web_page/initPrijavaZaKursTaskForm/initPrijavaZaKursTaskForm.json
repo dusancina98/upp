@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "initPrijavaZaKursTaskForm",
   "name" : "initPrijavaZaKursTaskForm",
-  "lastUpdate" : 1645039817531,
+  "lastUpdate" : 1645041335199,
   "rows" : [
     [
       {
@@ -243,7 +243,8 @@
                           "value" : ""
                         },
                         "min" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : 1
                         },
                         "max" : {
                           "type" : "constant"

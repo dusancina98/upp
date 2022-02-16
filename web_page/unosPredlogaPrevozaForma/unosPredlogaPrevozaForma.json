@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "newForm6",
-  "name" : "newForm6",
-  "lastUpdate" : 1645032365347,
+  "id" : "unosPredlogaPrevozaForma",
+  "name" : "unosPredlogaPrevozaForma",
+  "lastUpdate" : 1645041143398,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "3f8ad7dc-bf16-4b86-a4da-8643f9d7caff",
+        "reference" : "4886fabe-c89e-498b-997c-5db1092556fa",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "911bbf81-8bf8-4e6b-abce-d40b70ec80a5",
+              "reference" : "463d0c56-ac82-41f3-a761-198dcbe2a096",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b559bf46-b799-485d-b2cf-aa4ffd4ba4d9",
+              "reference" : "81c432ae-c9c0-47fa-ac4c-2565c437187a",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d72fc127-39ed-4431-b3a6-161105165ed9",
+        "reference" : "4d244147-34ff-4453-acaf-1838d6cb31dd",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "a80e7fce-7422-46a5-81cf-e10db41a3e5d",
+          "reference" : "8858a51e-2d67-409d-911f-1c24f5827359",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "49d8d10a-99cb-4a8b-9c89-b36fc3d32bce",
+                "reference" : "2f985c4a-616f-49b2-bba2-310189de9da1",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -179,7 +179,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -194,108 +195,10 @@
                     "value" : 12
                   }
                 },
-                "reference" : "19172722-fd94-4512-bdf2-76c46011b966",
+                "reference" : "1b999297-7d02-46cd-ace8-74aefaabc6db",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!prijavaZaKursKonferenciju.ime"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Ime"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{prijavaZaKursKonferenciju.ime}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "daaedbfb-7321-416b-9b2b-1527024f2286",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!prijavaZaKursKonferenciju.prezime"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Prezime"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{prijavaZaKursKonferenciju.prezime}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "1048280e-b093-4195-9771-579fb9ce9604",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
                   [
                     {
                       "type" : "component",
@@ -328,7 +231,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -352,9 +255,27 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "d5065205-fd9a-4894-abaa-c1a7b9580fa6",
+                      "reference" : "ea050f21-e325-404a-99a3-e5cbd6bebb92",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -392,7 +313,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -416,9 +337,27 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "5eaa6ada-b93d-4d88-bcec-6909efc8d6e1",
+                      "reference" : "09727c7b-8592-4752-b404-cea94e454cdb",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -460,7 +399,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -518,320 +457,9 @@
                           "value" : true
                         }
                       },
-                      "reference" : "a71d6da9-d8c4-4985-9ea3-b3b604f3e843",
+                      "reference" : "171a7ad3-9a0f-4e52-9127-8de89a169aa5",
                       "hasValidationError" : false,
                       "id" : "pbDateTimePicker",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Status Prijave"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "98e1490a-9ae2-4fd4-9de1-bf1ecc019cee",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "container",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "repeatedCollection" : {
-                          "type" : "variable"
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "abe05a14-effb-4d9e-baf6-9272621f571c",
-                      "hasValidationError" : false,
-                      "id" : "pbContainer",
-                      "rows" : [
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!prijavaZaKursKonferenciju_statusPrijave.statusPrijave"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Status Prijave"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{prijavaZaKursKonferenciju_statusPrijave.statusPrijave}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "81ef1665-851b-4ea4-ba51-a61d8baca234",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!prijavaZaKursKonferenciju_statusPrijave.razlogOdbijanja"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Razlog Odbijanja"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{prijavaZaKursKonferenciju_statusPrijave.razlogOdbijanja}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "6ac51e37-51df-4df3-a601-ba70393129a2",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!prijavaZaKursKonferenciju_statusPrijave.budzetZaPrevozSmestaj"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Budzet Za Prevoz Smestaj"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{prijavaZaKursKonferenciju_statusPrijave.budzetZaPrevozSmestaj}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "61e888e0-faf9-4ab0-908f-7bb210ebcd41",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!prijavaZaKursKonferenciju.jeUzivo"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Je Uzivo"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "prijavaZaKursKonferenciju.jeUzivo"
-                        }
-                      },
-                      "reference" : "bd421bfd-8e70-42f9-830a-13f9bc963207",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!prijavaZaKursKonferenciju.preuzetaRezervacija"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Preuzeta Rezervacija"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "prijavaZaKursKonferenciju.preuzetaRezervacija"
-                        }
-                      },
-                      "reference" : "24e1f0fc-f966-4565-9796-3dfa65ee41aa",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
                       "description" : ""
                     }
                   ]
@@ -862,7 +490,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Ponuda Prevoza I Smestaja"
+                    "value" : "Unesi ponudu prevoza"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -873,7 +501,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "45f7ae0a-8685-4d6c-9ee1-078832268893",
+                "reference" : "c1e53718-167c-484c-926b-8573ec86f539",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -890,7 +518,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -905,59 +534,10 @@
                     "value" : 12
                   }
                 },
-                "reference" : "677e31be-b3a4-429a-a320-fe3a47d4871a",
+                "reference" : "08782ac2-100f-4fde-8793-fd0e8f38bb42",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!ponudaPrevozaISmestaja.napomena"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Napomena"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{ponudaPrevozaISmestaja.napomena}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "570db2df-ac6f-4514-89a3-811c1f1cfa91",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
                   [
                     {
                       "type" : "component",
@@ -982,7 +562,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Ponuda Smestaja"
+                          "value" : "Ponuda Prevoza"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -993,7 +573,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "66473b78-9746-4c97-bf67-e40737399e90",
+                      "reference" : "ca8d8e2b-d1d1-4d71-af49-cbdf3b069337",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -1011,7 +591,7 @@
                       "propertyValues" : {
                         "repeatedCollection" : {
                           "type" : "variable",
-                          "value" : "ponudaPrevozaISmestaja.ponudaSmestaja"
+                          "value" : "ponudaPrevozaISmestaja.ponudaPrevoza"
                         },
                         "hidden" : {
                           "type" : "constant",
@@ -1026,7 +606,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "3d71805a-1852-4efb-b770-1165cef05b80",
+                      "reference" : "f1af238f-749a-4b5b-b8a0-b9a2974f5576",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -1088,7 +668,7 @@
                                 "value" : true
                               }
                             },
-                            "reference" : "b92ed275-9680-45f7-bb17-b6f0995dc216",
+                            "reference" : "8ae707cc-6f9c-4d81-9a54-0c17bd62814d",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -1152,7 +732,7 @@
                                 "value" : true
                               }
                             },
-                            "reference" : "177d66d7-0afc-4cc8-a09b-7f82da708961",
+                            "reference" : "9191c6c8-c20f-4522-8642-6ae0192a0a44",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -1182,7 +762,7 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "Vrsta Smestaja"
+                                "value" : "Vrsta Prevoza"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -1193,7 +773,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "c2375266-23c8-498c-80fb-015c75365855",
+                            "reference" : "cd015edd-b954-4255-85df-6d75a3ddcd6c",
                             "hasValidationError" : false,
                             "id" : "pbTitle",
                             "description" : ""
@@ -1210,7 +790,8 @@
                             },
                             "propertyValues" : {
                               "repeatedCollection" : {
-                                "type" : "variable"
+                                "type" : "variable",
+                                "value" : ""
                               },
                               "hidden" : {
                                 "type" : "constant",
@@ -1225,7 +806,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "ce5c4aa0-d36e-447c-9471-83af3656d02d",
+                            "reference" : "4fa906a6-95b9-42b9-9f66-c4c5662740d6",
                             "hasValidationError" : false,
                             "id" : "pbContainer",
                             "rows" : [
@@ -1257,7 +838,7 @@
                                     },
                                     "availableValues" : {
                                       "type" : "expression",
-                                      "value" : "vrstaSmestaja_query"
+                                      "value" : "vrstaPrevoza_query"
                                     },
                                     "labelWidth" : {
                                       "type" : "constant",
@@ -1265,11 +846,11 @@
                                     },
                                     "label" : {
                                       "type" : "interpolation",
-                                      "value" : "Vrsta Smestaja"
+                                      "value" : "Vrsta Prevoza"
                                     },
                                     "placeholder" : {
                                       "type" : "constant",
-                                      "value" : "Select a Vrsta Smestaja"
+                                      "value" : "Select a Vrsta Prevoza"
                                     },
                                     "dimension" : {
                                       "type" : "constant",
@@ -1277,80 +858,27 @@
                                     },
                                     "value" : {
                                       "type" : "variable",
-                                      "value" : "$item.vrstaSmestaja"
+                                      "value" : "$item.vrstaPrevoza"
                                     },
                                     "required" : {
                                       "type" : "constant",
                                       "value" : true
+                                    },
+                                    "disabled" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "displayedKey" : {
+                                      "type" : "constant",
+                                      "value" : "naziv"
+                                    },
+                                    "returnedKey" : {
+                                      "type" : "constant"
                                     }
                                   },
-                                  "reference" : "b26e0c55-d301-4908-b4f4-65e5bc9f22eb",
+                                  "reference" : "56698640-2aed-4adc-9e20-42f3dcbcbd3a",
                                   "hasValidationError" : false,
                                   "id" : "pbSelect",
-                                  "description" : ""
-                                }
-                              ],
-                              [
-                                {
-                                  "type" : "component",
-                                  "dimension" : {
-                                    "md" : 12,
-                                    "sm" : 12,
-                                    "xs" : 12,
-                                    "lg" : 12
-                                  },
-                                  "propertyValues" : {
-                                    "labelHidden" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "hidden" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "labelPosition" : {
-                                      "type" : "constant",
-                                      "value" : "top"
-                                    },
-                                    "cssClasses" : {
-                                      "type" : "constant",
-                                      "value" : ""
-                                    },
-                                    "labelWidth" : {
-                                      "type" : "constant",
-                                      "value" : 1
-                                    },
-                                    "readOnly" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    },
-                                    "label" : {
-                                      "type" : "interpolation",
-                                      "value" : "Naziv"
-                                    },
-                                    "placeholder" : {
-                                      "type" : "constant"
-                                    },
-                                    "type" : {
-                                      "type" : "constant",
-                                      "value" : "text"
-                                    },
-                                    "dimension" : {
-                                      "type" : "constant",
-                                      "value" : 12
-                                    },
-                                    "value" : {
-                                      "type" : "variable",
-                                      "value" : "$item.vrstaSmestaja.naziv"
-                                    },
-                                    "required" : {
-                                      "type" : "constant",
-                                      "value" : false
-                                    }
-                                  },
-                                  "reference" : "b50e8e44-cd1b-4655-9aaa-7d01b2f478cd",
-                                  "hasValidationError" : false,
-                                  "id" : "pbInput",
                                   "description" : ""
                                 }
                               ]
@@ -1425,7 +953,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "f3403ca1-a937-4025-8113-35c9abf5b194",
+                            "reference" : "6347223b-48df-4107-abf5-499f3eb053e7",
                             "hasValidationError" : false,
                             "id" : "pbButton",
                             "description" : ""
@@ -1448,8 +976,8 @@
                           "type" : "variable"
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "ponudaPrevozaISmestaja.ponudaPrevoza.length ==1"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -1461,7 +989,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Add PonudaSmestaja"
+                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Add PonudaPrevoza"
                         },
                         "dataToSend" : {
                           "type" : "expression"
@@ -1482,7 +1010,7 @@
                         },
                         "collectionToModify" : {
                           "type" : "variable",
-                          "value" : "ponudaPrevozaISmestaja.ponudaSmestaja"
+                          "value" : "ponudaPrevozaISmestaja.ponudaPrevoza"
                         },
                         "valueToAdd" : {
                           "type" : "expression",
@@ -1499,185 +1027,36 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable"
+                        },
+                        "closeOnSuccess" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dataFromError" : {
+                          "type" : "variable"
+                        },
+                        "modalId" : {
+                          "type" : "constant",
+                          "value" : ""
                         }
                       },
-                      "reference" : "e857e7c7-24d7-42c8-8b56-b3a635dfed27",
+                      "reference" : "82260464-c041-420b-9dc8-14fa9ecf0501",
                       "hasValidationError" : false,
                       "id" : "pbButton",
                       "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Ponuda Prevoza"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "494becc1-f6b7-4742-b691-b60bf8016d94",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "container",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "repeatedCollection" : {
-                          "type" : "variable",
-                          "value" : "ponudaPrevozaISmestaja.ponudaPrevoza"
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "6447ca9f-5d00-4edc-99f1-5ab3a0911299",
-                      "hasValidationError" : false,
-                      "id" : "pbContainer",
-                      "rows" : [
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!$item.naziv"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Naziv"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{$item.naziv}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "b0fbeca1-2a98-4241-804a-0d8dad193242",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!$item.cena"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Cena"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{$item.cena}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "0d1bf701-c0ce-4388-90ad-52cd8d48b933",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ]
-                      ]
                     }
                   ]
                 ]
@@ -1697,8 +1076,8 @@
                     "type" : "variable"
                   },
                   "hidden" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "ponudaPrevozaISmestaja.ponudaPrevoza.length !=1"
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -1752,9 +1131,32 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
-                "reference" : "51039b81-a419-45fe-93ca-29ae1eef0388",
+                "reference" : "002d2b61-e00e-4f1b-8d5b-a3dca2932d0c",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -1806,7 +1208,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "40d7dc51-2482-4739-8366-3cae28420bc0",
+                "reference" : "242a2640-b67c-4103-8161-a18ba87444c6",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -1819,14 +1221,14 @@
   ],
   "assets" : [
     {
-      "id" : "bd07d828-4ba6-4dbf-b988-a0c65d4b320e",
+      "id" : "baea57ea-480a-4b0e-91f9-15c998159624",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "94b37e64-8126-4770-800b-13ebd4cace83",
+      "id" : "e08dee57-3a0a-4e10-8274-242130d2178c",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
@@ -1835,13 +1237,6 @@
   ],
   "inactiveAssets" : [ ],
   "variables" : {
-    "vrstaSmestaja_query" : {
-      "type" : "url",
-      "value" : [
-        "../API/bdm/businessData/magija.it_firma.model.VrstaSmestaja?q=find&p=0&c=99"
-      ],
-      "exposed" : false
-    },
     "prijavaZaKursKonferenciju" : {
       "type" : "url",
       "value" : [
@@ -1893,13 +1288,12 @@
         "\t\t},",
         "\t\t//map ponudaPrevozaISmestaja variable to expected task contract input",
         "\t\tponudaPrevozaISmestajaInput: {",
-        "\t\t\tponudaSmestaja: $data.ponudaPrevozaISmestaja.ponudaSmestaja.map( it => ({",
+        "\t\t\tponudaPrevoza: $data.ponudaPrevozaISmestaja.ponudaPrevoza.map( it => ({",
         "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null,",
         "\t\t\t\tnaziv: it.naziv !== undefined ? it.naziv : null,",
         "\t\t\t\tcena: it.cena !== undefined ? it.cena : null,",
-        "\t\t\t\tvrstaSmestaja: it.vrstaSmestaja ? {",
-        "\t\t\t\t\tpersistenceId_string: it.vrstaSmestaja.persistenceId_string !== undefined ? it.vrstaSmestaja.persistenceId_string : null,",
-        "\t\t\t\t\tnaziv: it.vrstaSmestaja.naziv !== undefined ? it.vrstaSmestaja.naziv : null",
+        "\t\t\t\tvrstaPrevoza: it.vrstaPrevoza ? {",
+        "\t\t\t\t\tpersistenceId_string: it.vrstaPrevoza.persistenceId_string !== undefined ? it.vrstaPrevoza.persistenceId_string : null",
         "\t\t\t\t} : null",
         "\t\t\t}))",
         "\t\t}",
@@ -1922,6 +1316,13 @@
       ],
       "exposed" : false
     },
+    "vrstaPrevoza_query" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/magija.it_firma.model.VrstaPrevoza?q=find&p=0&c=99"
+      ],
+      "exposed" : false
+    },
     "taskId" : {
       "type" : "urlparameter",
       "value" : [
@@ -1931,7 +1332,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "a0922835-cac3-46f3-b140-d0d3b7a0bb17",
+  "uuid" : "490001b3-f52c-4b51-b0d2-8ddbcfa8052c",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

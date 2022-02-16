@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "selektovanjeIzvrsiocaIzOpsteSluzbeForm",
   "name" : "selektovanjeIzvrsiocaIzOpsteSluzbeForm",
-  "lastUpdate" : 1642547753545,
+  "lastUpdate" : 1645041297581,
   "rows" : [
     [
       {
@@ -536,7 +536,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "!prijavaZaKursKonferenciju_statusPrijave.budzetZaPrevozSmestaj"
+                                "value" : "!prijavaZaKursKonferenciju_statusPrijave.budzetZaPrevoz"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -544,11 +544,11 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Budzet Za Prevoz Smestaj"
+                                "value" : "Budzet Za Prevoz"
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{prijavaZaKursKonferenciju_statusPrijave.budzetZaPrevozSmestaj}}"
+                                "value" : "{{prijavaZaKursKonferenciju_statusPrijave.budzetZaPrevoz}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -557,12 +557,76 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
                               }
                             },
                             "reference" : "d4a9ea2b-e37a-4ab4-b823-a163e78484e1",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Budzet Za Smestaj"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{prijavaZaKursKonferenciju_statusPrijave.budzetZaSmestaj}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "51029368-5ac6-490d-8cf1-52a5aa480872",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
                           }
                         ]
                       ]

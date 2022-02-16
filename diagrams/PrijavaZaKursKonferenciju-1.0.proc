@@ -23,7 +23,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_XOVbCHmMEeyXl6PwbohH4Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_XOVbB3mMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_XOWCEHmMEeyXl6PwbohH4Q">
-            <targetForm xmi:type="expression:Expression" xmi:id="_i9ZC8I9gEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_cmZZwI9iEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_-m4FgI6yEeyJVvZqN1ecNA" name="initiator" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_-m4FgY6yEeyJVvZqN1ecNA" definitionId="bonita-actorfilter-initiator" version="1.0">
@@ -496,7 +496,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_-Is953mMEeyXl6PwbohH4Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_-Is95nmMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_-Is96XmMEeyXl6PwbohH4Q">
-            <targetForm xmi:type="expression:Expression" xmi:id="_i9ZC8Y9gEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_cmZZwY9iEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_-Is96HmMEeyXl6PwbohH4Q"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_-Is963mMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -567,7 +567,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="__6ggV46hEeyJVvZqN1ecNA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="__6ggVo6hEeyJVvZqN1ecNA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="__6hHYY6hEeyJVvZqN1ecNA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_hZT7sI9NEeySN98M0fZqMg" name="newForm6" content="a0922835-cac3-46f3-b140-d0d3b7a0bb17" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_hZT7sI9NEeySN98M0fZqMg" name="unosPredlogaSmestajaForm" content="a0922835-cac3-46f3-b140-d0d3b7a0bb17" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="__6hHYI6hEeyJVvZqN1ecNA">
             <inputs xmi:type="process:ContractInput" xmi:id="_fbcg0I9NEeySN98M0fZqMg" name="prijavaZaKursKonferencijuInput" type="COMPLEX" dataReference="prijavaZaKursKonferenciju" createMode="false">
@@ -657,7 +657,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_DQgN-I6xEeyJVvZqN1ecNA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_DQgN946xEeyJVvZqN1ecNA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_DQgN-o6xEeyJVvZqN1ecNA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_51J_gI9NEeySN98M0fZqMg" name="newForm7" content="490001b3-f52c-4b51-b0d2-8ddbcfa8052c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_51J_gI9NEeySN98M0fZqMg" name="unosPredlogaPrevozaForma" content="490001b3-f52c-4b51-b0d2-8ddbcfa8052c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_DQgN-Y6xEeyJVvZqN1ecNA">
             <inputs xmi:type="process:ContractInput" xmi:id="_3m4xII9NEeySN98M0fZqMg" name="prijavaZaKursKonferencijuInput" type="COMPLEX" dataReference="prijavaZaKursKonferenciju" createMode="false">
