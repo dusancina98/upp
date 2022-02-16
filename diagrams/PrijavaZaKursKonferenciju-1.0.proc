@@ -23,7 +23,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_XOVbCHmMEeyXl6PwbohH4Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_XOVbB3mMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_XOWCEHmMEeyXl6PwbohH4Q">
-            <targetForm xmi:type="expression:Expression" xmi:id="_cmZZwI9iEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="__wFq4I9jEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_-m4FgI6yEeyJVvZqN1ecNA" name="initiator" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_-m4FgY6yEeyJVvZqN1ecNA" definitionId="bonita-actorfilter-initiator" version="1.0">
@@ -444,36 +444,11 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_UjJbcY6mEeyJVvZqN1ecNA" name="odgovaraCeni" content="odgovaraCeni" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
               <referencedElements xmi:type="process:Data" xmi:id="_Vce3MI6mEeyJVvZqN1ecNA" name="odgovaraCeni" dataType="_en3ADG5gEeySSt74BsnCSw"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_UjJbco6mEeyJVvZqN1ecNA" name="newScript()" content="def jeUOkviru= true&#xD;&#xA;&#xD;&#xA;for(def ponudePrevoza : ponudaPrevozaISmestaja.getPonudaPrevoza()){&#xD;&#xA;&#x9;if(prijavaZaKursKonferenciju.getStatusPrijave().getBudzetZaPrevozSmestaj()&lt;ponudePrevoza.cena){&#xD;&#xA;&#x9;&#x9;jeUOkviru=false&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;for(def ponudeSmestaja : ponudaPrevozaISmestaja.getPonudaSmestaja()){&#xD;&#xA;&#x9;if(prijavaZaKursKonferenciju.getStatusPrijave().getBudzetZaPrevozSmestaj()&lt;ponudeSmestaja.cena){&#xD;&#xA;&#x9;&#x9;jeUOkviru=false&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;for(def ponudePrevoza2 : ponudaPrevozaISmestaja2.getPonudaPrevoza()){&#xD;&#xA;&#x9;if(prijavaZaKursKonferenciju.getStatusPrijave().getBudzetZaPrevozSmestaj()&lt;ponudePrevoza2.cena){&#xD;&#xA;&#x9;&#x9;jeUOkviru=false&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;for(def ponudeSmestaja2 : ponudaPrevozaISmestaja2.getPonudaSmestaja()){&#xD;&#xA;&#x9;if(prijavaZaKursKonferenciju.getStatusPrijave().getBudzetZaPrevozSmestaj()&lt;ponudeSmestaja2.cena){&#xD;&#xA;&#x9;&#x9;jeUOkviru=false&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return jeUOkviru&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DXcYcI8qEeyPjLpVrVI45A" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DXcYcY8qEeyPjLpVrVI45A" name="ponudaPrevozaISmestaja2" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DXcYco8qEeyPjLpVrVI45A" name="ponudaPrevozaISmestaja" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_UjJbco6mEeyJVvZqN1ecNA" name="newScript()" content="def jeVanOkvira= false&#xD;&#xA;&#xD;&#xA;for(def ponudaPrevoza : ponudaPrevozaISmestaja.getPonudaPrevoza()){&#xD;&#xA;&#x9;if(ponudaPrevoza.getCena() &lt; prijavaZaKursKonferenciju.getStatusPrijave().getBudzetZaPrevoz()){&#xD;&#xA;&#x9;&#x9;jeVanOkvira= true&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;for(def ponudaSmestaja : ponudaPrevozaISmestaja.getPonudaSmestaja()){&#xD;&#xA;&#x9;if(ponudaSmestaja.getCena() &lt; prijavaZaKursKonferenciju.getStatusPrijave().getBudzetZaSmestaj()){&#xD;&#xA;&#x9;&#x9;jeVanOkvira= true&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;return jeVanOkvira&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_OrZzoI9kEey8uvcwX-d3DQ" name="ponudaPrevozaISmestaja" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_OraasI9kEey8uvcwX-d3DQ" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_UjJbc46mEeyJVvZqN1ecNA" type="ASSIGNMENT"/>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_YyOswI8vEeyNyJd56imINw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_YyOswY8vEeyNyJd56imINw" name="ponudaPrevozaISmestaja" content="ponudaPrevozaISmestaja" type="TYPE_VARIABLE" returnType="magija.it_firma.model.Ponuda">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZY5EII8vEeyNyJd56imINw" name="ponudaPrevozaISmestaja" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_YyOswo8vEeyNyJd56imINw" name="newScript()" content="def ponudaSmestajaList = []&#xD;&#xA;&#xD;&#xA;for(def ponudeSmestajaaa : ponudaPrevozaISmestaja.getPonudaSmestaja()){&#xD;&#xA;&#x9;ponudaSmestajaList.add(ponudeSmestajaaa)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;for(def ponudeSmestajaa2 : ponudaPrevozaISmestaja2.getPonudaSmestaja()){&#xD;&#xA;&#x9;ponudaSmestajaList.add(ponudeSmestajaa2)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return ponudaSmestajaList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_G-wHQI8zEeyXvPh8OFsSEA" name="ponudaPrevozaISmestaja" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_G-wHQY8zEeyXvPh8OFsSEA" name="ponudaPrevozaISmestaja2" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_YyOsw48vEeyNyJd56imINw" type="JAVA_METHOD" expression="setPonudaSmestaja">
-              <inputTypes>java.util.List</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_SMSs0I8qEeyPjLpVrVI45A">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_SMSs0Y8qEeyPjLpVrVI45A" name="ponudaPrevozaISmestaja" content="ponudaPrevozaISmestaja" type="TYPE_VARIABLE" returnType="magija.it_firma.model.Ponuda">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_S9x0II8qEeyPjLpVrVI45A" name="ponudaPrevozaISmestaja" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_SMSs0o8qEeyPjLpVrVI45A" name="newScript()" content="def ponudaPrevozaList = []&#xD;&#xA;&#xD;&#xA;for(def ponudePrevoza : ponudaPrevozaISmestaja.getPonudaPrevoza()){&#xD;&#xA;&#x9;ponudaPrevozaList.add(ponudePrevoza)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;for(def ponudePrevoza2 : ponudaPrevozaISmestaja2.getPonudaPrevoza()){&#xD;&#xA;&#x9;ponudaPrevozaList.add(ponudePrevoza2)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return ponudaPrevozaList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1fCBsI8qEeyPjLpVrVI45A" name="ponudaPrevozaISmestaja" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1fCBsY8qEeyPjLpVrVI45A" name="ponudaPrevozaISmestaja2" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_SMSs048qEeyPjLpVrVI45A" type="JAVA_METHOD" expression="setPonudaPrevoza">
-              <inputTypes>java.util.List</inputTypes>
-            </operator>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_X_0XwHmLEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_X_0XwXmLEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -496,7 +471,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_-Is953mMEeyXl6PwbohH4Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_-Is95nmMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_-Is96XmMEeyXl6PwbohH4Q">
-            <targetForm xmi:type="expression:Expression" xmi:id="_cmZZwY9iEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="__wFq4Y9jEey8uvcwX-d3DQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_-Is96HmMEeyXl6PwbohH4Q"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_-Is963mMEeyXl6PwbohH4Q" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
