@@ -233,6 +233,46 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="seffinansija">
+      <firstName>Sef </firstName>
+      <lastName>Finansija1</lastName>
+      <jobTitle>Sef finansija</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="opstasluzba1">
+      <firstName>Opsta </firstName>
+      <lastName>sluzba1</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="opstasluzba2">
+      <firstName>Opsta</firstName>
+      <lastName>Sluzba2</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>language</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="Sef">
@@ -263,6 +303,12 @@
     </group>
     <group name="Dobavljac">
       <displayName>Dobavljac</displayName>
+    </group>
+    <group name="Sef finansija" parentPath="/ITFirma/Zaposleni">
+      <displayName>Sef finansija</displayName>
+    </group>
+    <group name="Opsta sluzba" parentPath="/ITFirma/Zaposleni">
+      <displayName>Opsta sluzba</displayName>
     </group>
   </groups>
   <memberships>
@@ -342,6 +388,24 @@
       <userName>nabavka.zaposleni2</userName>
       <roleName>Clan</roleName>
       <groupName>SluzbaNabavke</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>seffinansija</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sef finansija</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>opstasluzba1</userName>
+      <roleName>Sef</roleName>
+      <groupName>Opsta sluzba</groupName>
+      <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>opstasluzba2</userName>
+      <roleName>Sef</roleName>
+      <groupName>Opsta sluzba</groupName>
       <groupParentPath>/ITFirma/Zaposleni</groupParentPath>
     </membership>
   </memberships>
