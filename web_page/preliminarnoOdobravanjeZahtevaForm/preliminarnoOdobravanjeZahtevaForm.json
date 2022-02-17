@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "preliminarnoOdobravanjeZahtevaForm",
   "name" : "preliminarnoOdobravanjeZahtevaForm",
-  "lastUpdate" : 1642342692932,
+  "lastUpdate" : 1645065743422,
   "rows" : [
     [
       {
@@ -445,47 +445,6 @@
                       "rows" : [
                         [
                           {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "level" : {
-                                "type" : "constant",
-                                "value" : "Level 4"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "Vrsta Opreme"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "e920cf0b-83c2-4403-8ab4-232a59db7110",
-                            "hasValidationError" : false,
-                            "id" : "pbTitle",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
                             "type" : "container",
                             "dimension" : {
                               "md" : 12,
@@ -550,7 +509,7 @@
                                     },
                                     "label" : {
                                       "type" : "interpolation",
-                                      "value" : "Naziv"
+                                      "value" : "Vrsta Opreme"
                                     },
                                     "placeholder" : {
                                       "type" : "constant"
