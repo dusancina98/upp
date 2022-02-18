@@ -257,6 +257,11 @@
                 <field type="BOOLEAN" length="255" name="upitManjeKolicine" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="zahtevPonudaDobavljaca" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="magija.it_firma.model.PonudaDobavljaca" fetchType="EAGER" name="ponudeDobavljaca" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="upitProsirenjaBudzeta" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="potvrdaProsirenjaBudzeta" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="cenaNajboljePonude" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="odobrenaNabavka" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="odbijenaNabavka" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
