@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "prijavaForm",
   "name" : "prijavaForm",
-  "lastUpdate" : 1641389264219,
+  "lastUpdate" : 1645051593192,
   "rows" : [
     [
       {
@@ -127,6 +127,74 @@
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Stepen strucne spreme"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "Select an option"
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "stepenStrucneSpreme"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant",
+                    "value" : "naziv"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant",
+                    "value" : "persistenceId"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "selectedStepenStrucneSpreme"
+                  }
+                },
+                "reference" : "a5ccae26-1bbe-425c-85bf-8b1825dda107",
+                "hasValidationError" : false,
+                "id" : "pbSelect"
+              }
+            ],
             [
               {
                 "type" : "container",
@@ -295,6 +363,10 @@
                         "url" : {
                           "type" : "constant",
                           "value" : "../API/formFileUpload"
+                        },
+                        "errorContent" : {
+                          "type" : "variable",
+                          "value" : ""
                         }
                       },
                       "reference" : "90412f35-15c5-418e-a488-287ba55b3608",
@@ -675,7 +747,8 @@
         "\t\t\tfilename: $data.context.propratnoPismoDocument_ref.newValue && $data.context.propratnoPismoDocument_ref.newValue.filename ? $data.context.propratnoPismoDocument_ref.newValue.filename : null,",
         "\t\t\ttempPath: $data.context.propratnoPismoDocument_ref.newValue && $data.context.propratnoPismoDocument_ref.newValue.tempPath ? $data.context.propratnoPismoDocument_ref.newValue.tempPath : null,",
         "\t\t\tcontentType: $data.context.propratnoPismoDocument_ref.newValue && $data.context.propratnoPismoDocument_ref.newValue.contentType ? $data.context.propratnoPismoDocument_ref.newValue.contentType : null",
-        "\t\t}",
+        "\t\t},",
+        "\t\tstepenStrucneSpreme: $data.selectedStepenStrucneSpreme",
         "\t}",
         "}"
       ],
@@ -693,6 +766,17 @@
       "value" : [
         "id"
       ],
+      "exposed" : false
+    },
+    "stepenStrucneSpreme" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [magija.it_firma.model.StepenObrazovanja]\",\"businessObjectName\":\"StepenObrazovanja\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"magija.it_firma.model.StepenObrazovanja\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "selectedStepenStrucneSpreme" : {
+      "type" : "constant",
       "exposed" : false
     }
   },
