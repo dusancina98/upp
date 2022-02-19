@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "procesuiranjePrijaveZaKursKonferencijuForm",
   "name" : "procesuiranjePrijaveZaKursKonferencijuForm",
-  "lastUpdate" : 1645040300323,
+  "lastUpdate" : 1645286538316,
   "rows" : [
     [
       {
@@ -1164,7 +1164,7 @@
                   },
                   "required" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "minLength" : {
                     "type" : "constant",
@@ -1242,7 +1242,7 @@
                   },
                   "required" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "minLength" : {
                     "type" : "constant",
