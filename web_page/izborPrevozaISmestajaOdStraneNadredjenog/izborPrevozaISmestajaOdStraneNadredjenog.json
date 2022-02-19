@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "izborPrevozaISmestajaOdStraneNadredjenog",
   "name" : "izborPrevozaISmestajaOdStraneNadredjenog",
-  "lastUpdate" : 1645286807046,
+  "lastUpdate" : 1645288817542,
   "rows" : [
     [
       {
@@ -1085,8 +1085,8 @@
                     "value" : "naziv"
                   },
                   "returnedKey" : {
-                    "type" : "expression",
-                    "value" : ""
+                    "type" : "constant",
+                    "value" : "persistenceId_string"
                   },
                   "value" : {
                     "type" : "variable",
@@ -1154,7 +1154,7 @@
                   },
                   "returnedKey" : {
                     "type" : "constant",
-                    "value" : ""
+                    "value" : "persistenceId_string"
                   },
                   "value" : {
                     "type" : "variable",
@@ -1399,7 +1399,9 @@
         "\t\t},",
         "\t\t//map ponudaPrevozaISmestaja variable to expected task contract input",
         "\t\tponudaPrevozaISmestajaInput: {",
-        "\t\t\tnapomena: $data.ponudaPrevozaISmestaja.napomena !== undefined ? $data.ponudaPrevozaISmestaja.napomena : null",
+        "\t\t\tnapomena: $data.ponudaPrevozaISmestaja.napomena !== undefined ? $data.ponudaPrevozaISmestaja.napomena : null,",
+        "\t\t\tselektovaniPrevoz: $data.selektovaniPrevoz,",
+        "\t\t\tselektovaniSmestaj: $data.selektovaniSmestaj",
         "\t\t}",
         "\t}",
         "}"
@@ -1442,16 +1444,16 @@
       "exposed" : false
     },
     "selektovaniSmestaj" : {
-      "type" : "json",
+      "type" : "constant",
       "value" : [
-        "{}"
+        ""
       ],
       "exposed" : false
     },
     "selektovaniPrevoz" : {
-      "type" : "json",
+      "type" : "constant",
       "value" : [
-        "{}"
+        ""
       ],
       "exposed" : false
     }
