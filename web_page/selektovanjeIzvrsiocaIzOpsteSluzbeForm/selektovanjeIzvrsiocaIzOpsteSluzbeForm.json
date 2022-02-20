@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "selektovanjeIzvrsiocaIzOpsteSluzbeForm",
   "name" : "selektovanjeIzvrsiocaIzOpsteSluzbeForm",
-  "lastUpdate" : 1645041297581,
+  "lastUpdate" : 1645384896428,
   "rows" : [
     [
       {
@@ -592,8 +592,8 @@
                                 "value" : ""
                               },
                               "hidden" : {
-                                "type" : "constant",
-                                "value" : false
+                                "type" : "expression",
+                                "value" : "!prijavaZaKursKonferenciju_statusPrijave.budzetZaSmestaj"
                               },
                               "labelHidden" : {
                                 "type" : "constant",
@@ -729,7 +729,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Izaberi"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -771,6 +771,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "366baf7d-4e46-4e80-a492-c57429e40ac1",
