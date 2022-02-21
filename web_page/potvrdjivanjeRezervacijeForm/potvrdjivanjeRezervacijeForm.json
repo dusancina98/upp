@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "potvrdjivanjeRezervacijeForm",
   "name" : "potvrdjivanjeRezervacijeForm",
-  "lastUpdate" : 1645472989282,
+  "lastUpdate" : 1645474991739,
   "rows" : [
     [
       {
@@ -399,7 +399,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -479,7 +479,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "izabraniPrevoz==null"
+                          "value" : "!izabraniPrevoz"
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -529,7 +529,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "izabraniSmestaj==null"
+                          "value" : "!izabraniSmestaj"
                         },
                         "labelHidden" : {
                           "type" : "constant",

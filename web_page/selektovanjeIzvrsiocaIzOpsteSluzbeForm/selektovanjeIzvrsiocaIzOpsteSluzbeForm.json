@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "selektovanjeIzvrsiocaIzOpsteSluzbeForm",
   "name" : "selektovanjeIzvrsiocaIzOpsteSluzbeForm",
-  "lastUpdate" : 1645384896428,
+  "lastUpdate" : 1645473601230,
   "rows" : [
     [
       {
@@ -455,8 +455,8 @@
                       },
                       "propertyValues" : {
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "!prijavaZaKursKonferenciju_statusPrijave.budzetZaSmestaj"
                         },
                         "level" : {
                           "type" : "constant",
@@ -468,7 +468,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Status Prijave"
+                          "value" : "Budzeti"
                         },
                         "alignment" : {
                           "type" : "constant",
