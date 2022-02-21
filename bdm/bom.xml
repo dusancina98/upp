@@ -28,7 +28,7 @@
         <businessObject qualifiedName="magija.it_firma.model.KorisnikStraniJezik">
             <fields>
                 <field type="LONG" length="255" name="idKorisnika" nullable="false" collection="false"/>
-                <relationField type="AGGREGATION" reference="magija.it_firma.model.StraniJezik" fetchType="EAGER" name="straniJezik" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.StraniJezik" fetchType="LAZY" name="straniJezik" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries>

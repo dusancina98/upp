@@ -584,7 +584,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_tEIjcW_lEey538TNGH5Ihw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_tEIjc2_lEey538TNGH5Ihw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:TextAnnotation" xmi:id="_3L45wG_pEey538TNGH5Ihw" text="Za potrebe testiranja 5th day je stavljen na 2 min, a 6th day na 3 min"/>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_3L45wG_pEey538TNGH5Ihw" text="Radi lakseg testiranja 5th day je stavljen na 2 min, a 6th day na 3 min&#xD;&#xA;U realnom slucaju bi to bile stvarne vrednosti"/>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_A86S4GgeEeydB5g01Nxqig" name="Sef HR tima" actor="_RvvAwGgnEeydB5g01Nxqig">
         <elements xmi:type="process:Task" xmi:id="_1UUCoGgeEeydB5g01Nxqig" name="Biranje intervjuera" outgoing="_8nToYHQBEeyh5_sH83myOA" incoming="_hasM0GgeEeydB5g01Nxqig _gieycGgeEeydB5g01Nxqig" overrideActorsOfTheLane="false">
@@ -1635,7 +1635,7 @@
               <styles xmi:type="notation:DescriptionStyle" xmi:id="_3L6H4W_pEey538TNGH5Ihw"/>
               <styles xmi:type="notation:FontStyle" xmi:id="_3L6H4m_pEey538TNGH5Ihw" fontName="Segoe UI"/>
               <styles xmi:type="notation:LineStyle" xmi:id="_3L6H42_pEey538TNGH5Ihw"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3L6H5G_pEey538TNGH5Ihw" x="631" y="113" width="172" height="83"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3L6H5G_pEey538TNGH5Ihw" x="631" y="113" width="220" height="101"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_xek8oWgdEeydB5g01Nxqig"/>
