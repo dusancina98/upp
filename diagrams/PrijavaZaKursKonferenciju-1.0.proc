@@ -206,7 +206,9 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_OGXi8ZKQEeytA4u0XpAqKw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_OGXi8JKQEeytA4u0XpAqKw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_OGXi8pKQEeytA4u0XpAqKw" name="" content="" returnTypeFixed="true"/>
-          <condition xmi:type="expression:Expression" xmi:id="_VfpdoJKQEeytA4u0XpAqKw" name="2022/02/20 22:05:00" content="Calendar calendar = GregorianCalendar.getInstance();&#xA;calendar.set(2022, 1,20, 22, 5, 0);&#xA;calendar.getTime();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date"/>
+          <condition xmi:type="expression:Expression" xmi:id="_VfpdoJKQEeytA4u0XpAqKw" name="getDate" content="new Date(prijavaZaKursKonferenciju.getDatumOdrzavanja().toEpochSecond())" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_EbfRoJNXEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
+          </condition>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_Q9YMUJKQEeytA4u0XpAqKw" name="Napomena za pocetak kursa/konferencije" outgoing="_Uht1wJKQEeytA4u0XpAqKw" incoming="_UACFAJKQEeytA4u0XpAqKw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Q9YMUZKQEeytA4u0XpAqKw" name="" content="" returnTypeFixed="true"/>
@@ -296,7 +298,9 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_PhjO0ZNREeykVc-bJXZCqA" name="datumKursaJePosleRokaZaMail" content="datumKursaJePosleRokaZaMail" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
               <referencedElements xmi:type="process:Data" xmi:id="_QGfu8JNREeykVc-bJXZCqA" name="datumKursaJePosleRokaZaMail" dataType="_en3ADG5gEeySSt74BsnCSw"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_PhjO0pNREeykVc-bJXZCqA" name="newScript()" content="return false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_PhjO0pNREeykVc-bJXZCqA" name="newScript()" content="import java.time.OffsetDateTime&#xD;&#xA;&#xD;&#xA;def date = prijavaZaKursKonferenciju.getDatumOdrzavanja()&#xD;&#xA;def compareDate= prijavaZaKursKonferenciju.getDatumOdrzavanja().plusDays(3)&#xD;&#xA;&#xD;&#xA;return OffsetDateTime.compareInstant(date, compareDate)>0&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_YUiNwJNZEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
+            </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_PhjO05NREeykVc-bJXZCqA" type="ASSIGNMENT"/>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_6C6jApNQEeykVc-bJXZCqA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>

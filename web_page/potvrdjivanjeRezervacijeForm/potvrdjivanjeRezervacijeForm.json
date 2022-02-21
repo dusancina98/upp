@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "potvrdjivanjeRezervacijeForm",
   "name" : "potvrdjivanjeRezervacijeForm",
-  "lastUpdate" : 1645474991739,
+  "lastUpdate" : 1645477484999,
   "rows" : [
     [
       {
@@ -595,7 +595,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Preuzmi narudzbinu"
                   },
                   "dataToSend" : {
                     "type" : "expression",
