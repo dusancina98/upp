@@ -170,9 +170,7 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_brSWHZKPEeytA4u0XpAqKw" name="prijavaZaKursKonferenciju" content="prijavaZaKursKonferenciju" type="TYPE_VARIABLE" returnType="magija.it_firma.model.PrijavaZaKurs">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_brSWHpKPEeytA4u0XpAqKw" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_brSWH5KPEeytA4u0XpAqKw" name="prijavaZaKursKonferencijuInput.preuzetaRezervacija" content="prijavaZaKursKonferencijuInput?.preuzetaRezervacija" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_brSWIJKPEeytA4u0XpAqKw" name="prijavaZaKursKonferencijuInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_brSWH5KPEeytA4u0XpAqKw" name="prijavaZaKursKonferencijuInput.preuzetaRezervacija" content="return true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean"/>
             <operator xmi:type="expression:Operator" xmi:id="_brSWIZKPEeytA4u0XpAqKw" type="JAVA_METHOD" expression="setPreuzetaRezervacija">
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
@@ -543,9 +541,10 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_7i8gUZJpEeytA4u0XpAqKw" name="cenaPrevozaISmestaja" content="cenaPrevozaISmestaja" type="TYPE_VARIABLE" returnType="java.lang.Integer">
               <referencedElements xmi:type="process:Data" xmi:id="_7_TsMJJpEeytA4u0XpAqKw" name="cenaPrevozaISmestaja" dataType="_en3ADm5gEeySSt74BsnCSw"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_7i8gUpJpEeytA4u0XpAqKw" name="newScript()" content="def ukupnaCena = 0&#xD;&#xA;&#xD;&#xA;for(def ponudaPrevoza : ponudaPrevozaISmestaja.getPonudaPrevoza()){&#xD;&#xA;&#x9;if(ponudaPrevoza.getPersistenceId()==izabraniPrevoz){&#xD;&#xA;&#x9;&#x9;ukupnaCena= ukupnaCena+ ponudaPrevoza.getCena();&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;for(def ponudaSmestaja : ponudaPrevozaISmestaja.getPonudaSmestaja()){&#xD;&#xA;&#x9;if(ponudaSmestaja.getPersistenceId()==izabraniPrevoz){&#xD;&#xA;&#x9;&#x9;ukupnaCena= ukupnaCena+ ponudaSmestaja.getCena();&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return ukupnaCena&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ri0Q8JJqEeytA4u0XpAqKw" name="ponudaPrevozaISmestaja" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_Ri0Q8ZJqEeytA4u0XpAqKw" name="izabraniPrevoz" dataType="_en3ADm5gEeySSt74BsnCSw"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_7i8gUpJpEeytA4u0XpAqKw" name="newScript()" content="def ukupnaCena = 0&#xD;&#xA;&#xD;&#xA;for(def ponudaPrevoza : ponudaPrevozaISmestaja.getPonudaPrevoza()){&#xD;&#xA;&#x9;if(ponudaPrevoza.getPersistenceId()==izabraniPrevoz){&#xD;&#xA;&#x9;&#x9;ukupnaCena= ukupnaCena+ ponudaPrevoza.getCena();&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;for(def ponudaSmestaja : ponudaPrevozaISmestaja.getPonudaSmestaja()){&#xD;&#xA;&#x9;if(ponudaSmestaja.getPersistenceId()==izabraniPrevoz){&#xD;&#xA;&#x9;&#x9;ukupnaCena= ukupnaCena+ ponudaSmestaja.getCena();&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;ukupnaCena= ukupnaCena+prijavaZaKursKonferenciju.getCena();&#xD;&#xA;return ukupnaCena&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hokl8JNOEeykVc-bJXZCqA" name="ponudaPrevozaISmestaja" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.Ponuda"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_hokl8ZNOEeykVc-bJXZCqA" name="izabraniPrevoz" dataType="_en3ADm5gEeySSt74BsnCSw"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hokl8pNOEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_7i9HYJJpEeytA4u0XpAqKw" type="ASSIGNMENT"/>
           </operations>
@@ -626,7 +625,18 @@
                 <expression xmi:type="expression:TableExpression" xmi:id="_x01S4pKCEeytA4u0XpAqKw"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_x01S45KCEeytA4u0XpAqKw" key="body">
-                <expression xmi:type="expression:Expression" xmi:id="_x01S5JKCEeytA4u0XpAqKw" name="&lt;pattern-expression>" type="TYPE_PATTERN" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_x01S5JKCEeytA4u0XpAqKw" name="&lt;pattern-expression>" content="{&#xD;&#xA;&#x9;&quot;KonferencijaKursId&quot;: ${prijavaZaKursKonferenciju.persistenceId.toString()},&#xD;&#xA;&#x9;&quot;UkupnoZaPlacanje&quot;:${prijavaZaKursKonferenciju.cena}&#xD;&#xA;}" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_8irb8JNOEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju.persistenceId.toString()" content="prijavaZaKursKonferenciju.persistenceId.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_8irb8ZNOEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju" content="prijavaZaKursKonferenciju" type="TYPE_VARIABLE" returnType="magija.it_firma.model.PrijavaZaKurs">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_8irb8pNOEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_8irb85NOEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju.cena" content="prijavaZaKursKonferenciju.cena" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_8irb9JNOEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju" content="prijavaZaKursKonferenciju" type="TYPE_VARIABLE" returnType="magija.it_firma.model.PrijavaZaKurs">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_8irb9ZNOEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
+                    </referencedElements>
+                  </referencedElements>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_x01S5ZKCEeytA4u0XpAqKw" key="do_not_follow_redirect">
                 <expression xmi:type="expression:Expression" xmi:id="_x01S5pKCEeytA4u0XpAqKw" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -822,7 +832,18 @@
                 <expression xmi:type="expression:TableExpression" xmi:id="_evH2CpJxEeytA4u0XpAqKw"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_evIdEJJxEeytA4u0XpAqKw" key="body">
-                <expression xmi:type="expression:Expression" xmi:id="_evIdEZJxEeytA4u0XpAqKw" name="&lt;pattern-expression>" content="" type="TYPE_PATTERN" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_evIdEZJxEeytA4u0XpAqKw" name="&lt;pattern-expression>" content="{&#xD;&#xA;&#x9;&quot;KonferencijaKursId&quot;: ${prijavaZaKursKonferenciju.persistenceId.toString()},&#xD;&#xA;&#x9;&quot;UkupnoZaPlacanje&quot;:${cenaPrevozaISmestaja}&#xD;&#xA;}" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_PJY4YJNPEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju.persistenceId.toString()" content="prijavaZaKursKonferenciju.persistenceId.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_PJY4YZNPEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju" content="prijavaZaKursKonferenciju" type="TYPE_VARIABLE" returnType="magija.it_firma.model.PrijavaZaKurs">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_PJY4YpNPEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
+                    </referencedElements>
+                  </referencedElements>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_PJY4Y5NPEeykVc-bJXZCqA" name="cenaPrevozaISmestaja" content="cenaPrevozaISmestaja" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_PJY4ZJNPEeykVc-bJXZCqA" name="cenaPrevozaISmestaja" content="cenaPrevozaISmestaja" type="TYPE_VARIABLE" returnType="java.lang.Integer">
+                      <referencedElements xmi:type="process:Data" xmi:id="_PJY4ZZNPEeykVc-bJXZCqA" name="cenaPrevozaISmestaja" dataType="_en3ADm5gEeySSt74BsnCSw"/>
+                    </referencedElements>
+                  </referencedElements>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_evIdEpJxEeytA4u0XpAqKw" key="do_not_follow_redirect">
                 <expression xmi:type="expression:Expression" xmi:id="_evIdE5JxEeytA4u0XpAqKw" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -1695,7 +1716,7 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_S78Q8JJzEeytA4u0XpAqKw" type="5026">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_S78Q8ZJzEeytA4u0XpAqKw" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S77C0ZJzEeytA4u0XpAqKw" x="1814" y="261"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S77C0ZJzEeytA4u0XpAqKw" x="1814" y="255"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_6eREUJJ2EeytA4u0XpAqKw" type="3027" element="_6eNZ8JJ2EeytA4u0XpAqKw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_6eREUZJ2EeytA4u0XpAqKw" type="5017" element="_6eNZ8JJ2EeytA4u0XpAqKw"/>

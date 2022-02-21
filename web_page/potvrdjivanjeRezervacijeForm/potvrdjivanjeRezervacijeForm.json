@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "potvrdjivanjeRezervacijeForm",
   "name" : "potvrdjivanjeRezervacijeForm",
-  "lastUpdate" : 1645390669904,
+  "lastUpdate" : 1645472989282,
   "rows" : [
     [
       {
@@ -478,8 +478,8 @@
                           "value" : ""
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "izabraniPrevoz==null"
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -528,8 +528,8 @@
                           "value" : ""
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "izabraniSmestaj==null"
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -637,6 +637,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "072e0646-1bf3-451a-8a75-3f67aea8a7ff",
