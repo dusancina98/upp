@@ -584,7 +584,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_tEIjcW_lEey538TNGH5Ihw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_tEIjc2_lEey538TNGH5Ihw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:TextAnnotation" xmi:id="_3L45wG_pEey538TNGH5Ihw" text="Radi lakseg testiranja 5th day je stavljen na 2 min, a 6th day na 3 min&#xD;&#xA;U realnom slucaju bi to bile stvarne vrednosti"/>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_3L45wG_pEey538TNGH5Ihw" text="Radi lakseg testiranja 5th day je stavljen na 2 min, a 6th day na 3 min&#xD;&#xA;U realnom slucaju bi to bile stvarne vrednosti&#xD;&#xA;Deadline je namesten na trenutni datum + 7 dana (da bi se ispostovalo 7 dana za obradu prijave)"/>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_A86S4GgeEeydB5g01Nxqig" name="Sef HR tima" actor="_RvvAwGgnEeydB5g01Nxqig">
         <elements xmi:type="process:Task" xmi:id="_1UUCoGgeEeydB5g01Nxqig" name="Biranje intervjuera" outgoing="_8nToYHQBEeyh5_sH83myOA" incoming="_hasM0GgeEeydB5g01Nxqig _gieycGgeEeydB5g01Nxqig" overrideActorsOfTheLane="false">
@@ -964,6 +964,7 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_QrxUIHhTEeyFyKvIzEgOOQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_xvx5EJNZEey2moVajYF7xw" text="Ukoliko je sef HR sluzbe taj koji je prihvatio prijavu, onda ce on vrsiti predlog termina&#xD;&#xA;U suprotnom ce svako od intervjuera predloziti termin"/>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_YHoQIG_sEey538TNGH5Ihw" name="Zaposleni" actor="_duDtIG_sEey538TNGH5Ihw">
         <elements xmi:type="process:Task" xmi:id="_0zlcIHP7Eeyh5_sH83myOA" name="Predlaganje termina" outgoing="_juBS0HR-EeyTRus1H8MnZg" incoming="_-CAEwHQBEeyh5_sH83myOA" type="PARALLEL" collectionDataToMultiInstantiate="_nw99kHP_Eeyh5_sH83myOA" overrideActorsOfTheLane="false">
@@ -1633,7 +1634,7 @@
               <styles xmi:type="notation:DescriptionStyle" xmi:id="_3L6H4W_pEey538TNGH5Ihw"/>
               <styles xmi:type="notation:FontStyle" xmi:id="_3L6H4m_pEey538TNGH5Ihw" fontName="Segoe UI"/>
               <styles xmi:type="notation:LineStyle" xmi:id="_3L6H42_pEey538TNGH5Ihw"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3L6H5G_pEey538TNGH5Ihw" x="631" y="113" width="220" height="101"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3L6H5G_pEey538TNGH5Ihw" x="631" y="113" width="248" height="110"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_xek8oWgdEeydB5g01Nxqig"/>
@@ -1710,6 +1711,13 @@
             <children xmi:type="notation:Shape" xmi:id="_QrxUIXhTEeyFyKvIzEgOOQ" type="3005" element="_Qru34HhTEeyFyKvIzEgOOQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_Qrx7MHhTEeyFyKvIzEgOOQ" type="5005"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QrxUInhTEeyFyKvIzEgOOQ" x="785" y="231" width="120" height="60"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_xwBJoJNZEey2moVajYF7xw" type="3015" element="_xvx5EJNZEey2moVajYF7xw">
+              <children xmi:type="notation:DecorationNode" xmi:id="_xwBwsJNZEey2moVajYF7xw" type="5010"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_xwBJoZNZEey2moVajYF7xw"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_xwBJopNZEey2moVajYF7xw" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_xwBJo5NZEey2moVajYF7xw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xwBJpJNZEey2moVajYF7xw" x="726" y="106" width="201" height="97"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_A8658WgeEeydB5g01Nxqig"/>

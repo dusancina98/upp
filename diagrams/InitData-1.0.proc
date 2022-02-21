@@ -375,6 +375,56 @@
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_UfpJg5HdEeycU-e2WF4QJA" type="ASSIGNMENT"/>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="__QKHIJNUEey2moVajYF7xw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="__QKHIZNUEey2moVajYF7xw" name="ksj7" content="ksj7" type="TYPE_VARIABLE" returnType="magija.it_firma.model.KorisnikStraniJezik">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BJ8TQJNVEey2moVajYF7xw" name="ksj7" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.KorisnikStraniJezik"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="__QKHIpNUEey2moVajYF7xw" name="newScript()" content="korisnikStraniJezikDAO.newInstance(6, srpski)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="magija.it_firma.model.KorisnikStraniJezik">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_mSOYAJNWEey2moVajYF7xw" name="korisnikStraniJezikDAO" content="korisnikStraniJezikDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.KorisnikStraniJezikDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mSOYAZNWEey2moVajYF7xw" name="srpski" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.StraniJezik"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="__QKHI5NUEey2moVajYF7xw" type="ASSIGNMENT"/>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_meJ7MJNWEey2moVajYF7xw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_meJ7MZNWEey2moVajYF7xw" name="ksj8" content="ksj8" type="TYPE_VARIABLE" returnType="magija.it_firma.model.KorisnikStraniJezik">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_n6U-QJNWEey2moVajYF7xw" name="ksj8" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.KorisnikStraniJezik"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_meJ7MpNWEey2moVajYF7xw" name="newScript()" content="korisnikStraniJezikDAO.newInstance(5, srpski)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="magija.it_firma.model.KorisnikStraniJezik">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pV0r4JNWEey2moVajYF7xw" name="srpski" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.StraniJezik"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_pV0r4ZNWEey2moVajYF7xw" name="korisnikStraniJezikDAO" content="korisnikStraniJezikDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.KorisnikStraniJezikDAO" returnTypeFixed="true"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_meJ7M5NWEey2moVajYF7xw" type="ASSIGNMENT"/>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_pjzdgJNWEey2moVajYF7xw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_pjzdgZNWEey2moVajYF7xw" name="ksj9" content="ksj9" type="TYPE_VARIABLE" returnType="magija.it_firma.model.KorisnikStraniJezik">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qoNg0JNWEey2moVajYF7xw" name="ksj9" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.KorisnikStraniJezik"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_pjzdgpNWEey2moVajYF7xw" name="newScript()" content="korisnikStraniJezikDAO.newInstance(4, srpski)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="magija.it_firma.model.KorisnikStraniJezik">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ru6DIJNWEey2moVajYF7xw" name="srpski" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.StraniJezik"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_ru6DIZNWEey2moVajYF7xw" name="korisnikStraniJezikDAO" content="korisnikStraniJezikDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.KorisnikStraniJezikDAO" returnTypeFixed="true"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_pj0EkJNWEey2moVajYF7xw" type="ASSIGNMENT"/>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_sYPUAJNWEey2moVajYF7xw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_sYPUAZNWEey2moVajYF7xw" name="ksj10" content="ksj10" type="TYPE_VARIABLE" returnType="magija.it_firma.model.KorisnikStraniJezik">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_timOUJNWEey2moVajYF7xw" name="ksj10" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.KorisnikStraniJezik"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_sYPUApNWEey2moVajYF7xw" name="newScript()" content="korisnikStraniJezikDAO.newInstance(4, engleski)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="magija.it_firma.model.KorisnikStraniJezik">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_ufIvEJNWEey2moVajYF7xw" name="korisnikStraniJezikDAO" content="korisnikStraniJezikDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.KorisnikStraniJezikDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ufIvEZNWEey2moVajYF7xw" name="engleski" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.StraniJezik"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_sYPUA5NWEey2moVajYF7xw" type="ASSIGNMENT"/>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_uqYVwJNWEey2moVajYF7xw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_uqYVwZNWEey2moVajYF7xw" name="ksj11" content="ksj11" type="TYPE_VARIABLE" returnType="magija.it_firma.model.KorisnikStraniJezik">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vt-gwJNWEey2moVajYF7xw" name="ksj11" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.KorisnikStraniJezik"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_uqYVwpNWEey2moVajYF7xw" name="newScript()" content="korisnikStraniJezikDAO.newInstance(4, spanski)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="magija.it_firma.model.KorisnikStraniJezik">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_wlvPMJNWEey2moVajYF7xw" name="korisnikStraniJezikDAO" content="korisnikStraniJezikDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.KorisnikStraniJezikDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wlvPMZNWEey2moVajYF7xw" name="spanski" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.StraniJezik"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_uqYVw5NWEey2moVajYF7xw" type="ASSIGNMENT"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_Lw1mVJHdEeycU-e2WF4QJA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_Lw1mVZHdEeycU-e2WF4QJA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_Lw1mVpHdEeycU-e2WF4QJA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -463,6 +513,21 @@
       <data xmi:type="process:BusinessObjectData" xmi:id="_8LBZ8JHaEeycU-e2WF4QJA" name="ksj6" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.KorisnikStraniJezik">
         <defaultValue xmi:type="expression:Expression" xmi:id="_8LBZ8ZHaEeycU-e2WF4QJA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_BI6_kJNVEey2moVajYF7xw" name="ksj7" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.KorisnikStraniJezik">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_BI6_kZNVEey2moVajYF7xw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_n5B9wJNWEey2moVajYF7xw" name="ksj8" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.KorisnikStraniJezik">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_n5Ck0JNWEey2moVajYF7xw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_qnXMQJNWEey2moVajYF7xw" name="ksj9" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.KorisnikStraniJezik">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_qnXMQZNWEey2moVajYF7xw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_thjsgJNWEey2moVajYF7xw" name="ksj10" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.KorisnikStraniJezik">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_thjsgZNWEey2moVajYF7xw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_vs7X4JNWEey2moVajYF7xw" name="ksj11" dataType="_gwe0xJHTEeycU-e2WF4QJA" className="magija.it_firma.model.KorisnikStraniJezik">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_vs7X4ZNWEey2moVajYF7xw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_gwe0pJHTEeycU-e2WF4QJA">
         <targetForm xmi:type="expression:Expression" xmi:id="_DM-ngJHgEeygGLKLDoFrkg" name="startInitData" content="db5bd256-ce36-4d8e-8b95-9be3f8fda7bb" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -483,14 +548,8 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_pAvvsJHVEeycU-e2WF4QJA" name="dodati" target="_DFwXcJHbEeycU-e2WF4QJA" source="_kVruwJHVEeycU-e2WF4QJA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_pAvvsZHVEeycU-e2WF4QJA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_pAvvspHVEeycU-e2WF4QJA" name="provera" content="!angazovanjeDAO.find(0, 100).empty &amp;&amp;&#xD;&#xA;!pozicijaDAO.find(0, 100).empty &amp;&amp;&#xD;&#xA;!oglasDAO.find(0, 100).empty &amp;&amp;&#xD;&#xA;!senioritetDAO.find(0, 100).empty &amp;&amp;&#xD;&#xA;!stepenObrazovanjaDAO.find(0, 100).empty &amp;&amp;&#xD;&#xA;!straniJezikDAO.find(0, 100).empty &amp;&amp;&#xD;&#xA;!korisnikStraniJezikDAO.find(0, 100).empty" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="expression:Expression" xmi:id="_y6f7sJHYEeycU-e2WF4QJA" name="pozicijaDAO" content="pozicijaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.PozicijaDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_y6giwJHYEeycU-e2WF4QJA" name="angazovanjeDAO" content="angazovanjeDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.AngazovanjeDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_y6giwZHYEeycU-e2WF4QJA" name="straniJezikDAO" content="straniJezikDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.StraniJezikDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_y6giwpHYEeycU-e2WF4QJA" name="senioritetDAO" content="senioritetDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.SenioritetDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_y6giw5HYEeycU-e2WF4QJA" name="oglasDAO" content="oglasDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.OglasDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_y6gixJHYEeycU-e2WF4QJA" name="stepenObrazovanjaDAO" content="stepenObrazovanjaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.StepenObrazovanjaDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_y6gixZHYEeycU-e2WF4QJA" name="korisnikStraniJezikDAO" content="korisnikStraniJezikDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.KorisnikStraniJezikDAO" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_pAvvspHVEeycU-e2WF4QJA" name="provera" content="!angazovanjeDAO.find(0, 100).empty" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_NaUN0JNXEey2moVajYF7xw" name="angazovanjeDAO" content="angazovanjeDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.AngazovanjeDAO" returnTypeFixed="true"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_DF3FIJHbEeycU-e2WF4QJA" target="_mnnGYJHbEeycU-e2WF4QJA" source="_DFwXcJHbEeycU-e2WF4QJA" isDefault="true">
