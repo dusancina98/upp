@@ -206,8 +206,8 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_OGXi8ZKQEeytA4u0XpAqKw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_OGXi8JKQEeytA4u0XpAqKw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_OGXi8pKQEeytA4u0XpAqKw" name="" content="" returnTypeFixed="true"/>
-          <condition xmi:type="expression:Expression" xmi:id="_VfpdoJKQEeytA4u0XpAqKw" name="getDate" content="new Date(prijavaZaKursKonferenciju.getDatumOdrzavanja().toEpochSecond())" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date">
-            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_EbfRoJNXEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
+          <condition xmi:type="expression:Expression" xmi:id="_VfpdoJKQEeytA4u0XpAqKw" name="getDate" content="&#xD;&#xA;return prijavaZaKursKonferenciju.getDatumOdrzavanja().minusDays(3).toInstant().toEpochMilli()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_87SfgJNqEeye1O5PeloZtg" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
           </condition>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_Q9YMUJKQEeytA4u0XpAqKw" name="Napomena za pocetak kursa/konferencije" outgoing="_Uht1wJKQEeytA4u0XpAqKw" incoming="_UACFAJKQEeytA4u0XpAqKw">
@@ -232,10 +232,10 @@
                 <expression xmi:type="expression:Expression" xmi:id="_Q9YMX5KQEeytA4u0XpAqKw" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Q9YMYJKQEeytA4u0XpAqKw" key="userName">
-                <expression xmi:type="expression:Expression" xmi:id="_Q9YMYZKQEeytA4u0XpAqKw" name="4a50e154651948" content="4a50e154651948" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_Q9YMYZKQEeytA4u0XpAqKw" name="3df35bdc303037" content="3df35bdc303037" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Q9YMYpKQEeytA4u0XpAqKw" key="password">
-                <expression xmi:type="expression:Expression" xmi:id="_Q9YMY5KQEeytA4u0XpAqKw" name="50618cc2a6dcbe" content="50618cc2a6dcbe" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_Q9YMY5KQEeytA4u0XpAqKw" name="newScript()" content="'94f4632e9b0f7f'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Q9YMZJKQEeytA4u0XpAqKw" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_Q9YMZZKQEeytA4u0XpAqKw" name="from()" content="'support@itfirma.com'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
@@ -298,8 +298,8 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_PhjO0ZNREeykVc-bJXZCqA" name="datumKursaJePosleRokaZaMail" content="datumKursaJePosleRokaZaMail" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
               <referencedElements xmi:type="process:Data" xmi:id="_QGfu8JNREeykVc-bJXZCqA" name="datumKursaJePosleRokaZaMail" dataType="_en3ADG5gEeySSt74BsnCSw"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_PhjO0pNREeykVc-bJXZCqA" name="newScript()" content="import java.time.OffsetDateTime&#xD;&#xA;&#xD;&#xA;def date = prijavaZaKursKonferenciju.getDatumOdrzavanja()&#xD;&#xA;def compareDate= prijavaZaKursKonferenciju.getDatumOdrzavanja().plusDays(3)&#xD;&#xA;&#xD;&#xA;return OffsetDateTime.compareInstant(date, compareDate)>0&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_YUiNwJNZEeykVc-bJXZCqA" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_PhjO0pNREeykVc-bJXZCqA" name="newScript()" content="import java.time.LocalDate&#xD;&#xA;import java.time.OffsetDateTime&#xD;&#xA;import java.util.logging.Logger&#xD;&#xA;&#xD;&#xA;def dateLong = prijavaZaKursKonferenciju.getDatumOdrzavanja().toEpochSecond()&#xD;&#xA;def compareLong= OffsetDateTime.now().plusDays(3).toEpochSecond()&#xD;&#xA;&#xD;&#xA;Logger logger = Logger.getLogger(&quot;org.bonitasoft&quot;)&#xD;&#xA;logger.severe(&quot;1LOGUJEMOO&quot;)&#xD;&#xA;logger.severe(compareLong.toString())&#xD;&#xA;logger.severe(dateLong.toString())&#xD;&#xA;logger.severe((dateLong&lt;compareLong).toString())&#xD;&#xA;logger.severe((dateLong>compareLong).toString())&#xD;&#xA;&#xD;&#xA;return dateLong>compareLong&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_cKSHkJNqEeye1O5PeloZtg" name="prijavaZaKursKonferenciju" dataType="_en3AFG5gEeySSt74BsnCSw" className="magija.it_firma.model.PrijavaZaKurs"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_PhjO05NREeykVc-bJXZCqA" type="ASSIGNMENT"/>
           </operations>
@@ -336,10 +336,10 @@
                 <expression xmi:type="expression:Expression" xmi:id="_FgARb5NREeykVc-bJXZCqA" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_FgARcJNREeykVc-bJXZCqA" key="userName">
-                <expression xmi:type="expression:Expression" xmi:id="_FgARcZNREeykVc-bJXZCqA" name="4a50e154651948" content="4a50e154651948" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_FgARcZNREeykVc-bJXZCqA" name="3df35bdc303037" content="3df35bdc303037" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_FgARcpNREeykVc-bJXZCqA" key="password">
-                <expression xmi:type="expression:Expression" xmi:id="_FgARc5NREeykVc-bJXZCqA" name="50618cc2a6dcbe" content="50618cc2a6dcbe" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_FgARc5NREeykVc-bJXZCqA" name="newScript()" content="'94f4632e9b0f7f'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_FgARdJNREeykVc-bJXZCqA" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_FgARdZNREeykVc-bJXZCqA" name="from()" content="'support@itfirma.com'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
@@ -502,10 +502,10 @@
                 <expression xmi:type="expression:Expression" xmi:id="_pTvna3lvEeyXl6PwbohH4Q" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_pTvnbHlvEeyXl6PwbohH4Q" key="userName">
-                <expression xmi:type="expression:Expression" xmi:id="_pTvnbXlvEeyXl6PwbohH4Q" name="4a50e154651948" content="4a50e154651948" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_pTvnbXlvEeyXl6PwbohH4Q" name="3df35bdc303037" content="3df35bdc303037" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_pTvnbnlvEeyXl6PwbohH4Q" key="password">
-                <expression xmi:type="expression:Expression" xmi:id="_pTvnb3lvEeyXl6PwbohH4Q" name="50618cc2a6dcbe" content="50618cc2a6dcbe" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_pTvnb3lvEeyXl6PwbohH4Q" name="newScript()" content="'94f4632e9b0f7f'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_pTvncHlvEeyXl6PwbohH4Q" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_pTvncXlvEeyXl6PwbohH4Q" name="support@itfirma.com" content="support@itfirma.com" returnTypeFixed="true"/>
@@ -1306,10 +1306,10 @@
                 <expression xmi:type="expression:Expression" xmi:id="_6eOBCpJ2EeytA4u0XpAqKw" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_6eOBC5J2EeytA4u0XpAqKw" key="userName">
-                <expression xmi:type="expression:Expression" xmi:id="_6eOBDJJ2EeytA4u0XpAqKw" name="4a50e154651948" content="4a50e154651948" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_6eOBDJJ2EeytA4u0XpAqKw" name="3df35bdc303037" content="3df35bdc303037" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_6eOBDZJ2EeytA4u0XpAqKw" key="password">
-                <expression xmi:type="expression:Expression" xmi:id="_6eOBDpJ2EeytA4u0XpAqKw" name="50618cc2a6dcbe" content="50618cc2a6dcbe" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_6eOBDpJ2EeytA4u0XpAqKw" name="newScript()" content="'94f4632e9b0f7f'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_6eOBD5J2EeytA4u0XpAqKw" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_6eOBEJJ2EeytA4u0XpAqKw" name="from()" content="'support@itfirma.com'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
@@ -1386,10 +1386,10 @@
                 <expression xmi:type="expression:Expression" xmi:id="_mRmIO3lzEeyXl6PwbohH4Q" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_mRmIPHlzEeyXl6PwbohH4Q" key="userName">
-                <expression xmi:type="expression:Expression" xmi:id="_mRmIPXlzEeyXl6PwbohH4Q" name="4a50e154651948" content="4a50e154651948" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_mRmIPXlzEeyXl6PwbohH4Q" name="3df35bdc303037" content="3df35bdc303037" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_mRmIPnlzEeyXl6PwbohH4Q" key="password">
-                <expression xmi:type="expression:Expression" xmi:id="_mRmIP3lzEeyXl6PwbohH4Q" name="50618cc2a6dcbe" content="50618cc2a6dcbe" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_mRmIP3lzEeyXl6PwbohH4Q" name="newScript()" content="'94f4632e9b0f7f'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_mRmIQHlzEeyXl6PwbohH4Q" key="from">
                 <expression xmi:type="expression:Expression" xmi:id="_mRmIQXlzEeyXl6PwbohH4Q" name="from()" content="'support@itfirma.com'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
@@ -1641,7 +1641,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="__ag50JNQEeykVc-bJXZCqA" target="_OGUfoJKQEeytA4u0XpAqKw" source="_-PDMQJNQEeykVc-bJXZCqA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="__ag50ZNQEeykVc-bJXZCqA"/>
         <condition xmi:type="expression:Expression" xmi:id="__ag50pNQEeykVc-bJXZCqA" name="newScript()" content="return datumKursaJePosleRokaZaMail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_IVdewJNVEeykVc-bJXZCqA" name="datumKursaJePosleRokaZaMail" dataType="_en3ADG5gEeySSt74BsnCSw"/>
+          <referencedElements xmi:type="process:Data" xmi:id="_WsOLIJNkEeye1O5PeloZtg" name="datumKursaJePosleRokaZaMail" dataType="_en3ADG5gEeySSt74BsnCSw"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_GVo44JNREeykVc-bJXZCqA" target="_FgARYJNREeykVc-bJXZCqA" source="_-PDMQJNQEeykVc-bJXZCqA" isDefault="true">
