@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "prihvatanjePrijaveForm",
   "name" : "prihvatanjePrijaveForm",
-  "lastUpdate" : 1645051977506,
+  "lastUpdate" : 1645402753784,
   "rows" : [
     [
       {
@@ -1391,7 +1391,7 @@
     "statisticsApi" : {
       "type" : "url",
       "value" : [
-        "http://localhost:8097/api/statistics/form-access"
+        "http://localhost:8000/api/statistics/form-access"
       ],
       "advancedOptions" : { },
       "exposed" : false
