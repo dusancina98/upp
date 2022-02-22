@@ -37,7 +37,7 @@
         <businessObject qualifiedName="magija.it_firma.model.KorisnikStraniJezik">
             <fields>
                 <field type="LONG" length="255" name="idKorisnika" nullable="false" collection="false"/>
-                <relationField type="AGGREGATION" reference="magija.it_firma.model.StraniJezik" fetchType="EAGER" name="straniJezik" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.StraniJezik" fetchType="LAZY" name="straniJezik" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries>
@@ -73,23 +73,21 @@
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="magija.it_firma.model.OpcijePrevoza">
+        <businessObject qualifiedName="magija.it_firma.model.Ponuda">
             <fields>
-                <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaPrevoza" fetchType="EAGER" name="vrsta" nullable="true" collection="false"/>
-                <field type="OFFSETDATETIME" length="255" name="datum" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="cena" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="napomena" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="magija.it_firma.model.PonudaSmestaja" fetchType="EAGER" name="ponudaSmestaja" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="magija.it_firma.model.PonudaPrevoza" fetchType="EAGER" name="ponudaPrevoza" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="magija.it_firma.model.OpcijeSmestaja">
+        <businessObject qualifiedName="magija.it_firma.model.PonudaPrevoza">
             <fields>
-                <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaSmestaja" fetchType="EAGER" name="vrsta" nullable="true" collection="false"/>
-                <field type="OFFSETDATETIME" length="255" name="datum" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="cena" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="cena" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaPrevoza" fetchType="EAGER" name="vrstaPrevoza" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -122,10 +120,11 @@
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="magija.it_firma.model.PonudaPrevozaISmestaja">
+        <businessObject qualifiedName="magija.it_firma.model.PonudaSmestaja">
             <fields>
-                <relationField type="COMPOSITION" reference="magija.it_firma.model.OpcijePrevoza" fetchType="LAZY" name="opcijePrevoza" nullable="true" collection="true"/>
-                <relationField type="COMPOSITION" reference="magija.it_firma.model.OpcijeSmestaja" fetchType="LAZY" name="opcijeSmestaja" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="cena" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaSmestaja" fetchType="EAGER" name="vrstaSmestaja" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -169,6 +168,7 @@
                 <field type="LOCALDATE" length="255" name="datum" nullable="false" collection="false"/>
                 <field type="LONG" length="255" name="obradioHrId" nullable="false" collection="false"/>
                 <field type="LONG" length="255" name="obradioSefId" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.StepenObrazovanja" fetchType="LAZY" name="stepenObrazovanja" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -186,7 +186,18 @@
             <fields>
                 <field type="INTEGER" length="255" name="statusPrijave" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="razlogOdbijanja" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="budzetZaPrevozSmestaj" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="budzetZaPrevoz" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="budzetZaSmestaj" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="izabraniPrevoz" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="izabraniSmestaj" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="magija.it_firma.model.StepenObrazovanja">
+            <fields>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -219,7 +230,7 @@
         </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.VrstaOpreme">
             <fields>
-                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -235,7 +246,7 @@
         </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.VrstaSmestaja">
             <fields>
-                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
