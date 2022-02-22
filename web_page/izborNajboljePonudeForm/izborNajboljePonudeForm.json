@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "izborNajboljePonudeForm",
   "name" : "izborNajboljePonudeForm",
-  "lastUpdate" : 1645117633776,
+  "lastUpdate" : 1645507054410,
   "rows" : [
     [
       {
@@ -948,7 +948,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Dobavljac Id"
+                                "value" : "Dobavljac Ime"
                               },
                               "placeholder" : {
                                 "type" : "constant"
@@ -963,7 +963,7 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "$item.dobavljacId"
+                                "value" : "$item.dobavljacIme"
                               },
                               "required" : {
                                 "type" : "constant",
@@ -1273,7 +1273,7 @@
                   },
                   "displayedKey" : {
                     "type" : "constant",
-                    "value" : "dobavljacId"
+                    "value" : "dobavljacIme"
                   },
                   "returnedKey" : {
                     "type" : "constant",

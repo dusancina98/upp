@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "UnosPonudeForm",
   "name" : "UnosPonudeForm",
-  "lastUpdate" : 1645117765757,
+  "lastUpdate" : 1645507069118,
   "rows" : [
     [
       {
@@ -1402,7 +1402,8 @@
         "\t\t\tponudeDobavljaca: $data.zahtevZaNabavkuOpreme.ponudeDobavljaca.concat({",
         "\t\t\t\tpersistenceId_string: \"\",",
         "\t\t\t\tcena: $data.cene,",
-        "\t\t\t\tdobavljacId: $data.dobavljac.user_id",
+        "\t\t\t\tdobavljacId: $data.dobavljac.user_id,",
+        "\t\t\t\tdobavljacIme: $data.dobavljac.user_name",
         "\t\t\t})",
         "\t\t}",
         "\t}",
@@ -1443,7 +1444,11 @@
       "value" : [
         "../API/system/session/1"
       ],
-      "advancedOptions" : { },
+      "advancedOptions" : {
+        "headers" : "",
+        "statusCode" : "",
+        "failedResponseValue" : ""
+      },
       "exposed" : false
     }
   },
