@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "unosMaksimalnogBudzetaZaNabavkuForm3",
-  "name" : "unosMaksimalnogBudzetaZaNabavkuForm3",
-  "lastUpdate" : 1645487109031,
+  "id" : "proslediDokumentPorudzbeniceNaSupotpisivanjeForm",
+  "name" : "proslediDokumentPorudzbeniceNaSupotpisivanjeForm",
+  "lastUpdate" : 1645485995356,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d8d82437-b647-400e-aad0-37b37723c134",
+        "reference" : "38ccdfd6-dad0-45f1-9fdb-080e1f754584",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "2cafa36a-5eec-4f4f-9485-5d037143f3af",
+              "reference" : "56bbbfae-e2c3-410a-9846-ab283e0b4a0c",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "f38b0db4-6195-456f-83f7-932f26318962",
+              "reference" : "7c93b766-dc53-401a-ae03-536884a86cdc",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "87bc5353-c0c8-488f-8db6-6b4b338870c5",
+        "reference" : "db5589fe-3caa-428d-8391-7d399d62524e",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "1c148665-4fc3-44b4-a9a6-b225af74d43c",
+          "reference" : "5197fdc4-5f18-4bb1-8b2c-e227f6488e78",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7fd36a89-5b80-4651-b9f9-d7b4da465711",
+                "reference" : "1ba11bf6-9187-48e1-ac04-f40a301c362e",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -194,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "6f7eb9f1-ea72-4302-8675-4d4dc9cf4e3e",
+                "reference" : "bfb64fce-12f4-4205-a5ad-b93e701f35d9",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -274,7 +274,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "00e29107-d365-4f6f-8b2d-b9d427da15d3",
+                      "reference" : "cf13f014-aaf8-4ccd-a305-7708007abb81",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -356,7 +356,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "6980060d-2c90-46a0-bf03-e465e4f5e727",
+                      "reference" : "553f0b9d-9858-4248-813b-bdf13d70ae02",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -397,7 +397,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "6101f99a-a22f-4c21-bf1d-7fceb36f5e8e",
+                      "reference" : "b22b1b19-b273-4578-a688-ab2361e2eeb0",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -430,51 +430,10 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "ba554bc2-95cf-4f6f-b0fe-fdba3132fe20",
+                      "reference" : "1582ff8e-c57d-45b9-b663-70514515f50e",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "level" : {
-                                "type" : "constant",
-                                "value" : "Level 4"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "Vrsta Opreme"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "a4abcfcb-844b-4abd-9063-81788ad71f1f",
-                            "hasValidationError" : false,
-                            "id" : "pbTitle",
-                            "description" : ""
-                          }
-                        ],
                         [
                           {
                             "type" : "container",
@@ -501,7 +460,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "8aaf9334-3221-42cf-ab60-4aa6bfc6ed58",
+                            "reference" : "a1ef4b9a-1855-4bfb-b2c2-042286691ecc",
                             "hasValidationError" : false,
                             "id" : "pbContainer",
                             "rows" : [
@@ -541,7 +500,7 @@
                                     },
                                     "label" : {
                                       "type" : "interpolation",
-                                      "value" : "Naziv"
+                                      "value" : "Vrsta Opreme"
                                     },
                                     "placeholder" : {
                                       "type" : "constant"
@@ -581,7 +540,7 @@
                                       "value" : 1
                                     }
                                   },
-                                  "reference" : "3628ef31-7d14-4507-b88e-1129ca7e7623",
+                                  "reference" : "583522d1-a279-4b80-b618-b91875bbd3fd",
                                   "hasValidationError" : false,
                                   "id" : "pbInput",
                                   "description" : ""
@@ -666,7 +625,7 @@
                                 "value" : 1
                               }
                             },
-                            "reference" : "ab04f2d7-8638-4953-8ec0-684e5c1aba8d",
+                            "reference" : "ca06e29a-199c-42c2-9c15-5f41ada9fd9d",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -748,7 +707,7 @@
                                 "value" : 1
                               }
                             },
-                            "reference" : "fe7293c2-3faf-42ea-8392-71e177fcdd28",
+                            "reference" : "7722e66d-a7c9-40aa-90f3-8cb1b1a214ce",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -789,11 +748,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Maksimalni Budzet"
+                          "value" : "Cena Najbolje Ponude"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -808,7 +767,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "zahtevZaNabavkuOpreme.maksimalniBudzet"
+                          "value" : "zahtevZaNabavkuOpreme.cenaNajboljePonude"
                         },
                         "required" : {
                           "type" : "constant",
@@ -823,8 +782,7 @@
                           "value" : ""
                         },
                         "min" : {
-                          "type" : "constant",
-                          "value" : 0
+                          "type" : "constant"
                         },
                         "max" : {
                           "type" : "constant"
@@ -834,7 +792,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "203b3cff-73a5-4fbe-a257-97f2b89ff549",
+                      "reference" : "d3903743-e761-415a-a2ec-ca90134a2554",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -870,7 +828,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Prosledi dokument porudzbenice na supotpisivanje"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -912,9 +870,32 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
-                "reference" : "834c7f5c-0659-4750-bc2e-d1d3058cf18b",
+                "reference" : "02684478-d1dc-445e-a314-dd43e324a00b",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -966,7 +947,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "5f3ca211-a499-4d04-95cd-d37de956fd93",
+                "reference" : "87702a6d-6d19-40ed-ae87-3fdb76d42532",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -979,16 +960,16 @@
   ],
   "assets" : [
     {
-      "id" : "12dc927a-f881-443e-9842-62070e667e40",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "7c1deaec-c420-4e11-ac0e-64248d283433",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "a7924783-97f7-44ac-80cd-422b6f1cfdfc",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "e7e5d107-e763-49c4-a60f-943b5511c270",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
@@ -1042,7 +1023,7 @@
         "\t\t\t\ttipOpreme: it.tipOpreme !== undefined ? it.tipOpreme : null,",
         "\t\t\t\tkolicina: it.kolicina !== undefined ? it.kolicina : null",
         "\t\t\t})),",
-        "\t\t\tmaksimalniBudzet: $data.zahtevZaNabavkuOpreme.maksimalniBudzet !== undefined ? $data.zahtevZaNabavkuOpreme.maksimalniBudzet : null",
+        "\t\t\tcenaNajboljePonude: $data.zahtevZaNabavkuOpreme.cenaNajboljePonude !== undefined ? $data.zahtevZaNabavkuOpreme.cenaNajboljePonude : null",
         "\t\t}",
         "\t}",
         "}"
@@ -1072,7 +1053,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "6bb7dd3f-5aa9-496d-bd30-9c1d28c3a477",
+  "uuid" : "f05520a7-fb15-4b44-9ce2-9c6ce9f79eb5",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

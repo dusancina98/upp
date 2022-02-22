@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "popunjavanjeZahtevaZaNabavkuOpremeForm",
   "name" : "popunjavanjeZahtevaZaNabavkuOpremeForm",
-  "lastUpdate" : 1645065707435,
+  "lastUpdate" : 1645486846556,
   "rows" : [
     [
       {
@@ -678,6 +678,25 @@
                               "required" : {
                                 "type" : "constant",
                                 "value" : true
+                              },
+                              "minLength" : {
+                                "type" : "expression",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant",
+                                "value" : 0
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "98694576-eb24-4272-b647-7d4e652fe708",
@@ -932,6 +951,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "06f37ed4-8e95-4fa1-aa16-69ddf05cae19",

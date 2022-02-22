@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "DodeljivanjeZahtevaZaposlenomForm",
   "name" : "DodeljivanjeZahtevaZaposlenomForm",
-  "lastUpdate" : 1645065792395,
+  "lastUpdate" : 1645487220025,
   "rows" : [
     [
       {
@@ -822,7 +822,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
