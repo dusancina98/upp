@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "UnosPonudeForm",
   "name" : "UnosPonudeForm",
-  "lastUpdate" : 1645507069118,
+  "lastUpdate" : 1645585052315,
   "rows" : [
     [
       {
@@ -721,10 +721,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "hidden" : {
@@ -756,6 +756,40 @@
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Unesite jedinicnu cenu za svaku stavku zahteva"
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 4"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "4beeb382-d7b4-477a-86b6-686ad1ac9829",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle"
                     }
                   ],
                   [
@@ -809,11 +843,11 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{zahtevZaNabavkuOpreme.stavkeZahteva[$index].vrstaOpreme.naziv}}"
+                                "value" : "{{zahtevZaNabavkuOpreme.stavkeZahteva[$index].vrstaOpreme.naziv + \" \" +  zahtevZaNabavkuOpreme.stavkeZahteva[$index].tipOpreme}}"
                               },
                               "level" : {
                                 "type" : "constant",
-                                "value" : "Level 5"
+                                "value" : "Level 4"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -821,40 +855,6 @@
                               }
                             },
                             "reference" : "c78314b0-427f-4277-ad2c-4058b8bf63d7",
-                            "hasValidationError" : false,
-                            "id" : "pbTitle"
-                          },
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "xs" : 12,
-                              "sm" : 12,
-                              "md" : 3,
-                              "lg" : 2
-                            },
-                            "propertyValues" : {
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{zahtevZaNabavkuOpreme.stavkeZahteva[$index].tipOpreme}}"
-                              },
-                              "level" : {
-                                "type" : "constant",
-                                "value" : "Level 5"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              }
-                            },
-                            "reference" : "e414772a-08f8-4e0d-b462-158c2ffb306f",
                             "hasValidationError" : false,
                             "id" : "pbTitle"
                           },
@@ -962,7 +962,8 @@
                                 "value" : ""
                               },
                               "min" : {
-                                "type" : "constant"
+                                "type" : "constant",
+                                "value" : 0
                               },
                               "max" : {
                                 "type" : "constant"
