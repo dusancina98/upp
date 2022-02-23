@@ -2316,7 +2316,7 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_wfUxe3PWEeyrB5X049S_Fw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:TextAnnotation" xmi:id="_4_HUEJRKEeyQT9kIWeabuw" text="Rok za potrebe postavljen na 1.5 min za potrebe testiranja"/>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_4_HUEJRKEeyQT9kIWeabuw" text="Rok za potrebe postavljen na 2 min za potrebe testiranja"/>
       </elements>
       <data xmi:type="process:Data" xmi:id="_i2Q4YHYTEeyXXJ7nLoZMoQ" name="statusObradeNajboljePonudeDobavljaca" dataType="_HEbHTnO4EeyrB5X049S_Fw">
         <defaultValue xmi:type="expression:Expression" xmi:id="_i2Q4YXYTEeyXXJ7nLoZMoQ" name="0" content="0" returnType="java.lang.Integer"/>
@@ -2363,7 +2363,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_CpRMMZP-EeyAe5YFUO7e7Q" content="" returnType="java.lang.Integer"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_HEbHNHO4EeyrB5X049S_Fw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_NCHccJRYEeyQT9kIWeabuw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_e80b8JSvEeyMkPWm6HSI1A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_HEbHNnO4EeyrB5X049S_Fw">
         <targetForm xmi:type="expression:Expression" xmi:id="_HEbHN3O4EeyrB5X049S_Fw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -3200,7 +3200,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_V-5aBJODEeywWYkINj_nfQ" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_V-5aAZODEeywWYkINj_nfQ" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V-5aApODEeywWYkINj_nfQ" points="[-1, -6, -189, 2]$[186, 6, -2, 14]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V-5aApODEeywWYkINj_nfQ" points="[-2, -10, -252, 1]$[229, -10, -21, 1]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V-6oIJODEeywWYkINj_nfQ" id="(1.0,0.6976744186046512)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_01MNwJP8EeyAe5YFUO7e7Q" type="4001" element="_01K_oJP8EeyAe5YFUO7e7Q" source="_007vEJP8EeyAe5YFUO7e7Q" target="_ACXd4HVeEeyXXJ7nLoZMoQ" roundedBendpointsRadius="10" routing="Rectilinear">
