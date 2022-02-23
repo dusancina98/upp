@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "UpitZaManjuKolicinuOpremeForm",
   "name" : "UpitZaManjuKolicinuOpremeForm",
-  "lastUpdate" : 1642776754701,
+  "lastUpdate" : 1645580379519,
   "rows" : [
     [
       {
@@ -735,7 +735,7 @@
                               },
                               "readOnly" : {
                                 "type" : "constant",
-                                "value" : false
+                                "value" : true
                               },
                               "label" : {
                                 "type" : "interpolation",

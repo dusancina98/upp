@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ObradaZahtevaForm",
   "name" : "ObradaZahtevaForm",
-  "lastUpdate" : 1645065854267,
+  "lastUpdate" : 1645584912943,
   "rows" : [
     [
       {
@@ -436,47 +436,6 @@
                       "rows" : [
                         [
                           {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "level" : {
-                                "type" : "constant",
-                                "value" : "Level 4"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "Vrsta Opreme"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "79c6ac5e-d920-4dc6-9a89-a895d2772b11",
-                            "hasValidationError" : false,
-                            "id" : "pbTitle",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
                             "type" : "container",
                             "dimension" : {
                               "md" : 12,
@@ -541,7 +500,7 @@
                                     },
                                     "label" : {
                                       "type" : "interpolation",
-                                      "value" : "Naziv"
+                                      "value" : "Vrsta Opreme"
                                     },
                                     "placeholder" : {
                                       "type" : "constant"
@@ -1049,7 +1008,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "value" : "$form.$invalid || !(zahtevZaNabavkuOpreme.upitManjeKolicine || zahtevZaNabavkuOpreme.zahtevPonudaDobavljaca || zahtevZaNabavkuOpreme.izdataOprema)"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -1058,6 +1017,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "5c3ce159-2780-42f4-940c-49d2aa2cd480",

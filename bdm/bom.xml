@@ -75,9 +75,9 @@
         </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.OpremaNaStanju">
             <fields>
-                <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaOpreme" fetchType="EAGER" name="vrsta" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="tip" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="kolicina" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="magija.it_firma.model.VrstaOpreme" fetchType="EAGER" name="vrsta" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="tip" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="kolicina" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -231,7 +231,7 @@
         </businessObject>
         <businessObject qualifiedName="magija.it_firma.model.VrstaOpreme">
             <fields>
-                <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -274,6 +274,7 @@
                 <field type="DOUBLE" length="255" name="cenaNajboljePonude" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="odobrenaNabavka" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="odbijenaNabavka" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="preliminarnoOdobrenje" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
