@@ -744,7 +744,7 @@
           <referencedElements xmi:type="expression:Expression" xmi:id="_h4h0MJRkEeyU1JT09QzYZw" name="opremaNaStanjuDAO" content="opremaNaStanjuDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="magija.it_firma.model.OpremaNaStanjuDAO" returnTypeFixed="true"/>
         </condition>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_OQck4JRlEeyU1JT09QzYZw" name="Actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_OQck4JRlEeyU1JT09QzYZw" name="Svi" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_gwe0rJHTEeycU-e2WF4QJA"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_gwe0rZHTEeycU-e2WF4QJA">
         <name xmi:type="expression:Expression" xmi:id="_gwe0rpHTEeycU-e2WF4QJA" content="" returnTypeFixed="true"/>
