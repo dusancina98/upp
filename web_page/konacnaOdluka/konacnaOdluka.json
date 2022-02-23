@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "konacnaOdluka",
   "name" : "konacnaOdluka",
-  "lastUpdate" : 1642102429681,
+  "lastUpdate" : 1645547269151,
   "rows" : [
     [
       {
@@ -290,7 +290,7 @@
                                     },
                                     "hidden" : {
                                       "type" : "expression",
-                                      "value" : "$index == 0"
+                                      "value" : "$index != 0"
                                     },
                                     "cssClasses" : {
                                       "type" : "constant",
@@ -347,7 +347,7 @@
                                     },
                                     "hidden" : {
                                       "type" : "expression",
-                                      "value" : "$index == 1"
+                                      "value" : "$index != 1"
                                     },
                                     "labelHidden" : {
                                       "type" : "constant",
@@ -399,7 +399,7 @@
                                     },
                                     "hidden" : {
                                       "type" : "expression",
-                                      "value" : "$index == 2"
+                                      "value" : "$index != 2"
                                     },
                                     "labelHidden" : {
                                       "type" : "constant",
@@ -454,8 +454,8 @@
                                       "value" : false
                                     },
                                     "hidden" : {
-                                      "type" : "expression",
-                                      "value" : "!$item.licnaProcena"
+                                      "type" : "constant",
+                                      "value" : false
                                     },
                                     "cssClasses" : {
                                       "type" : "constant",
