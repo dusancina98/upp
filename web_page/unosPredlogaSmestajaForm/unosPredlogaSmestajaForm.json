@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "unosPredlogaSmestajaForm",
   "name" : "unosPredlogaSmestajaForm",
-  "lastUpdate" : 1645284659085,
+  "lastUpdate" : 1645642666820,
   "rows" : [
     [
       {
@@ -1019,7 +1019,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "ponudaPrevozaISmestaja.ponudaSmestaja.length==2"
+                          "value" : "ponudaPrevozaISmestaja.ponudaSmestaja.length==3"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -1119,7 +1119,7 @@
                   },
                   "hidden" : {
                     "type" : "expression",
-                    "value" : "ponudaPrevozaISmestaja.ponudaSmestaja.length!=2"
+                    "value" : "ponudaPrevozaISmestaja.ponudaSmestaja.length!=3"
                   },
                   "cssClasses" : {
                     "type" : "constant",

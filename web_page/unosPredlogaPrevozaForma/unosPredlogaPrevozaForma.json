@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "unosPredlogaPrevozaForma",
   "name" : "unosPredlogaPrevozaForma",
-  "lastUpdate" : 1645041143398,
+  "lastUpdate" : 1645642700408,
   "rows" : [
     [
       {
@@ -977,7 +977,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "ponudaPrevozaISmestaja.ponudaPrevoza.length ==1"
+                          "value" : "ponudaPrevozaISmestaja.ponudaPrevoza.length ==3"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -1077,7 +1077,7 @@
                   },
                   "hidden" : {
                     "type" : "expression",
-                    "value" : "ponudaPrevozaISmestaja.ponudaPrevoza.length !=1"
+                    "value" : "ponudaPrevozaISmestaja.ponudaPrevoza.length !=3"
                   },
                   "cssClasses" : {
                     "type" : "constant",
